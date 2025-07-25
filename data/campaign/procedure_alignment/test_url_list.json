@@ -1,0 +1,1020 @@
+{
+    "1": [
+        {
+            "id": "relationship--a33a1a9c-c8d1-45f5-ad29-4a4188e5a54b",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8490486059420836,
+            "min_id": 1,
+            "order_ids": [
+                1
+            ],
+            "sent_indexes": [
+                0
+            ],
+            "combine_ids": [
+                3
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 33,
+                        "end": 37,
+                        "text": "file",
+                        "id": 7,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--9d8296bb-40a0-4a08-a01a-f6dd4409c6f1",
+            "techID": "T1070.006",
+            "tech_name": "Timestomp",
+            "value": 0.8490486059420836,
+            "min_id": 1,
+            "order_ids": [
+                1
+            ],
+            "sent_indexes": [
+                0
+            ],
+            "combine_ids": [
+                3
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 25,
+                        "end": 29,
+                        "text": "file",
+                        "id": 5,
+                        "verbs": [
+                            "timestomp"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        }
+    ],
+    "6": [
+        {
+            "id": "relationship--0994d9a9-b94e-4235-b762-18c2f7b2ed57",
+            "techID": "T1005",
+            "tech_name": "Data from Local System",
+            "value": 0.848823491312116,
+            "min_id": 6,
+            "order_ids": [
+                1,
+                6
+            ],
+            "sent_indexes": [
+                0,
+                0
+            ],
+            "combine_ids": [
+                3,
+                21
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 25,
+                        "end": 30,
+                        "text": "files",
+                        "id": 4,
+                        "verbs": [
+                            "retrieve",
+                            "collect"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "files"
+                        ]
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 40,
+                        "end": 57,
+                        "text": "local file system",
+                        "id": 9,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "local system",
+                            "local file system"
+                        ]
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 87,
+                        "text": "system",
+                        "id": 21,
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--227abd66-91cc-436e-aad8-c1fb82691357",
+            "techID": "T1083",
+            "tech_name": "File and Directory Discovery",
+            "value": 0.8904839112273335,
+            "min_id": 6,
+            "order_ids": [
+                1,
+                6
+            ],
+            "sent_indexes": [
+                0,
+                0
+            ],
+            "combine_ids": [
+                3,
+                21
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 24,
+                        "end": 31,
+                        "text": "folders",
+                        "id": 5,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA",
+                            "DIRECTORY"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "files",
+                            "folders"
+                        ]
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 49,
+                        "end": 55,
+                        "text": "system",
+                        "id": 10,
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 87,
+                        "text": "system",
+                        "id": 21,
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--6ec66973-8ba0-4ec4-a4ca-c49a304f56b7",
+            "techID": "T1083",
+            "tech_name": "File and Directory Discovery",
+            "value": 0.8773430857376465,
+            "min_id": 6,
+            "order_ids": [
+                1,
+                6
+            ],
+            "sent_indexes": [
+                0,
+                0
+            ],
+            "combine_ids": [
+                3,
+                21
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 23,
+                        "end": 35,
+                        "text": "file listing",
+                        "id": 6,
+                        "verbs": [
+                            "retrieve"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 45,
+                        "end": 51,
+                        "text": "system",
+                        "id": 9,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 87,
+                        "text": "system",
+                        "id": 21,
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--702ed555-03e2-4660-82d8-e85d46cbec02",
+            "techID": "T1082",
+            "tech_name": "System Information Discovery",
+            "value": 0.8477838215425433,
+            "min_id": 6,
+            "order_ids": [
+                6,
+                6
+            ],
+            "sent_indexes": [
+                0,
+                0
+            ],
+            "combine_ids": [
+                21,
+                21
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 18,
+                        "end": 31,
+                        "text": "computer name",
+                        "id": 5,
+                        "verbs": [
+                            "gather",
+                            "collect",
+                            "obtain",
+                            "record"
+                        ],
+                        "label": [
+                            "COMPONENT",
+                            "OTHER",
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "video card information",
+                            "system architecture",
+                            "OS architecture information",
+                            "machine information",
+                            "number",
+                            "system name",
+                            "OS version",
+                            "system language",
+                            "kernel version",
+                            "victim system information",
+                            "computer name",
+                            "manufacturers",
+                            "locale information",
+                            "information",
+                            "physical memory",
+                            "hostname",
+                            "Windows product name",
+                            "OS",
+                            "system information",
+                            "BIOS versions"
+                        ]
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 87,
+                        "text": "system",
+                        "id": 21,
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 79,
+                        "end": 81,
+                        "text": "OS",
+                        "id": 14,
+                        "verbs": [
+                            "gather",
+                            "collect",
+                            "record",
+                            "about"
+                        ],
+                        "label": [
+                            "COMPONENT",
+                            "FUNCTION",
+                            "OTHER",
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "architecture",
+                            "video card information",
+                            "BIOS",
+                            "system architecture",
+                            "system volume serial number",
+                            "OS architecture information",
+                            "machine information",
+                            "number",
+                            "system name",
+                            "DEP policy",
+                            "OS version",
+                            "system language",
+                            "kernel version",
+                            "mapped drives",
+                            "victim system information",
+                            "computer name",
+                            "OS version/Service pack",
+                            "manufacturers",
+                            "physical memory",
+                            "processor",
+                            "hostname",
+                            "Windows product name",
+                            "OS",
+                            "OS name",
+                            "system information",
+                            "BIOS versions",
+                            "memory size",
+                            "OS architecture"
+                        ]
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 87,
+                        "text": "system",
+                        "id": 21,
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--27e8d133-848b-4db0-ac79-b5a37da879f1",
+            "techID": "T1070.004",
+            "tech_name": "File Deletion",
+            "value": 0.8422729085722169,
+            "min_id": 6,
+            "order_ids": [
+                1,
+                6
+            ],
+            "sent_indexes": [
+                0,
+                0
+            ],
+            "combine_ids": [
+                3,
+                21
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 21,
+                        "end": 26,
+                        "text": "files",
+                        "id": 4,
+                        "verbs": [
+                            "delete"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "files"
+                        ]
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 36,
+                        "end": 42,
+                        "text": "system",
+                        "id": 7,
+                        "verbs": [
+                            "off",
+                            "from"
+                        ],
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "system"
+                        ]
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 87,
+                        "text": "system",
+                        "id": 21,
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--47afdb05-0327-4feb-b80e-1be491b57693",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8975338570317277,
+            "min_id": 6,
+            "order_ids": [
+                1,
+                6
+            ],
+            "sent_indexes": [
+                0,
+                0
+            ],
+            "combine_ids": [
+                3,
+                21
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 21,
+                        "end": 26,
+                        "text": "files",
+                        "id": 4,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 34,
+                        "end": 40,
+                        "text": "system",
+                        "id": 7,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 87,
+                        "text": "system",
+                        "id": 21,
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        }
+    ],
+    "9": [
+        {
+            "id": "relationship--34d105a6-47ac-4a8b-b892-6f630cd97096",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8671447426326033,
+            "min_id": 9,
+            "order_ids": [
+                1,
+                9
+            ],
+            "sent_indexes": [
+                0,
+                1
+            ],
+            "combine_ids": [
+                3,
+                1005
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 40,
+                        "end": 44,
+                        "text": "file",
+                        "id": 7,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 50,
+                        "end": 59,
+                        "text": "given URL",
+                        "id": 10,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 15,
+                        "end": 18,
+                        "text": "URL",
+                        "id": 5,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--f4902ad9-b1bb-41ce-a448-55e2d9437503",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.922548681946735,
+            "min_id": 9,
+            "order_ids": [
+                1,
+                9
+            ],
+            "sent_indexes": [
+                0,
+                1
+            ],
+            "combine_ids": [
+                3,
+                1005
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 28,
+                        "end": 32,
+                        "text": "file",
+                        "id": 5,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 50,
+                        "end": 53,
+                        "text": "URL",
+                        "id": 9,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 15,
+                        "end": 18,
+                        "text": "URL",
+                        "id": 5,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--42f6d62c-6477-42b7-8078-76b1f94e6155",
+            "techID": "T1071.001",
+            "tech_name": "Web Protocols",
+            "value": 0.8523200205286139,
+            "min_id": 9,
+            "order_ids": [
+                9,
+                1
+            ],
+            "sent_indexes": [
+                1,
+                0
+            ],
+            "combine_ids": [
+                1005,
+                3
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 20,
+                        "end": 25,
+                        "text": "HTTPS",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "HTTP",
+                            "HTTPS"
+                        ]
+                    },
+                    "dest": {
+                        "start": 15,
+                        "end": 18,
+                        "text": "URL",
+                        "id": 5,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 38,
+                        "end": 43,
+                        "text": "files",
+                        "id": 7,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "files"
+                        ]
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                }
+            ]
+        }
+    ],
+    "2": [
+        {
+            "id": "relationship--484add44-6a43-4700-b1bc-d64f24157353",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.9042539225111477,
+            "min_id": 2,
+            "order_ids": [
+                1,
+                2
+            ],
+            "sent_indexes": [
+                0,
+                0
+            ],
+            "combine_ids": [
+                3,
+                5
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 34,
+                        "end": 39,
+                        "text": "files",
+                        "id": 5,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 45,
+                        "end": 49,
+                        "text": "URLs",
+                        "id": 7,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 21,
+                        "end": 25,
+                        "text": "URLs",
+                        "id": 5,
+                        "verbs": [
+                            "contain"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "13": [
+        {
+            "id": "relationship--ca7d9090-d5ff-4a10-b403-015daa559e84",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8779662154451319,
+            "min_id": 13,
+            "order_ids": [
+                1,
+                13
+            ],
+            "sent_indexes": [
+                0,
+                1
+            ],
+            "combine_ids": [
+                3,
+                1031
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 27,
+                        "end": 32,
+                        "text": "files",
+                        "id": 5,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 7,
+                        "end": 11,
+                        "text": "file",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 43,
+                        "end": 50,
+                        "text": "systems",
+                        "id": 8,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 143,
+                        "end": 149,
+                        "text": "system",
+                        "id": 31,
+                        "verbs": [
+                            "run"
+                        ],
+                        "label": [
+                            "COMPONENT"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ]
+}

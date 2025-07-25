@@ -1,0 +1,109 @@
+FROM python:3.8-slim
+
+# Install system dependencies including ca-certificates for SSL
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    wget \
+    curl \
+    git \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/* \
+    && update-ca-certificates
+
+# Set working directory
+WORKDIR /app
+
+# Set environment variables early
+ENV TF_CPP_MIN_LOG_LEVEL=3
+ENV CUDA_VISIBLE_DEVICES=""
+ENV TF_ENABLE_ONEDNN_OPTS=0
+
+# Install dependencies manually with compatible versions
+RUN pip install --no-cache-dir --upgrade pip==21.3.1 setuptools==59.6.0 wheel==0.37.1
+
+# Install numpy first with exact version
+RUN pip install --no-cache-dir numpy==1.19.5
+
+# Install core ML dependencies
+RUN pip install --no-cache-dir \
+    scikit-learn==1.0.2 \
+    pandas==1.3.5 \
+    matplotlib==3.5.3 \
+    networkx==2.6.3
+
+# Install SpaCy stack with compatible versions
+RUN pip install --no-cache-dir \
+    catalogue==2.0.8 \
+    cymem==2.0.6 \
+    murmurhash==1.0.9 \
+    preshed==3.0.8 \
+    wasabi==0.10.1 \
+    srsly==2.4.5 \
+    typer==0.4.2
+
+RUN pip install --no-cache-dir \
+    thinc==8.1.5 \
+    spacy==3.4.4
+
+# Install TensorFlow and related
+RUN pip install --no-cache-dir \
+    tensorflow-hub==0.12.0 \
+    tensorflow==2.8.4
+
+# Install remaining dependencies individually
+RUN pip install --no-cache-dir \
+    evaluate==0.4.0 \
+    fasttext-langdetect==1.0.5 \
+    inscriptis==2.3.2 \
+    jsonlines==3.1.0 \
+    mitreattack-python==2.0.14 \
+    psutil==5.9.5 \
+    pyinflect==0.5.1 \
+    python-Levenshtein==0.20.9 \
+    regex==2022.10.31 \
+    requests==2.28.2 \
+    snorkel==0.9.9 \
+    tqdm==4.64.1 \
+    spacy-transformers==1.1.9 \
+    coreferee==1.4.0 \
+    fire==0.4.0
+
+# Install additional dependencies for universal input processing  
+RUN pip install --no-cache-dir \
+    beautifulsoup4==4.11.2 \
+    PyPDF2==3.0.1 \
+    PyMuPDF==1.21.1 \
+    lxml==4.9.2
+
+# Download SpaCy models after installation with SSL verification handling
+RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --no-cache-dir certifi
+RUN python -c "import ssl; print(ssl.get_default_verify_paths())"
+
+# Try to download SpaCy models with fallback options
+RUN python -m spacy download en_core_web_lg || \
+    (echo "Trying alternative download method..." && \
+     pip install --no-cache-dir https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.4.1/en_core_web_lg-3.4.1-py3-none-any.whl)
+
+RUN python -m spacy download en_core_web_trf || \
+    (echo "Trying alternative download method..." && \
+     pip install --no-cache-dir https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.4.1/en_core_web_trf-3.4.1-py3-none-any.whl)
+
+# Install Coreferee with fallback
+RUN python -m coreferee install en || echo "Coreferee installation completed with warnings"
+
+# Copy the rest of the application
+COPY . .
+
+# Create necessary directories
+RUN mkdir -p data/tf_hub
+
+# Set environment variables
+ENV TFHUB_CACHE_DIR=/app/data/tf_hub
+ENV TF_ENABLE_ONEDNN_OPTS=0
+ENV PYTHONPATH=/app
+
+# Expose port (if needed for future web interface)
+EXPOSE 8000
+
+# Default command
+CMD ["python3", "main.py"]

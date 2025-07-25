@@ -1,0 +1,5326 @@
+{
+    "24": [
+        {
+            "id": "relationship--7fcb628d-ce4d-48a4-bb9f-b727fe54e6af",
+            "techID": "T1071.001",
+            "tech_name": "Web Protocols",
+            "value": 0.8065102165355043,
+            "min_id": 24,
+            "order_ids": [
+                24,
+                19
+            ],
+            "sent_indexes": [
+                10,
+                9
+            ],
+            "combine_ids": [
+                10014,
+                9013
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 23,
+                        "text": "HTTP",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "WebDav",
+                            "HTTP",
+                            "HTTPS"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 46,
+                        "end": 68,
+                        "text": "network communications",
+                        "id": 12,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "network communications",
+                            "network communication"
+                        ],
+                        "verbs": []
+                    },
+                    "dest": {
+                        "start": 70,
+                        "end": 77,
+                        "text": "network",
+                        "id": 13,
+                        "verbs": [
+                            "by",
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "25": [
+        {
+            "id": "relationship--0a975ec6-5754-4a42-aa0f-f468d67a2c91",
+            "techID": "T1071.001",
+            "tech_name": "Web Protocols",
+            "value": 0.8760909976040581,
+            "min_id": 25,
+            "order_ids": [
+                24,
+                25
+            ],
+            "sent_indexes": [
+                10,
+                10
+            ],
+            "combine_ids": [
+                10014,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 16,
+                        "end": 20,
+                        "text": "HTTP",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "HTTP",
+                            "HTTPS"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 25,
+                        "end": 27,
+                        "text": "C2",
+                        "id": 6,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "C2"
+                        ],
+                        "verbs": [
+                            "conduct",
+                            "communicate"
+                        ]
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--53da7e18-3812-47d5-a8de-af49e84f796a",
+            "techID": "T1573.001",
+            "tech_name": "Symmetric Cryptography",
+            "value": 0.8818196722531695,
+            "min_id": 25,
+            "order_ids": [
+                24,
+                25
+            ],
+            "sent_indexes": [
+                10,
+                10
+            ],
+            "combine_ids": [
+                10014,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 47,
+                        "text": "AES encrypted communications",
+                        "id": 6,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 51,
+                        "end": 53,
+                        "text": "C2",
+                        "id": 8,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--c3086516-a419-4e7f-87c4-e37f08d0f27a",
+            "techID": "T1071.001",
+            "tech_name": "Web Protocols",
+            "value": 0.8655276695486545,
+            "min_id": 25,
+            "order_ids": [
+                24,
+                25
+            ],
+            "sent_indexes": [
+                10,
+                10
+            ],
+            "combine_ids": [
+                10014,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 24,
+                        "text": "HTTPS",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 29,
+                        "end": 45,
+                        "text": "C2 communiations",
+                        "id": 7,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--7953c8bf-2e44-45e9-90f5-4db5da4ad8c2",
+            "techID": "T1041",
+            "tech_name": "Exfiltration Over C2 Channel",
+            "value": 0.8111577105536534,
+            "min_id": 25,
+            "order_ids": [
+                18,
+                25
+            ],
+            "sent_indexes": [
+                9,
+                10
+            ],
+            "combine_ids": [
+                9004,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 23,
+                        "end": 41,
+                        "text": "stolen information",
+                        "id": 5,
+                        "verbs": [
+                            "exfiltrate"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 10,
+                        "end": 28,
+                        "text": "stolen credentials",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 51,
+                        "end": 53,
+                        "text": "C2",
+                        "id": 8,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--cecf4306-a80e-4e65-b701-7e934adc6c42",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8494458058847505,
+            "min_id": 25,
+            "order_ids": [
+                8,
+                25
+            ],
+            "sent_indexes": [
+                3,
+                10
+            ],
+            "combine_ids": [
+                3021,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 21,
+                        "end": 36,
+                        "text": "PowerShell code",
+                        "id": 5,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 46,
+                        "end": 48,
+                        "text": "C2",
+                        "id": 8,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--ce7b27ac-fff6-4d3c-bceb-50c16f462552",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8177285660173568,
+            "min_id": 25,
+            "order_ids": [
+                10,
+                25
+            ],
+            "sent_indexes": [
+                5,
+                10
+            ],
+            "combine_ids": [
+                5003,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 47,
+                        "end": 66,
+                        "text": "PowerShell payloads",
+                        "id": 8,
+                        "verbs": [
+                            "retrieve"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 21,
+                        "text": "PowerShell script",
+                        "id": 3,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 76,
+                        "end": 78,
+                        "text": "C2",
+                        "id": 11,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--bac1d1a4-14f7-4f68-8035-e322e94f92c9",
+            "techID": "T1071.002",
+            "tech_name": "File Transfer Protocols",
+            "value": 0.9146368593533685,
+            "min_id": 25,
+            "order_ids": [
+                21,
+                25
+            ],
+            "sent_indexes": [
+                9,
+                10
+            ],
+            "combine_ids": [
+                9019,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 22,
+                        "text": "SMB",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 101,
+                        "end": 111,
+                        "text": "SMB shares",
+                        "id": 19,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 27,
+                        "end": 29,
+                        "text": "C2",
+                        "id": 6,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--56b6c694-6d04-4799-9a34-b4c66f25b30e",
+            "techID": "T1071.001",
+            "tech_name": "Web Protocols",
+            "value": 0.8876678368094255,
+            "min_id": 25,
+            "order_ids": [
+                24,
+                24,
+                25
+            ],
+            "sent_indexes": [
+                10,
+                10,
+                10
+            ],
+            "combine_ids": [
+                10014,
+                10014,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 14,
+                        "end": 18,
+                        "text": "HTTP",
+                        "id": 3,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "HTTP",
+                            "HTTPS"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 24,
+                        "text": "HTTPS",
+                        "id": 5,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "HTTP",
+                            "HTTPS"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 29,
+                        "end": 45,
+                        "text": "C2 communication",
+                        "id": 8,
+                        "label": [
+                            "FUNCTION",
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "data exfiltration",
+                            "C2",
+                            "C2 communications",
+                            "C2 communication"
+                        ],
+                        "verbs": [
+                            "to",
+                            "with"
+                        ]
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--2211dd80-6ab2-4d3b-90fd-3ae19e75b64f",
+            "techID": "T1041",
+            "tech_name": "Exfiltration Over C2 Channel",
+            "value": 0.9400222266034708,
+            "min_id": 25,
+            "order_ids": [
+                18,
+                25
+            ],
+            "sent_indexes": [
+                9,
+                10
+            ],
+            "combine_ids": [
+                9004,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 37,
+                        "text": "stolen credentials",
+                        "id": 5,
+                        "verbs": [
+                            "transmit",
+                            "send"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "data",
+                            "files",
+                            "stolen credentials"
+                        ]
+                    },
+                    "dest": {
+                        "start": 10,
+                        "end": 28,
+                        "text": "stolen credentials",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 60,
+                        "end": 62,
+                        "text": "C2",
+                        "id": 11,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "C2"
+                        ]
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--76b62130-29f5-4e3a-ace1-146a228a08a9",
+            "techID": "T1029",
+            "tech_name": "Scheduled Transfer",
+            "value": 0.8789085135515193,
+            "min_id": 25,
+            "order_ids": [
+                18,
+                25
+            ],
+            "sent_indexes": [
+                9,
+                10
+            ],
+            "combine_ids": [
+                9004,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 14,
+                        "end": 25,
+                        "text": "stolen data",
+                        "id": 4,
+                        "verbs": [
+                            "send"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 10,
+                        "end": 28,
+                        "text": "stolen credentials",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 33,
+                        "end": 35,
+                        "text": "C2",
+                        "id": 7,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--19e0594c-c5b4-45c8-926e-ae884164d294",
+            "techID": "T1071.001",
+            "tech_name": "Web Protocols",
+            "value": 0.8788755395068907,
+            "min_id": 25,
+            "order_ids": [
+                24,
+                25
+            ],
+            "sent_indexes": [
+                10,
+                10
+            ],
+            "combine_ids": [
+                10014,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 15,
+                        "end": 20,
+                        "text": "HTTPS",
+                        "id": 3,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "HTTPS"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 25,
+                        "end": 27,
+                        "text": "C2",
+                        "id": 5,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "C2"
+                        ],
+                        "verbs": [
+                            "communicate"
+                        ]
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--82ce210f-a994-4541-b62f-40ead02ad202",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8820629036311147,
+            "min_id": 25,
+            "order_ids": [
+                13,
+                25
+            ],
+            "sent_indexes": [
+                7,
+                10
+            ],
+            "combine_ids": [
+                7002,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 32,
+                        "end": 39,
+                        "text": "malware",
+                        "id": 5,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 49,
+                        "end": 51,
+                        "text": "C2",
+                        "id": 8,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--665e5a7f-e575-44c7-839d-4c69f14238d2",
+            "techID": "T1573",
+            "tech_name": "Encrypted Channel",
+            "value": 0.8342753057656531,
+            "min_id": 25,
+            "order_ids": [
+                24,
+                25
+            ],
+            "sent_indexes": [
+                10,
+                10
+            ],
+            "combine_ids": [
+                10014,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 24,
+                        "end": 44,
+                        "text": "encrypted http proxy",
+                        "id": 8,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 48,
+                        "end": 65,
+                        "text": "C2 communications",
+                        "id": 11,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--2cd5235f-1f0b-4f58-a931-d3b940b62cbf",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.8207577217767135,
+            "min_id": 25,
+            "order_ids": [
+                10,
+                25
+            ],
+            "sent_indexes": [
+                5,
+                10
+            ],
+            "combine_ids": [
+                5003,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 20,
+                        "end": 37,
+                        "text": "PowerShell script",
+                        "id": 6,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "Powershell commands",
+                            "PowerShell script",
+                            "PowerShell scripts"
+                        ]
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 21,
+                        "text": "PowerShell script",
+                        "id": 3,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 52,
+                        "end": 54,
+                        "text": "C2",
+                        "id": 9,
+                        "verbs": [
+                            "receive",
+                            "send"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "C2"
+                        ]
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--41c5b24c-6e33-43b4-ad7e-ebe7506d33b9",
+            "techID": "T1041",
+            "tech_name": "Exfiltration Over C2 Channel",
+            "value": 0.8219790869731034,
+            "min_id": 25,
+            "order_ids": [
+                18,
+                25
+            ],
+            "sent_indexes": [
+                9,
+                10
+            ],
+            "combine_ids": [
+                9004,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 16,
+                        "end": 34,
+                        "text": "stolen information",
+                        "id": 5,
+                        "verbs": [
+                            "send"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 10,
+                        "end": 28,
+                        "text": "stolen credentials",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 38,
+                        "end": 46,
+                        "text": "C2 nodes",
+                        "id": 8,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--7340fcbe-e87b-4f16-bdac-e429a0ba7714",
+            "techID": "T1573",
+            "tech_name": "Encrypted Channel",
+            "value": 0.8756133123103178,
+            "min_id": 25,
+            "order_ids": [
+                24,
+                25
+            ],
+            "sent_indexes": [
+                10,
+                10
+            ],
+            "combine_ids": [
+                10014,
+                10017
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 21,
+                        "end": 38,
+                        "text": "encrypted channel",
+                        "id": 6,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 106,
+                        "text": "encrypted HTTPS channels",
+                        "id": 14,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 43,
+                        "end": 60,
+                        "text": "C2 communications",
+                        "id": 9,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 112,
+                        "end": 114,
+                        "text": "C2",
+                        "id": 17,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 10,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "3": [
+        {
+            "id": "relationship--7a2f70b7-7b6e-4c05-8f71-42a494b055ce",
+            "techID": "T1566.001",
+            "tech_name": "Spearphishing Attachment",
+            "value": 0.8257501661562414,
+            "min_id": 3,
+            "order_ids": [
+                2,
+                3
+            ],
+            "sent_indexes": [
+                1,
+                1
+            ],
+            "combine_ids": [
+                1010,
+                1013
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 18,
+                        "end": 24,
+                        "text": "emails",
+                        "id": 4,
+                        "verbs": [
+                            "send"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 56,
+                        "end": 62,
+                        "text": "emails",
+                        "id": 10,
+                        "verbs": [
+                            "phishe"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 28,
+                        "end": 35,
+                        "text": "victims",
+                        "id": 6,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 91,
+                        "text": "employees",
+                        "id": 13,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "8": [
+        {
+            "id": "relationship--570da7ec-2d72-4e1b-9f30-f0e1a10085bf",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.8139608881156254,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 23,
+                        "end": 33,
+                        "text": "PowerShell",
+                        "id": 5,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--79633fcf-d22a-40f0-a9be-52fc0608825f",
+            "techID": "T1027.010",
+            "tech_name": "Command Obfuscation",
+            "value": 0.8103318359855829,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 20,
+                        "end": 39,
+                        "text": "PowerShell commands",
+                        "id": 5,
+                        "verbs": [
+                            "encode"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--fe3cefac-f51b-4bac-b6e1-c4bba1f090a8",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.9762024878725,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 36,
+                        "end": 54,
+                        "text": "PowerShell scripts",
+                        "id": 8,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--58c28a92-b3ed-41de-841d-8b8d1ad142be",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.8326408264559295,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 20,
+                        "end": 38,
+                        "text": "PowerShell Scripts",
+                        "id": 5,
+                        "verbs": [
+                            "employ",
+                            "write",
+                            "launch"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "PowerShell Scripts",
+                            "PowerShell scripts",
+                            "custom PowerShell script"
+                        ]
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--3f2f8ae7-0690-4987-a00c-6b234b938fef",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.8490486059420836,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 16,
+                        "end": 26,
+                        "text": "PowerShell",
+                        "id": 4,
+                        "verbs": [
+                            "execute",
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "PowerShell script",
+                            "PowerShell"
+                        ]
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--be31bf6d-ce4f-4620-8940-445f35ff90a7",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.9621932089695294,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 42,
+                        "end": 57,
+                        "text": "PowerShell code",
+                        "id": 7,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "PowerShell code",
+                            "Windows binaries"
+                        ]
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--f6d0705a-e4a5-4aae-a8a3-b1c2b7287469",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.8139608881156254,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 26,
+                        "end": 36,
+                        "text": "PowerShell",
+                        "id": 5,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--6809f70c-63a2-415d-8c64-66784fd80caf",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.8326408264559295,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 38,
+                        "text": "PowerShell commands",
+                        "id": 5,
+                        "verbs": [
+                            "execute",
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "PowerShell commands",
+                            "PowerShell scripts"
+                        ]
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--16e90509-5ea2-48ff-8e09-686dcfddbb3b",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.9384668595577561,
+            "min_id": 8,
+            "order_ids": [
+                8,
+                8
+            ],
+            "sent_indexes": [
+                3,
+                3
+            ],
+            "combine_ids": [
+                3021,
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 29,
+                        "end": 47,
+                        "text": "PowerShell scripts",
+                        "id": 6,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 61,
+                        "end": 80,
+                        "text": "PowerShell commands",
+                        "id": 10,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--b4c7e12f-6921-4007-ab15-595969bf9eca",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.8139608881156254,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 23,
+                        "end": 33,
+                        "text": "PowerShell",
+                        "id": 5,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--ebd78850-caf0-4e14-8338-0f7347063afc",
+            "techID": "T1140",
+            "tech_name": "Deobfuscate/Decode Files or Information",
+            "value": 0.8490486059420836,
+            "min_id": 8,
+            "order_ids": [
+                8
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3021
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 24,
+                        "end": 41,
+                        "text": "PowerShell script",
+                        "id": 6,
+                        "verbs": [
+                            "decode"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 117,
+                        "end": 134,
+                        "text": "PowerShell script",
+                        "id": 21,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "15": [
+        {
+            "id": "relationship--31a72381-c672-404f-afd2-17bfb2aa3078",
+            "techID": "T1056.002",
+            "tech_name": "GUI Input Capture",
+            "value": 0.8089670841642231,
+            "min_id": 15,
+            "order_ids": [
+                3,
+                15
+            ],
+            "sent_indexes": [
+                1,
+                7
+            ],
+            "combine_ids": [
+                1013,
+                7007
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 20,
+                        "end": 24,
+                        "text": "user",
+                        "id": 4,
+                        "verbs": [
+                            "prompt"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "user"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 91,
+                        "text": "employees",
+                        "id": 13,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 35,
+                        "end": 46,
+                        "text": "credentials",
+                        "id": 7,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "credentials"
+                        ],
+                        "verbs": []
+                    },
+                    "dest": {
+                        "start": 34,
+                        "end": 45,
+                        "text": "credentials",
+                        "id": 7,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--fad2a504-6e00-4892-bf88-b49d6d18788c",
+            "techID": "T1003",
+            "tech_name": "OS Credential Dumping",
+            "value": 0.993629272450717,
+            "min_id": 15,
+            "order_ids": [
+                15
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7007
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 15,
+                        "end": 26,
+                        "text": "credentials",
+                        "id": 4,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 34,
+                        "end": 45,
+                        "text": "credentials",
+                        "id": 7,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--b1b935ac-1823-48a8-ac16-b9d17e519475",
+            "techID": "T1003.001",
+            "tech_name": "LSASS Memory",
+            "value": 0.9437405678493881,
+            "min_id": 15,
+            "order_ids": [
+                14,
+                15
+            ],
+            "sent_indexes": [
+                7,
+                7
+            ],
+            "combine_ids": [
+                7004,
+                7007
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 27,
+                        "text": "Mimikatz",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 17,
+                        "end": 25,
+                        "text": "mimikatz",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 47,
+                        "end": 69,
+                        "text": "legitimate credentials",
+                        "id": 10,
+                        "verbs": [
+                            "capture"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 34,
+                        "end": 45,
+                        "text": "credentials",
+                        "id": 7,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--1c7b9a1b-e874-4881-884a-e3c3d1fd8aed",
+            "techID": "T1003.001",
+            "tech_name": "LSASS Memory",
+            "value": 0.993629272450717,
+            "min_id": 15,
+            "order_ids": [
+                15,
+                14
+            ],
+            "sent_indexes": [
+                7,
+                7
+            ],
+            "combine_ids": [
+                7007,
+                7004
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 17,
+                        "end": 28,
+                        "text": "credentials",
+                        "id": 4,
+                        "verbs": [
+                            "harvest",
+                            "obtain",
+                            "dump",
+                            "steal",
+                            "gather"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "credentials"
+                        ]
+                    },
+                    "dest": {
+                        "start": 34,
+                        "end": 45,
+                        "text": "credentials",
+                        "id": 7,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 35,
+                        "end": 43,
+                        "text": "Mimikatz",
+                        "id": 6,
+                        "verbs": [
+                            "use",
+                            "run"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "Windows Credential Editor",
+                            "Mimikatz",
+                            "tools",
+                            "LaZagne",
+                            "ProcDump"
+                        ]
+                    },
+                    "dest": {
+                        "start": 17,
+                        "end": 25,
+                        "text": "mimikatz",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--37ad61e7-6520-47d0-81ae-f3d129b49ac1",
+            "techID": "T1003",
+            "tech_name": "OS Credential Dumping",
+            "value": 0.8636936159841943,
+            "min_id": 15,
+            "order_ids": [
+                15,
+                3
+            ],
+            "sent_indexes": [
+                7,
+                1
+            ],
+            "combine_ids": [
+                7007,
+                1013
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 17,
+                        "end": 28,
+                        "text": "credentials",
+                        "id": 3,
+                        "verbs": [
+                            "steal"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 34,
+                        "end": 45,
+                        "text": "credentials",
+                        "id": 7,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 38,
+                        "end": 45,
+                        "text": "victims",
+                        "id": 6,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 91,
+                        "text": "employees",
+                        "id": 13,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--ecc9a971-349b-428d-a376-74f11b5b7086",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.8027437638012753,
+            "min_id": 15,
+            "order_ids": [
+                10,
+                15
+            ],
+            "sent_indexes": [
+                5,
+                7
+            ],
+            "combine_ids": [
+                5003,
+                7007
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 20,
+                        "end": 38,
+                        "text": "PowerShell scripts",
+                        "id": 6,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 21,
+                        "text": "PowerShell script",
+                        "id": 3,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 49,
+                        "end": 64,
+                        "text": "credential data",
+                        "id": 10,
+                        "verbs": [
+                            "access"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 34,
+                        "end": 45,
+                        "text": "credentials",
+                        "id": 7,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--9433ea0e-0bae-44b6-b32b-5290356f057b",
+            "techID": "T1560",
+            "tech_name": "Archive Collected Data",
+            "value": 0.8490486059420836,
+            "min_id": 15,
+            "order_ids": [
+                15
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7007
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 23,
+                        "end": 34,
+                        "text": "credentials",
+                        "id": 4,
+                        "verbs": [
+                            "rc4-encrypt"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 34,
+                        "end": 45,
+                        "text": "credentials",
+                        "id": 7,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "13": [
+        {
+            "id": "relationship--ca484dbf-aa28-4d7e-90bb-b60723ff70b1",
+            "techID": "T1059.001",
+            "tech_name": "PowerShell",
+            "value": 0.9232674170395572,
+            "min_id": 13,
+            "order_ids": [
+                10,
+                13
+            ],
+            "sent_indexes": [
+                5,
+                7
+            ],
+            "combine_ids": [
+                5003,
+                7002
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 15,
+                        "end": 25,
+                        "text": "PowerShell",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 21,
+                        "text": "PowerShell script",
+                        "id": 3,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 50,
+                        "end": 57,
+                        "text": "malware",
+                        "id": 9,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "malware",
+                            "reconnaissance scripts"
+                        ]
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--05581e74-e78f-40e1-aa13-c990a99cbac3",
+            "techID": "T1588.001",
+            "tech_name": "Malware",
+            "value": 0.8456567613579762,
+            "min_id": 13,
+            "order_ids": [
+                13
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7002
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 35,
+                        "end": 42,
+                        "text": "malware",
+                        "id": 6,
+                        "verbs": [
+                            "obtain",
+                            "acquire"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "Cobalt Strike",
+                            "njRAT",
+                            "Remcos",
+                            "malware",
+                            "AsyncRAT"
+                        ]
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--1f7b17e9-9ad3-42dd-ab92-e3afe752247b",
+            "techID": "T1053.005",
+            "tech_name": "Scheduled Task",
+            "value": 0.8117458198312647,
+            "min_id": 13,
+            "order_ids": [
+                13,
+                12
+            ],
+            "sent_indexes": [
+                7,
+                5
+            ],
+            "combine_ids": [
+                7002,
+                5010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 0,
+                        "end": 12,
+                        "text": "FIN7 malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 25,
+                        "end": 40,
+                        "text": "scheduled tasks",
+                        "id": 6,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--283ba7b1-cd3b-44e9-bfae-70023c53d446",
+            "techID": "T1204.002",
+            "tech_name": "Malicious File",
+            "value": 0.8356829637401377,
+            "min_id": 13,
+            "order_ids": [
+                3,
+                13,
+                5
+            ],
+            "sent_indexes": [
+                1,
+                7,
+                3
+            ],
+            "combine_ids": [
+                1013,
+                7002,
+                3003
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 25,
+                        "end": 32,
+                        "text": "victims",
+                        "id": 5,
+                        "verbs": [
+                            "convince",
+                            "lure"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "victims"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 91,
+                        "text": "employees",
+                        "id": 13,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 48,
+                        "end": 55,
+                        "text": "malware",
+                        "id": 8,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "malware"
+                        ]
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 69,
+                        "end": 87,
+                        "text": "e-mail attachments",
+                        "id": 12,
+                        "verbs": [
+                            "use",
+                            "open"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "attachments",
+                            "e-mail attachments"
+                        ]
+                    },
+                    "dest": {
+                        "start": 14,
+                        "end": 24,
+                        "text": "attachment",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 3,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--db2be919-e747-430b-a7ee-d619a11abd93",
+            "techID": "T1053.005",
+            "tech_name": "Scheduled Task",
+            "value": 0.8096115229587161,
+            "min_id": 13,
+            "order_ids": [
+                13,
+                12
+            ],
+            "sent_indexes": [
+                7,
+                5
+            ],
+            "combine_ids": [
+                7002,
+                5010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 34,
+                        "end": 41,
+                        "text": "malware",
+                        "id": 5,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 47,
+                        "end": 62,
+                        "text": "scheduled tasks",
+                        "id": 8,
+                        "verbs": [
+                            "with"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--91eab726-0a0c-4898-8376-66987fd1037c",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8490485639378214,
+            "min_id": 13,
+            "order_ids": [
+                13
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7002
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 44,
+                        "end": 51,
+                        "text": "malware",
+                        "id": 8,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--96ff6190-cb11-4473-a194-abbf317205b8",
+            "techID": "T1587.002",
+            "tech_name": "Code Signing Certificates",
+            "value": 0.8490485639378214,
+            "min_id": 13,
+            "order_ids": [
+                13
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7002
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 37,
+                        "end": 44,
+                        "text": "malware",
+                        "id": 6,
+                        "verbs": [
+                            "sign"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "malware",
+                            "dbxcli utility"
+                        ]
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--9b55c1b3-94fd-436f-8910-9d0519d3b5b4",
+            "techID": "T1588.001",
+            "tech_name": "Malware",
+            "value": 0.8456567613579762,
+            "min_id": 13,
+            "order_ids": [
+                13
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7002
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 29,
+                        "end": 37,
+                        "text": "backdoor",
+                        "id": 7,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "Conti ransomware",
+                            "Cobalt Strike",
+                            "backdoor",
+                            "FunnyDream",
+                            "malware"
+                        ]
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--0177d430-a0b9-4f2f-8c66-8dfa4391611a",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8490485639378214,
+            "min_id": 13,
+            "order_ids": [
+                13
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7002
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 32,
+                        "end": 37,
+                        "text": "files",
+                        "id": 5,
+                        "verbs": [
+                            "download",
+                            "send"
+                        ],
+                        "label": [
+                            "FUNCTION",
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "modules",
+                            "files",
+                            "updates",
+                            "payloads",
+                            "tools",
+                            "malware",
+                            "plugins",
+                            "components",
+                            "auxiliary modules"
+                        ]
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                }
+            ]
+        }
+    ],
+    "12": [
+        {
+            "id": "relationship--2ccf654b-1077-4277-9a24-099fb3bf095f",
+            "techID": "T1036.004",
+            "tech_name": "Masquerade Task or Service",
+            "value": 0.993629272450717,
+            "min_id": 12,
+            "order_ids": [
+                12
+            ],
+            "sent_indexes": [
+                5
+            ],
+            "combine_ids": [
+                5010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 25,
+                        "end": 39,
+                        "text": "scheduled task",
+                        "id": 6,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "COMPONENT",
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "\"AdobeFlashSync",
+                            "\"MicrosoftEdge",
+                            "scheduled task"
+                        ]
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--005b6fd1-be80-424b-b6df-2ff88d390b1b",
+            "techID": "T1053.005",
+            "tech_name": "Scheduled Task",
+            "value": 0.8490486059420836,
+            "min_id": 12,
+            "order_ids": [
+                12
+            ],
+            "sent_indexes": [
+                5
+            ],
+            "combine_ids": [
+                5010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 17,
+                        "end": 32,
+                        "text": "scheduled tasks",
+                        "id": 5,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION",
+                            "DIRECTORY"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "MSST",
+                            "Task Scheduler",
+                            "and\\Microsoft\\Windows\\Autochk\\Scheduled",
+                            "scheduled tasks",
+                            "\"Watchmon Service",
+                            "scheduled task"
+                        ]
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--7a28c0d9-28cf-4881-b8a5-8d779eb76e0d",
+            "techID": "T1053.005",
+            "tech_name": "Scheduled Task",
+            "value": 0.8490486059420836,
+            "min_id": 12,
+            "order_ids": [
+                12
+            ],
+            "sent_indexes": [
+                5
+            ],
+            "combine_ids": [
+                5010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 39,
+                        "end": 53,
+                        "text": "scheduled task",
+                        "id": 8,
+                        "verbs": [
+                            "by"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--2496d1c4-cb04-40ab-9f9a-0102da3e6d77",
+            "techID": "T1053.005",
+            "tech_name": "Scheduled Task",
+            "value": 0.8490486059420836,
+            "min_id": 12,
+            "order_ids": [
+                12
+            ],
+            "sent_indexes": [
+                5
+            ],
+            "combine_ids": [
+                5010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 29,
+                        "end": 43,
+                        "text": "scheduled task",
+                        "id": 8,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--0327e5d8-877c-4efe-bedc-9807279d74dc",
+            "techID": "T1053.005",
+            "tech_name": "Scheduled Task",
+            "value": 0.993629272450717,
+            "min_id": 12,
+            "order_ids": [
+                12
+            ],
+            "sent_indexes": [
+                5
+            ],
+            "combine_ids": [
+                5010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 22,
+                        "end": 37,
+                        "text": "scheduled tasks",
+                        "id": 6,
+                        "verbs": [
+                            "create",
+                            "add",
+                            "launch"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "\"Microsoft Boost Kernel Optimization",
+                            "\"Maintenance",
+                            "Scheduled Task",
+                            "RecoveryExTask",
+                            "scheduled tasks",
+                            "scheduled task"
+                        ]
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--57828888-a833-44c7-af2c-e250d799a9bc",
+            "techID": "T1053.005",
+            "tech_name": "Scheduled Task",
+            "value": 0.8051325603474566,
+            "min_id": 12,
+            "order_ids": [
+                12,
+                12
+            ],
+            "sent_indexes": [
+                5,
+                5
+            ],
+            "combine_ids": [
+                5010,
+                5010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 45,
+                        "end": 49,
+                        "text": "task",
+                        "id": 9,
+                        "verbs": [
+                            "add"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 57,
+                        "end": 71,
+                        "text": "task scheduler",
+                        "id": 13,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 60,
+                        "end": 74,
+                        "text": "scheduled task",
+                        "id": 10,
+                        "verbs": [
+                            "create"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "19": [
+        {
+            "id": "relationship--11087b2c-2d00-4a57-a974-045010c7bab5",
+            "techID": "T1016.002",
+            "tech_name": "Wi-Fi Discovery",
+            "value": 0.8028738335917691,
+            "min_id": 19,
+            "order_ids": [
+                17,
+                19
+            ],
+            "sent_indexes": [
+                7,
+                9
+            ],
+            "combine_ids": [
+                7019,
+                9013
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 26,
+                        "end": 31,
+                        "text": "names",
+                        "id": 5,
+                        "verbs": [
+                            "collect"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "passwords",
+                            "names"
+                        ]
+                    },
+                    "dest": {
+                        "start": 102,
+                        "end": 121,
+                        "text": "plaintext passwords",
+                        "id": 19,
+                        "verbs": [
+                            "obtain"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 53,
+                        "end": 67,
+                        "text": "Wi-Fi networks",
+                        "id": 11,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "Wi-Fi networks"
+                        ],
+                        "verbs": []
+                    },
+                    "dest": {
+                        "start": 70,
+                        "end": 77,
+                        "text": "network",
+                        "id": 13,
+                        "verbs": [
+                            "by",
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "18": [
+        {
+            "id": "relationship--0528b64e-e719-44a9-94aa-0576bd9a87ec",
+            "techID": "T1078",
+            "tech_name": "Valid Accounts",
+            "value": 0.9169289830786164,
+            "min_id": 18,
+            "order_ids": [
+                18
+            ],
+            "sent_indexes": [
+                9
+            ],
+            "combine_ids": [
+                9004
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 11,
+                        "end": 34,
+                        "text": "compromised credentials",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 10,
+                        "end": 28,
+                        "text": "stolen credentials",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--9493cec9-dbbc-43ef-ae57-6f307f8d6001",
+            "techID": "T1553.002",
+            "tech_name": "Code Signing",
+            "value": 0.9265132845729092,
+            "min_id": 18,
+            "order_ids": [
+                18,
+                13
+            ],
+            "sent_indexes": [
+                9,
+                7
+            ],
+            "combine_ids": [
+                9004,
+                7002
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 51,
+                        "text": "stolen code signing certificates",
+                        "id": 7,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "stolen code signing certificates",
+                            "stolen certificates"
+                        ]
+                    },
+                    "dest": {
+                        "start": 10,
+                        "end": 28,
+                        "text": "stolen credentials",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 60,
+                        "end": 67,
+                        "text": "malware",
+                        "id": 10,
+                        "verbs": [
+                            "sign"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "malware"
+                        ]
+                    },
+                    "dest": {
+                        "start": 4,
+                        "end": 11,
+                        "text": "malware",
+                        "id": 2,
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "subject"
+                    }
+                }
+            ]
+        }
+    ],
+    "21": [
+        {
+            "id": "relationship--1ec9706f-7faa-466d-afd0-97cc71714f7b",
+            "techID": "T1021.002",
+            "tech_name": "SMB/Windows Admin Shares",
+            "value": 0.8874529798156476,
+            "min_id": 21,
+            "order_ids": [
+                21
+            ],
+            "sent_indexes": [
+                9
+            ],
+            "combine_ids": [
+                9019
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 29,
+                        "end": 43,
+                        "text": "network shares",
+                        "id": 7,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 101,
+                        "end": 111,
+                        "text": "SMB shares",
+                        "id": 19,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--3c1dbc6c-c608-4745-8cd2-863b4d56fabe",
+            "techID": "T1021.002",
+            "tech_name": "SMB/Windows Admin Shares",
+            "value": 0.8786281482009373,
+            "min_id": 21,
+            "order_ids": [
+                21
+            ],
+            "sent_indexes": [
+                9
+            ],
+            "combine_ids": [
+                9019
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 14,
+                        "end": 17,
+                        "text": "SMB",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "SMB"
+                        ]
+                    },
+                    "dest": {
+                        "start": 101,
+                        "end": 111,
+                        "text": "SMB shares",
+                        "id": 19,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--4dd44f72-a08e-4dac-9875-98690508ed08",
+            "techID": "T1021.002",
+            "tech_name": "SMB/Windows Admin Shares",
+            "value": 0.9100717522194833,
+            "min_id": 21,
+            "order_ids": [
+                19,
+                21
+            ],
+            "sent_indexes": [
+                9,
+                9
+            ],
+            "combine_ids": [
+                9013,
+                9019
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 26,
+                        "end": 33,
+                        "text": "network",
+                        "id": 6,
+                        "verbs": [
+                            "spread"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 70,
+                        "end": 77,
+                        "text": "network",
+                        "id": 13,
+                        "verbs": [
+                            "by",
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 37,
+                        "end": 40,
+                        "text": "SMB",
+                        "id": 8,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 101,
+                        "end": 111,
+                        "text": "SMB shares",
+                        "id": 19,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--422b117a-9cb1-4d03-9b2d-000de5d8526e",
+            "techID": "T1135",
+            "tech_name": "Network Share Discovery",
+            "value": 0.8006726603499965,
+            "min_id": 21,
+            "order_ids": [
+                21,
+                19
+            ],
+            "sent_indexes": [
+                9,
+                9
+            ],
+            "combine_ids": [
+                9019,
+                9013
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 24,
+                        "end": 38,
+                        "text": "network shares",
+                        "id": 5,
+                        "verbs": [
+                            "enumerate"
+                        ],
+                        "label": [
+                            "COMPONENT",
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "network shares",
+                            "mounted drives"
+                        ]
+                    },
+                    "dest": {
+                        "start": 101,
+                        "end": 111,
+                        "text": "SMB shares",
+                        "id": 19,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 63,
+                        "end": 70,
+                        "text": "network",
+                        "id": 11,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 70,
+                        "end": 77,
+                        "text": "network",
+                        "id": 13,
+                        "verbs": [
+                            "by",
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--d07f2da6-6497-414f-96c1-9dd60155b169",
+            "techID": "T1135",
+            "tech_name": "Network Share Discovery",
+            "value": 0.8117055232684429,
+            "min_id": 21,
+            "order_ids": [
+                21,
+                19
+            ],
+            "sent_indexes": [
+                9,
+                9
+            ],
+            "combine_ids": [
+                9019,
+                9013
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 17,
+                        "end": 23,
+                        "text": "shares",
+                        "id": 3,
+                        "verbs": [
+                            "discover"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 101,
+                        "end": 111,
+                        "text": "SMB shares",
+                        "id": 19,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 31,
+                        "end": 38,
+                        "text": "network",
+                        "id": 6,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 70,
+                        "end": 77,
+                        "text": "network",
+                        "id": 13,
+                        "verbs": [
+                            "by",
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "20": [
+        {
+            "id": "relationship--1d37f088-123f-41bb-9367-a1696dbfe895",
+            "techID": "T1021.001",
+            "tech_name": "Remote Desktop Protocol",
+            "value": 0.9126838419570946,
+            "min_id": 20,
+            "order_ids": [
+                20
+            ],
+            "sent_indexes": [
+                9
+            ],
+            "combine_ids": [
+                9016
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 17,
+                        "end": 20,
+                        "text": "RDP",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "RDP"
+                        ]
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 96,
+                        "text": "RDP connections",
+                        "id": 16,
+                        "verbs": [
+                            "by",
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--9655304e-7bdb-4375-8789-2bfecc5b0a64",
+            "techID": "T1133",
+            "tech_name": "External Remote Services",
+            "value": 0.9126838419570946,
+            "min_id": 20,
+            "order_ids": [
+                20
+            ],
+            "sent_indexes": [
+                9
+            ],
+            "combine_ids": [
+                9016
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 17,
+                        "end": 20,
+                        "text": "RDP",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 96,
+                        "text": "RDP connections",
+                        "id": 16,
+                        "verbs": [
+                            "by",
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--8fd19779-990a-4ce7-9b59-173896e518e8",
+            "techID": "T1021.001",
+            "tech_name": "Remote Desktop Protocol",
+            "value": 0.9936292501559338,
+            "min_id": 20,
+            "order_ids": [
+                20
+            ],
+            "sent_indexes": [
+                9
+            ],
+            "combine_ids": [
+                9016
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 31,
+                        "end": 46,
+                        "text": "RDP connections",
+                        "id": 7,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 81,
+                        "end": 96,
+                        "text": "RDP connections",
+                        "id": 16,
+                        "verbs": [
+                            "by",
+                            "use"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 9,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "11": [
+        {
+            "id": "relationship--a7ad3949-0d4d-49a8-a2cd-3a0d5857ba92",
+            "techID": "T1547.001",
+            "tech_name": "Registry Run Keys / Startup Folder",
+            "value": 0.993629272450717,
+            "min_id": 11,
+            "order_ids": [
+                11
+            ],
+            "sent_indexes": [
+                5
+            ],
+            "combine_ids": [
+                5005
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 26,
+                        "end": 37,
+                        "text": "persistence",
+                        "id": 5,
+                        "verbs": [
+                            "establish"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 34,
+                        "end": 45,
+                        "text": "persistence",
+                        "id": 5,
+                        "verbs": [
+                            "establish"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 5,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "5": [
+        {
+            "id": "relationship--e4d36f81-8028-4eae-8bc2-d856296afb46",
+            "techID": "T1566.001",
+            "tech_name": "Spearphishing Attachment",
+            "value": 0.8522921415919688,
+            "min_id": 5,
+            "order_ids": [
+                2,
+                5
+            ],
+            "sent_indexes": [
+                1,
+                3
+            ],
+            "combine_ids": [
+                1010,
+                3003
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 27,
+                        "end": 43,
+                        "text": "e-mail campaigns",
+                        "id": 7,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    },
+                    "dest": {
+                        "start": 56,
+                        "end": 62,
+                        "text": "emails",
+                        "id": 10,
+                        "verbs": [
+                            "phishe"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 64,
+                        "end": 75,
+                        "text": "attachments",
+                        "id": 10,
+                        "verbs": [
+                            "utilize"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 14,
+                        "end": 24,
+                        "text": "attachment",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 3,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--3577cdd8-c9fd-4b97-94a5-6332f9cad77a",
+            "techID": "T1566.001",
+            "tech_name": "Spearphishing Attachment",
+            "value": 0.860228137441839,
+            "min_id": 5,
+            "order_ids": [
+                3,
+                5
+            ],
+            "sent_indexes": [
+                1,
+                3
+            ],
+            "combine_ids": [
+                1013,
+                3003
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 34,
+                        "end": 41,
+                        "text": "victims",
+                        "id": 6,
+                        "verbs": [
+                            "to"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "victims"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 91,
+                        "text": "employees",
+                        "id": 13,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 55,
+                        "end": 73,
+                        "text": "e-mail attachments",
+                        "id": 10,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject",
+                        "texts": [
+                            "email attachment",
+                            "e-mail attachments"
+                        ],
+                        "verbs": [
+                            "as"
+                        ]
+                    },
+                    "dest": {
+                        "start": 14,
+                        "end": 24,
+                        "text": "attachment",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 3,
+                        "type": "subject"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--73e00ae6-71f1-4ad7-861a-f0643b42c2ac",
+            "techID": "T1566.001",
+            "tech_name": "Spearphishing Attachment",
+            "value": 0.8134570485388863,
+            "min_id": 5,
+            "order_ids": [
+                5,
+                2
+            ],
+            "sent_indexes": [
+                3,
+                1
+            ],
+            "combine_ids": [
+                3003,
+                1010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 47,
+                        "end": 57,
+                        "text": "attachment",
+                        "id": 8,
+                        "verbs": [
+                            "as"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 14,
+                        "end": 24,
+                        "text": "attachment",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 3,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 68,
+                        "end": 73,
+                        "text": "email",
+                        "id": 11,
+                        "verbs": [
+                            "within"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 56,
+                        "end": 62,
+                        "text": "emails",
+                        "id": 10,
+                        "verbs": [
+                            "phishe"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--7e93778d-1f69-4705-b544-b0e80d889267",
+            "techID": "T1204.002",
+            "tech_name": "Malicious File",
+            "value": 0.8572343298898248,
+            "min_id": 5,
+            "order_ids": [
+                3,
+                5,
+                2
+            ],
+            "sent_indexes": [
+                1,
+                3,
+                1
+            ],
+            "combine_ids": [
+                1013,
+                3003,
+                1010
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 26,
+                        "text": "victims",
+                        "id": 5,
+                        "verbs": [
+                            "rely"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 91,
+                        "text": "employees",
+                        "id": 13,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 47,
+                        "end": 57,
+                        "text": "attachment",
+                        "id": 10,
+                        "verbs": [
+                            "open"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 14,
+                        "end": 24,
+                        "text": "attachment",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 3,
+                        "type": "subject"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 71,
+                        "end": 76,
+                        "text": "email",
+                        "id": 13,
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "subject"
+                    },
+                    "dest": {
+                        "start": 56,
+                        "end": 62,
+                        "text": "emails",
+                        "id": 10,
+                        "verbs": [
+                            "phishe"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--54e6596d-ca80-4406-93f3-5fab013bc913",
+            "techID": "T1204.002",
+            "tech_name": "Malicious File",
+            "value": 0.8670387239948656,
+            "min_id": 5,
+            "order_ids": [
+                3,
+                5
+            ],
+            "sent_indexes": [
+                1,
+                3
+            ],
+            "combine_ids": [
+                1013,
+                3003
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 25,
+                        "end": 32,
+                        "text": "victims",
+                        "id": 4,
+                        "verbs": [
+                            "infect"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 91,
+                        "text": "employees",
+                        "id": 13,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 46,
+                        "end": 57,
+                        "text": "attachments",
+                        "id": 7,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 14,
+                        "end": 24,
+                        "text": "attachment",
+                        "id": 3,
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 3,
+                        "type": "subject"
+                    }
+                }
+            ]
+        }
+    ],
+    "14": [
+        {
+            "id": "relationship--0b3809c3-78a5-4121-9b51-64a9dfa60b11",
+            "techID": "T1588.002",
+            "tech_name": "Tool",
+            "value": 0.8456568033015885,
+            "min_id": 14,
+            "order_ids": [
+                14
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7004
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 34,
+                        "end": 39,
+                        "text": "tools",
+                        "id": 6,
+                        "verbs": [
+                            "obtain",
+                            "acquire"
+                        ],
+                        "label": [
+                            "FUNCTION",
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "Empire",
+                            "Wake-On-Lan",
+                            "Cobalt Strike",
+                            "YSoSerial.NET",
+                            "ChromePass",
+                            "open source tools",
+                            "open-source tools",
+                            "pwdump",
+                            "PDQ Deploy",
+                            "PsExec",
+                            "Windows Credential Editor",
+                            "Sliver",
+                            "BadPotato",
+                            "Responder",
+                            "QuasarRAT",
+                            "Havij",
+                            "dbxcli",
+                            "Remcos",
+                            "BloodHound",
+                            "AnyDesk",
+                            "LaZagne",
+                            "Metasploit",
+                            "sqlmap",
+                            "gsecdump",
+                            "Mimikatz",
+                            "SoftPerfect Network Scanner",
+                            "Winexe",
+                            "NBTscan",
+                            "Nirsoft WebBrowserPassVIew",
+                            "PowerSploit",
+                            "AdFind",
+                            "CrackMapExec",
+                            "Plink",
+                            "Impacket",
+                            "Koadic",
+                            "ConfuserEx",
+                            "tools",
+                            "MailSniper"
+                        ]
+                    },
+                    "dest": {
+                        "start": 17,
+                        "end": 25,
+                        "text": "mimikatz",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--0b512662-8eb8-424d-99c5-4f76d1d70276",
+            "techID": "T1588.002",
+            "tech_name": "Tool",
+            "value": 0.8490486059420836,
+            "min_id": 14,
+            "order_ids": [
+                14
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7004
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 34,
+                        "end": 58,
+                        "text": "publicly-available tools",
+                        "id": 7,
+                        "verbs": [
+                            "obtain"
+                        ],
+                        "label": [
+                            "FUNCTION",
+                            "NETWORK"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "publicly-available tools",
+                            "Empire",
+                            "UNICORN",
+                            "NorthStar C2",
+                            "METASPLOIT",
+                            "Mimikatz"
+                        ]
+                    },
+                    "dest": {
+                        "start": 17,
+                        "end": 25,
+                        "text": "mimikatz",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "7": [
+        {
+            "id": "relationship--88898d14-9313-4fdd-8ef5-584d8dcdec17",
+            "techID": "T1059.005",
+            "tech_name": "Visual Basic",
+            "value": 0.8695133060768252,
+            "min_id": 7,
+            "order_ids": [
+                7
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3016
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 19,
+                        "end": 27,
+                        "text": "VBScript",
+                        "id": 4,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 94,
+                        "end": 102,
+                        "text": "VBA code",
+                        "id": 16,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--245ced0a-5a53-44bd-a4db-07451f752b14",
+            "techID": "T1059.005",
+            "tech_name": "Visual Basic",
+            "value": 0.944987568540061,
+            "min_id": 7,
+            "order_ids": [
+                7
+            ],
+            "sent_indexes": [
+                3
+            ],
+            "combine_ids": [
+                3016
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 17,
+                        "end": 28,
+                        "text": "VBA scripts",
+                        "id": 5,
+                        "verbs": [
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 94,
+                        "end": 102,
+                        "text": "VBA code",
+                        "id": 16,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--188366e1-a2a9-4025-ac5a-ce56d940094a",
+            "techID": "T1059.005",
+            "tech_name": "Visual Basic",
+            "value": 0.966350317578006,
+            "min_id": 7,
+            "order_ids": [
+                7,
+                7
+            ],
+            "sent_indexes": [
+                3,
+                3
+            ],
+            "combine_ids": [
+                3016,
+                3016
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 18,
+                        "end": 28,
+                        "text": "VBA macros",
+                        "id": 5,
+                        "verbs": [
+                            "execute",
+                            "use"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "shellcode",
+                            "VBA macros",
+                            "VBA script"
+                        ]
+                    },
+                    "dest": {
+                        "start": 94,
+                        "end": 102,
+                        "text": "VBA code",
+                        "id": 16,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 40,
+                        "end": 49,
+                        "text": "shellcode",
+                        "id": 8,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "shellcode",
+                            "VBA script"
+                        ]
+                    },
+                    "dest": {
+                        "start": 94,
+                        "end": 102,
+                        "text": "VBA code",
+                        "id": 16,
+                        "verbs": [
+                            "execute"
+                        ],
+                        "label": [
+                            "FUNCTION"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "17": [
+        {
+            "id": "relationship--b8133b35-52b8-4407-9845-a00b6a739cdc",
+            "techID": "T1003.002",
+            "tech_name": "Security Account Manager",
+            "value": 0.9235048290440873,
+            "min_id": 17,
+            "order_ids": [
+                17
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7019
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 18,
+                        "end": 33,
+                        "text": "password hashes",
+                        "id": 5,
+                        "verbs": [
+                            "dump"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 102,
+                        "end": 121,
+                        "text": "plaintext passwords",
+                        "id": 19,
+                        "verbs": [
+                            "obtain"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--4086a9d6-5574-48fb-be8d-e8406145e740",
+            "techID": "T1555.003",
+            "tech_name": "Credentials from Web Browsers",
+            "value": 0.9341397304997509,
+            "min_id": 17,
+            "order_ids": [
+                17
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7019
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 21,
+                        "end": 38,
+                        "text": "browser usernames",
+                        "id": 5,
+                        "verbs": [
+                            "gather"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "browser usernames",
+                            "passwords"
+                        ]
+                    },
+                    "dest": {
+                        "start": 102,
+                        "end": 121,
+                        "text": "plaintext passwords",
+                        "id": 19,
+                        "verbs": [
+                            "obtain"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "relationship--dc7e8f00-d57c-4cfd-971c-510ede375c2f",
+            "techID": "T1003.002",
+            "tech_name": "Security Account Manager",
+            "value": 0.8036392993961108,
+            "min_id": 17,
+            "order_ids": [
+                17
+            ],
+            "sent_indexes": [
+                7
+            ],
+            "combine_ids": [
+                7019
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 26,
+                        "end": 42,
+                        "text": "hashed passwords",
+                        "id": 6,
+                        "verbs": [
+                            "recover"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object"
+                    },
+                    "dest": {
+                        "start": 102,
+                        "end": 121,
+                        "text": "plaintext passwords",
+                        "id": 19,
+                        "verbs": [
+                            "obtain"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 7,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ],
+    "9": [
+        {
+            "id": "relationship--04ecc705-0027-4dda-85fe-d6ce028ef05e",
+            "techID": "T1105",
+            "tech_name": "Ingress Tool Transfer",
+            "value": 0.8151364279830554,
+            "min_id": 9,
+            "order_ids": [
+                9,
+                3
+            ],
+            "sent_indexes": [
+                3,
+                1
+            ],
+            "combine_ids": [
+                3025,
+                1013
+            ],
+            "phrases": [
+                {
+                    "source": {
+                        "start": 24,
+                        "end": 36,
+                        "text": "remote files",
+                        "id": 5,
+                        "verbs": [
+                            "download"
+                        ],
+                        "label": [
+                            "DATA"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "remote files"
+                        ]
+                    },
+                    "dest": {
+                        "start": 142,
+                        "end": 155,
+                        "text": "remote server",
+                        "id": 25,
+                        "verbs": [
+                            "from"
+                        ],
+                        "label": [
+                            "NETWORK"
+                        ],
+                        "sent_index": 3,
+                        "type": "object"
+                    }
+                },
+                {
+                    "source": {
+                        "start": 42,
+                        "end": 49,
+                        "text": "victims",
+                        "id": 7,
+                        "verbs": [
+                            "onto"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 0,
+                        "type": "object",
+                        "texts": [
+                            "victims"
+                        ]
+                    },
+                    "dest": {
+                        "start": 82,
+                        "end": 91,
+                        "text": "employees",
+                        "id": 13,
+                        "verbs": [
+                            "target"
+                        ],
+                        "label": [
+                            "USER"
+                        ],
+                        "sent_index": 1,
+                        "type": "object"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "0": [
+        {
+            "techID": "T1588.006",
+            "techName": "Vulnerabilities",
+            "value": 1.0,
+            "min_id": 150,
+            "location": 150,
+            "order_ids": [
+                150
+            ],
+            "sent_indexes": [
+                49
+            ]
+        },
+        {
+            "techID": "T1588.001",
+            "techName": "Malware",
+            "value": 1.0,
+            "min_id": 60,
+            "location": 60,
+            "order_ids": [
+                60
+            ],
+            "sent_indexes": [
+                28
+            ]
+        },
+        {
+            "techID": "T1589.001",
+            "techName": "Credentials",
+            "value": 1.0,
+            "min_id": 160,
+            "location": 160,
+            "order_ids": [
+                160
+            ],
+            "sent_indexes": [
+                50
+            ]
+        },
+        {
+            "techID": "T1588.002",
+            "techName": "Tool",
+            "value": 1.0,
+            "min_id": 143,
+            "location": 143,
+            "order_ids": [
+                143
+            ],
+            "sent_indexes": [
+                47
+            ]
+        },
+        {
+            "techID": "T1587.001",
+            "techName": "Malware",
+            "value": 1.0,
+            "min_id": 60,
+            "location": 60,
+            "order_ids": [
+                60
+            ],
+            "sent_indexes": [
+                28
+            ]
+        },
+        {
+            "techID": "T1584.004",
+            "techName": "Server",
+            "value": 1.0,
+            "min_id": 181,
+            "location": 181,
+            "order_ids": [
+                181
+            ],
+            "sent_indexes": [
+                55
+            ]
+        },
+        {
+            "techID": "T1592.002",
+            "techName": "Software",
+            "value": 1.0,
+            "min_id": 44,
+            "location": 44,
+            "order_ids": [
+                44
+            ],
+            "sent_indexes": [
+                19
+            ]
+        },
+        {
+            "techID": "T1583.004",
+            "techName": "Server",
+            "value": 1.0,
+            "min_id": 181,
+            "location": 181,
+            "order_ids": [
+                181
+            ],
+            "sent_indexes": [
+                55
+            ]
+        },
+        {
+            "techID": "T1588.005",
+            "techName": "Exploits",
+            "value": 1.0,
+            "min_id": 176,
+            "location": 176,
+            "order_ids": [
+                176
+            ],
+            "sent_indexes": [
+                55
+            ]
+        }
+    ],
+    "197": [
+        {
+            "techID": "T1059.001",
+            "techName": "PowerShell",
+            "value": 1.0,
+            "min_id": 197,
+            "location": 197,
+            "order_ids": [
+                197
+            ],
+            "sent_indexes": [
+                60
+            ]
+        }
+    ]
+}

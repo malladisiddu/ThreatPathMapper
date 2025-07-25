@@ -1,0 +1,182 @@
+[
+  {
+    "Stage": "Step 0",
+    "Tactic (MITRE)": "TA0001 - Initial Access",
+    "Technique": "T1583.001 - Domains",
+    "Description": "Adversaries acquire domains for malicious purposes including phishing, drive-by compromise, and command and control.",
+    "Implementation Methods": "Domain purchasing; Typosquatting; IDN homograph attacks; Expired domain reuse",
+    "Associated Tools": "Domain registrars; WHOIS privacy services; DNS management tools",
+    "Observed Indicators": "C2, domain, registered domains",
+    "Confidence": "0.876"
+  },
+  {
+    "Stage": "Step 2",
+    "Tactic (MITRE)": "TA0001 - Initial Access",
+    "Technique": "T1566.001 - Spearphishing Attachment",
+    "Description": "Adversaries send spearphishing emails with malicious attachments to gain initial access.",
+    "Implementation Methods": "Malicious documents; Macro-enabled files; Archive attachments; PDF exploits",
+    "Associated Tools": "Email clients; Document generators; Exploit kits; Social engineering",
+    "Observed Indicators": "Microsoft Office documents, Microsoft Word documents, email",
+    "Confidence": "0.911"
+  },
+  {
+    "Stage": "Step 4",
+    "Tactic (MITRE)": "TA0007 - Discovery",
+    "Technique": "T1083 - File and Directory Discovery",
+    "Description": "Technique related to Discovery phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Various tools",
+    "Observed Indicators": "document, folders",
+    "Confidence": "0.928"
+  },
+  {
+    "Stage": "Step 6",
+    "Tactic (MITRE)": "TA0002 - Execution",
+    "Technique": "T1204.002 - Malicious File",
+    "Description": "Technique related to Execution phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "PowerShell; cmd.exe; Cobalt Strike; Metasploit; Empire",
+    "Observed Indicators": "victim, document, email",
+    "Confidence": "0.944"
+  },
+  {
+    "Stage": "Step 13",
+    "Tactic (MITRE)": "TA0002 - Execution",
+    "Technique": "T1203 - Exploitation for Client Execution",
+    "Description": "Technique related to Execution phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "PowerShell; cmd.exe; Cobalt Strike; Metasploit; Empire",
+    "Observed Indicators": "No specific indicators",
+    "Confidence": "1.000"
+  },
+  {
+    "Stage": "Step 16",
+    "Tactic (MITRE)": "TA0007 - Discovery",
+    "Technique": "T1082 - System Information Discovery",
+    "Description": "Technique related to Discovery phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Various tools",
+    "Observed Indicators": "victim, hostname, machine",
+    "Confidence": "0.877"
+  },
+  {
+    "Stage": "Step 18",
+    "Tactic (MITRE)": "TA0009 - Collection",
+    "Technique": "T1005 - Data from Local System",
+    "Description": "Technique related to Collection phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Various tools",
+    "Observed Indicators": "files, machine, victims",
+    "Confidence": "0.871"
+  },
+  {
+    "Stage": "Step 19",
+    "Tactic (MITRE)": "TA0002 - Execution",
+    "Technique": "T1059.001 - PowerShell",
+    "Description": "Adversaries abuse command and script interpreters to execute commands and scripts.",
+    "Implementation Methods": "PowerShell scripts; Command line execution; Batch files; Shell commands",
+    "Associated Tools": "PowerShell; cmd.exe; bash; Python; JavaScript",
+    "Observed Indicators": "No specific indicators",
+    "Confidence": "1.000"
+  },
+  {
+    "Stage": "Step 22",
+    "Tactic (MITRE)": "TA0003 - Persistence",
+    "Technique": "T1547.001 - Registry Run Keys / Startup Folder",
+    "Description": "Technique related to Persistence phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Scheduled tasks; Registry modifications; Service creation; WMI subscriptions",
+    "Observed Indicators": "persistence",
+    "Confidence": "0.994"
+  },
+  {
+    "Stage": "Step 25",
+    "Tactic (MITRE)": "TA0002 - Execution",
+    "Technique": "T1127.001 - MSBuild",
+    "Description": "Technique related to Execution phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "PowerShell; cmd.exe; Cobalt Strike; Metasploit; Empire",
+    "Observed Indicators": "No specific indicators",
+    "Confidence": "1.000"
+  },
+  {
+    "Stage": "Step 41",
+    "Tactic (MITRE)": "TA0002 - Execution",
+    "Technique": "T1059.003 - Windows Command Shell",
+    "Description": "Adversaries abuse command and script interpreters to execute commands and scripts.",
+    "Implementation Methods": "PowerShell scripts; Command line execution; Batch files; Shell commands",
+    "Associated Tools": "PowerShell; cmd.exe; bash; Python; JavaScript",
+    "Observed Indicators": "cmd.exe, commands, command",
+    "Confidence": "1.000"
+  },
+  {
+    "Stage": "Step 48",
+    "Tactic (MITRE)": "TA0005 - Defense Evasion",
+    "Technique": "T1140 - Deobfuscate/Decode Files or Information",
+    "Description": "Technique related to Defense Evasion phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Process injection; AMSI bypass; Obfuscation; Living off the land binaries",
+    "Observed Indicators": "payload, base64-encoded commands, script",
+    "Confidence": "1.000"
+  },
+  {
+    "Stage": "Step 57",
+    "Tactic (MITRE)": "TA0011 - Command and Control",
+    "Technique": "T1573.001 - Symmetric Cryptography",
+    "Description": "Technique related to Command and Control phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Various tools",
+    "Observed Indicators": "encrypted RC4 byte stream, C2",
+    "Confidence": "1.000"
+  },
+  {
+    "Stage": "Step 59",
+    "Tactic (MITRE)": "TA0011 - Command and Control",
+    "Technique": "T1008 - Fallback Channels",
+    "Description": "Technique related to Command and Control phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Various tools",
+    "Observed Indicators": "C2, domain, domains",
+    "Confidence": "0.912"
+  },
+  {
+    "Stage": "Step 67",
+    "Tactic (MITRE)": "TA0002 - Execution",
+    "Technique": "T1059.001 - PowerShell",
+    "Description": "Adversaries abuse command and script interpreters to execute commands and scripts.",
+    "Implementation Methods": "PowerShell scripts; Command line execution; Batch files; Shell commands",
+    "Associated Tools": "PowerShell; cmd.exe; bash; Python; JavaScript",
+    "Observed Indicators": "PowerShell commands, PowerShell scripts, PowerShell script",
+    "Confidence": "0.913"
+  },
+  {
+    "Stage": "Step 68",
+    "Tactic (MITRE)": "TA0007 - Discovery",
+    "Technique": "T1018 - Remote System Discovery",
+    "Description": "Technique related to Discovery phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Various tools",
+    "Observed Indicators": "remote host, host",
+    "Confidence": "0.900"
+  },
+  {
+    "Stage": "Step 70",
+    "Tactic (MITRE)": "TA0009 - Collection",
+    "Technique": "T1074.001 - Local Data Staging",
+    "Description": "Technique related to Collection phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Various tools",
+    "Observed Indicators": "information",
+    "Confidence": "0.994"
+  },
+  {
+    "Stage": "Step 72",
+    "Tactic (MITRE)": "TA0010 - Exfiltration",
+    "Technique": "T1029 - Scheduled Transfer",
+    "Description": "Technique related to Exfiltration phase of the attack.",
+    "Implementation Methods": "Various methods depending on environment",
+    "Associated Tools": "Various tools",
+    "Observed Indicators": "data, C2, information",
+    "Confidence": "0.891"
+  }
+]

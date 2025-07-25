@@ -1,0 +1,4342 @@
+{
+    "best": {
+        "0": [
+            {
+                "id": "relationship--7b817a81-02a9-48f0-8166-9e25b6860a76",
+                "techID": "T1588.001",
+                "tech_name": "Malware",
+                "value": 0.9675723361732227,
+                "min_id": 187,
+                "order_ids": [
+                    187,
+                    182
+                ],
+                "sent_indexes": [
+                    57,
+                    56
+                ],
+                "combine_ids": [
+                    57025,
+                    56001
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 29,
+                            "end": 36,
+                            "text": "malware",
+                            "id": 5,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 141,
+                            "end": 148,
+                            "text": "malware",
+                            "id": 25,
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 57,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "text": "privilege",
+                            "start": 41,
+                            "end": 50,
+                            "id": 7,
+                            "verbs": [
+                                "escalate"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "text": "Privilege",
+                            "start": 0,
+                            "end": 9,
+                            "id": 1,
+                            "verbs": [
+                                "escalate"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 56,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 182
+            }
+        ],
+        "39": [
+            {
+                "id": "relationship--2b062058-3345-4993-9715-6ad6e98dc2ad",
+                "techID": "T1140",
+                "tech_name": "Deobfuscate/Decode Files or Information",
+                "value": 0.8756793117873485,
+                "min_id": 39,
+                "order_ids": [
+                    39
+                ],
+                "sent_indexes": [
+                    2
+                ],
+                "combine_ids": [
+                    2004
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 42,
+                            "end": 45,
+                            "text": "DLL",
+                            "id": 10,
+                            "verbs": [
+                                "load"
+                            ],
+                            "label": [
+                                "DATA",
+                                "REGISTRY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "resources",
+                                "DLL"
+                            ]
+                        },
+                        "dest": {
+                            "start": 0,
+                            "end": 22,
+                            "text": "* Partners * Resources",
+                            "id": 4,
+                            "verbs": [
+                                "start"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 2,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 39
+            }
+        ],
+        "61": [
+            {
+                "id": "relationship--c39edafb-5a90-43a3-af9f-6865c5a6a71f",
+                "techID": "T1570",
+                "tech_name": "Lateral Tool Transfer",
+                "value": 0.8865120400789779,
+                "min_id": 61,
+                "order_ids": [
+                    61,
+                    58
+                ],
+                "sent_indexes": [
+                    28,
+                    28
+                ],
+                "combine_ids": [
+                    28021,
+                    28012
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 26,
+                            "end": 31,
+                            "text": "tools",
+                            "id": 5,
+                            "verbs": [
+                                "move"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 127,
+                            "end": 132,
+                            "text": "tools",
+                            "id": 21,
+                            "verbs": [
+                                "rely"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 28,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 53,
+                            "end": 70,
+                            "text": "corporate network",
+                            "id": 10,
+                            "verbs": [
+                                "within"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 78,
+                            "end": 86,
+                            "text": "networks",
+                            "id": 12,
+                            "verbs": [
+                                "to"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 28,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 61
+            }
+        ],
+        "109": [
+            {
+                "id": "relationship--5c46f9a0-fb83-473d-af9a-c1c98cfdd85b",
+                "techID": "T1033",
+                "tech_name": "System Owner/User Discovery",
+                "value": 0.9050699304904146,
+                "min_id": 109,
+                "order_ids": [
+                    109,
+                    101
+                ],
+                "sent_indexes": [
+                    37,
+                    36
+                ],
+                "combine_ids": [
+                    37008,
+                    36017
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 17,
+                            "end": 28,
+                            "text": "information",
+                            "id": 4,
+                            "verbs": [
+                                "gather",
+                                "obtain"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "information"
+                            ]
+                        },
+                        "dest": {
+                            "start": 28,
+                            "end": 39,
+                            "text": "information",
+                            "id": 8,
+                            "verbs": [
+                                "share"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 37,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 43,
+                            "end": 47,
+                            "text": "user",
+                            "id": 7,
+                            "verbs": [
+                                "regard",
+                                "about"
+                            ],
+                            "label": [
+                                "USER"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "user"
+                            ]
+                        },
+                        "dest": {
+                            "start": 96,
+                            "end": 105,
+                            "text": "customers",
+                            "id": 17,
+                            "verbs": [
+                                "to"
+                            ],
+                            "label": [
+                                "USER"
+                            ],
+                            "sent_index": 36,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 109
+            }
+        ],
+        "150": [
+            {
+                "id": "relationship--33eb4a61-d966-4193-a8e5-237eb5a5129a",
+                "techID": "T1190",
+                "tech_name": "Exploit Public-Facing Application",
+                "value": 0.993629272450717,
+                "min_id": 150,
+                "order_ids": [
+                    150
+                ],
+                "sent_indexes": [
+                    49
+                ],
+                "combine_ids": [
+                    49009
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 30,
+                            "end": 45,
+                            "text": "vulnerabilities",
+                            "id": 5,
+                            "verbs": [
+                                "exploit"
+                            ],
+                            "label": [
+                                "VULNERABILITY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "Microsoft Exchange vulnerability CVE-2020-0688",
+                                "vulnerabilities"
+                            ]
+                        },
+                        "dest": {
+                            "start": 57,
+                            "end": 72,
+                            "text": "vulnerabilities",
+                            "id": 9,
+                            "verbs": [
+                                "exploit"
+                            ],
+                            "label": [
+                                "VULNERABILITY"
+                            ],
+                            "sent_index": 49,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 150
+            }
+        ],
+        "160": [
+            {
+                "id": "relationship--fad2a504-6e00-4892-bf88-b49d6d18788c",
+                "techID": "T1003",
+                "tech_name": "OS Credential Dumping",
+                "value": 0.993629272450717,
+                "min_id": 160,
+                "order_ids": [
+                    160
+                ],
+                "sent_indexes": [
+                    50
+                ],
+                "combine_ids": [
+                    50034
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 26,
+                            "text": "credentials",
+                            "id": 4,
+                            "verbs": [
+                                "dump"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 220,
+                            "end": 231,
+                            "text": "credentials",
+                            "id": 34,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 50,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 160
+            }
+        ],
+        "161": [
+            {
+                "id": "relationship--739217f2-c273-4005-8175-1261a81a1224",
+                "techID": "T1078.002",
+                "tech_name": "Domain Accounts",
+                "value": 0.9340974013721006,
+                "min_id": 161,
+                "order_ids": [
+                    160,
+                    161
+                ],
+                "sent_indexes": [
+                    50,
+                    50
+                ],
+                "combine_ids": [
+                    50034,
+                    50037
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 28,
+                            "end": 39,
+                            "text": "credentials",
+                            "id": 5,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "credentials",
+                                "domain accounts"
+                            ]
+                        },
+                        "dest": {
+                            "start": 220,
+                            "end": 231,
+                            "text": "credentials",
+                            "id": 34,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 50,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 45,
+                            "end": 61,
+                            "text": "infected systems",
+                            "id": 8,
+                            "verbs": [
+                                "from"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 237,
+                            "end": 256,
+                            "text": "compromised systems",
+                            "id": 37,
+                            "verbs": [
+                                "from"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 50,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 161
+            }
+        ],
+        "177": [
+            {
+                "id": "relationship--b847cd82-14c8-4270-b03d-2acf3abda4b6",
+                "techID": "T1505.003",
+                "tech_name": "Web Shell",
+                "value": 0.9936292278611506,
+                "min_id": 177,
+                "order_ids": [
+                    177
+                ],
+                "sent_indexes": [
+                    55
+                ],
+                "combine_ids": [
+                    55009
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 24,
+                            "text": "Web shell",
+                            "id": 5,
+                            "verbs": [
+                                "be"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "Web shell"
+                            ]
+                        },
+                        "dest": {
+                            "start": 35,
+                            "end": 44,
+                            "text": "web shell",
+                            "id": 9,
+                            "verbs": [
+                                "be"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 55,
+                            "type": "object",
+                            "texts": [
+                                "China Chopper",
+                                "web shell"
+                            ]
+                        }
+                    }
+                ],
+                "location": 177
+            }
+        ],
+        "179": [
+            {
+                "id": "relationship--2fa20fad-4ede-42f4-8ce5-7f5a6ce83ed8",
+                "techID": "T1059",
+                "tech_name": "Command and Scripting Interpreter",
+                "value": 0.8956441281646732,
+                "min_id": 179,
+                "order_ids": [
+                    179
+                ],
+                "sent_indexes": [
+                    55
+                ],
+                "combine_ids": [
+                    55020
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "text": "remote command",
+                            "start": 25,
+                            "end": 39,
+                            "id": 5,
+                            "verbs": [
+                                "execute"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "text": "remote code",
+                            "start": 86,
+                            "end": 97,
+                            "id": 20,
+                            "verbs": [
+                                "execute"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 55,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 179
+            }
+        ],
+        "196": [
+            {
+                "id": "relationship--b835f71a-b961-4d69-a7eb-6bf682f433de",
+                "techID": "T1047",
+                "tech_name": "Windows Management Instrumentation",
+                "value": 0.9936292278611506,
+                "min_id": 196,
+                "order_ids": [
+                    196
+                ],
+                "sent_indexes": [
+                    60
+                ],
+                "combine_ids": [
+                    60011
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 39,
+                            "end": 43,
+                            "text": "WMIC",
+                            "id": 7,
+                            "verbs": [
+                                "execute"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 78,
+                            "end": 82,
+                            "text": "WMIC",
+                            "id": 11,
+                            "verbs": [
+                                "access"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 60,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 196
+            }
+        ],
+        "197": [
+            {
+                "techID": "T1059.001",
+                "techName": "PowerShell",
+                "value": 1.0,
+                "min_id": 197,
+                "location": 197,
+                "order_ids": [
+                    197
+                ],
+                "sent_indexes": [
+                    60
+                ]
+            }
+        ],
+        "202": [
+            {
+                "id": "relationship--9655304e-7bdb-4375-8789-2bfecc5b0a64",
+                "techID": "T1133",
+                "tech_name": "External Remote Services",
+                "value": 0.993629272450717,
+                "min_id": 202,
+                "order_ids": [
+                    202
+                ],
+                "sent_indexes": [
+                    60
+                ],
+                "combine_ids": [
+                    60042
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 17,
+                            "end": 20,
+                            "text": "RDP",
+                            "id": 4,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 270,
+                            "end": 273,
+                            "text": "RDP",
+                            "id": 42,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 60,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 202
+            }
+        ],
+        "224": [
+            {
+                "id": "relationship--fdc9c7e3-4467-4f57-af5b-156cf2f9d189",
+                "techID": "T1547.004",
+                "tech_name": "Winlogon Helper DLL",
+                "value": 0.8922946566919633,
+                "min_id": 224,
+                "order_ids": [
+                    224
+                ],
+                "sent_indexes": [
+                    64
+                ],
+                "combine_ids": [
+                    64006
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 16,
+                            "end": 38,
+                            "text": "Registry key HKCU\\Software\\Microsoft\\WindowsNT\\CurrentVersion\\Winlogon",
+                            "id": 6,
+                            "verbs": [
+                                "add"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 23,
+                            "end": 35,
+                            "text": "registry key",
+                            "id": 6,
+                            "verbs": [
+                                "change"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 64,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 224
+            }
+        ],
+        "241": [
+            {
+                "id": "relationship--728c2a84-ac7d-4b17-a287-4c692d717065",
+                "techID": "T1546.008",
+                "tech_name": "Accessibility Features",
+                "value": 0.993629272450717,
+                "min_id": 241,
+                "order_ids": [
+                    241
+                ],
+                "sent_indexes": [
+                    67
+                ],
+                "combine_ids": [
+                    67028
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 11,
+                            "end": 22,
+                            "text": "sticky keys",
+                            "id": 4,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 151,
+                            "end": 162,
+                            "text": "Sticky Keys",
+                            "id": 28,
+                            "verbs": [
+                                "manage"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 67,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 241
+            }
+        ],
+        "246": [
+            {
+                "id": "relationship--4113afe0-e84a-44ba-9180-3033de06d72e",
+                "techID": "T1124",
+                "tech_name": "System Time Discovery",
+                "value": 0.8934235015984777,
+                "min_id": 246,
+                "order_ids": [
+                    246,
+                    244
+                ],
+                "sent_indexes": [
+                    69,
+                    68
+                ],
+                "combine_ids": [
+                    69006,
+                    68009
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 23,
+                            "text": "function",
+                            "id": 4,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 26,
+                            "end": 33,
+                            "text": "feature",
+                            "id": 6,
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 69,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 46,
+                            "end": 50,
+                            "text": "time",
+                            "id": 9,
+                            "verbs": [
+                                "gather"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 41,
+                            "end": 45,
+                            "text": "time",
+                            "id": 9,
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 68,
+                            "type": "object",
+                            "texts": [
+                                "time",
+                                "sign-in screen"
+                            ]
+                        }
+                    }
+                ],
+                "location": 246
+            }
+        ],
+        "252": [
+            {
+                "id": "relationship--1b1027ff-81d2-4ae9-85ac-0d886dea8a04",
+                "techID": "T1053.005",
+                "tech_name": "Scheduled Task",
+                "value": 0.8895304612722319,
+                "min_id": 252,
+                "order_ids": [
+                    252
+                ],
+                "sent_indexes": [
+                    70
+                ],
+                "combine_ids": [
+                    70010
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 25,
+                            "end": 38,
+                            "text": "Windows tasks",
+                            "id": 6,
+                            "verbs": [
+                                "create"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 40,
+                            "end": 60,
+                            "text": "Windows Task Manager",
+                            "id": 10,
+                            "verbs": [
+                                "launch"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 70,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 252
+            }
+        ],
+        "300": [
+            {
+                "id": "relationship--0f42474f-27d5-4939-8f18-348b8d09a9b6",
+                "techID": "T1543.003",
+                "tech_name": "Windows Service",
+                "value": 0.993629272450717,
+                "min_id": 300,
+                "order_ids": [
+                    300
+                ],
+                "sent_indexes": [
+                    84
+                ],
+                "combine_ids": [
+                    84006
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 39,
+                            "end": 46,
+                            "text": "service",
+                            "id": 6,
+                            "verbs": [
+                                "install",
+                                "create",
+                                "add"
+                            ],
+                            "label": [
+                                "COMPONENT",
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "Service1",
+                                "msamger",
+                                "Microsoft Security Accounts Manager",
+                                "WBService",
+                                "service",
+                                "WmiApSrvEx",
+                                "NetAdapter"
+                            ]
+                        },
+                        "dest": {
+                            "start": 32,
+                            "end": 39,
+                            "text": "service",
+                            "id": 6,
+                            "verbs": [
+                                "create"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 84,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 300
+            }
+        ],
+        "304": [
+            {
+                "id": "relationship--70879424-99b5-4ebe-8c77-cf872738dfcf",
+                "techID": "T1078",
+                "tech_name": "Valid Accounts",
+                "value": 0.9159831965225679,
+                "min_id": 304,
+                "order_ids": [
+                    304
+                ],
+                "sent_indexes": [
+                    85
+                ],
+                "combine_ids": [
+                    85009
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 19,
+                            "end": 40,
+                            "text": "valid VPN credentials",
+                            "id": 6,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 24,
+                            "end": 50,
+                            "text": "legitimate VPN application",
+                            "id": 9,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 85,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 304
+            }
+        ],
+        "308": [
+            {
+                "id": "relationship--a90a5b4d-b677-4a69-8fa0-feab294c9daf",
+                "techID": "T1036.005",
+                "tech_name": "Match Legitimate Name or Location",
+                "value": 0.8880868755170784,
+                "min_id": 308,
+                "order_ids": [
+                    308
+                ],
+                "sent_indexes": [
+                    87
+                ],
+                "combine_ids": [
+                    87010
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 31,
+                            "end": 36,
+                            "text": "tools",
+                            "id": 6,
+                            "verbs": [
+                                "rename"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "tools",
+                                "executables"
+                            ]
+                        },
+                        "dest": {
+                            "start": 44,
+                            "end": 59,
+                            "text": "executable file",
+                            "id": 10,
+                            "verbs": [
+                                "rename"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 87,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 308
+            }
+        ],
+        "327": [
+            {
+                "id": "relationship--2c9fad15-9b3f-45fe-854a-c87113d4695c",
+                "techID": "T1046",
+                "tech_name": "Network Service Discovery",
+                "value": 0.993629272450717,
+                "min_id": 327,
+                "order_ids": [
+                    327
+                ],
+                "sent_indexes": [
+                    91
+                ],
+                "combine_ids": [
+                    91013
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 20,
+                            "end": 27,
+                            "text": "systems",
+                            "id": 5,
+                            "verbs": [
+                                "scan"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 68,
+                            "end": 75,
+                            "text": "systems",
+                            "id": 13,
+                            "verbs": [
+                                "access"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 91,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 327
+            }
+        ],
+        "329": [
+            {
+                "id": "relationship--571c83a5-0a53-4f57-93bc-52356b6cc741",
+                "techID": "T1021.006",
+                "tech_name": "Windows Remote Management",
+                "value": 0.9741983638702212,
+                "min_id": 329,
+                "order_ids": [
+                    329
+                ],
+                "sent_indexes": [
+                    91
+                ],
+                "combine_ids": [
+                    91022
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 17,
+                            "end": 22,
+                            "text": "WinRM",
+                            "id": 4,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "WinRM"
+                            ]
+                        },
+                        "dest": {
+                            "start": 119,
+                            "end": 126,
+                            "text": "LOLBins",
+                            "id": 22,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "OTHER",
+                                "FUNCTION",
+                                "NETWORK"
+                            ],
+                            "sent_index": 91,
+                            "type": "object",
+                            "texts": [
+                                "WMIC",
+                                "LOLBins",
+                                "WinRM",
+                                "Windows Remote Management"
+                            ]
+                        }
+                    }
+                ],
+                "location": 329
+            }
+        ],
+        "341": [
+            {
+                "id": "relationship--f94c1c97-ec5d-4703-93c1-91de05761d2a",
+                "techID": "T1105",
+                "tech_name": "Ingress Tool Transfer",
+                "value": 0.8820629272812319,
+                "min_id": 341,
+                "order_ids": [
+                    341,
+                    332
+                ],
+                "sent_indexes": [
+                    95,
+                    92
+                ],
+                "combine_ids": [
+                    95021,
+                    92012
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 28,
+                            "end": 33,
+                            "text": "tools",
+                            "id": 5,
+                            "verbs": [
+                                "copy"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "tools",
+                                "malware"
+                            ]
+                        },
+                        "dest": {
+                            "start": 142,
+                            "end": 147,
+                            "text": "tools",
+                            "id": 21,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 95,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 51,
+                            "end": 67,
+                            "text": "targeted systems",
+                            "id": 10,
+                            "verbs": [
+                                "onto"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 69,
+                            "end": 85,
+                            "text": "targeted systems",
+                            "id": 12,
+                            "verbs": [
+                                "to"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 92,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 341
+            }
+        ],
+        "349": [
+            {
+                "id": "relationship--76d7d7fa-94a4-4fa6-9fd2-e9af9ab0f356",
+                "techID": "T1087.001",
+                "tech_name": "Local Account",
+                "value": 0.8990275968174426,
+                "min_id": 349,
+                "order_ids": [
+                    348,
+                    349
+                ],
+                "sent_indexes": [
+                    97,
+                    97
+                ],
+                "combine_ids": [
+                    97007,
+                    97012
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 22,
+                            "end": 27,
+                            "text": "users",
+                            "id": 4,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 41,
+                            "end": 46,
+                            "text": "users",
+                            "id": 7,
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 97,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 35,
+                            "end": 41,
+                            "text": "system",
+                            "id": 7,
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 63,
+                            "end": 75,
+                            "text": "local system",
+                            "id": 12,
+                            "verbs": [
+                                "sign into",
+                                "sign"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 97,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 349
+            }
+        ],
+        "356": [
+            {
+                "id": "relationship--8debe90d-927a-4195-b796-793e9b1730ee",
+                "techID": "T1135",
+                "tech_name": "Network Share Discovery",
+                "value": 0.8897267139964564,
+                "min_id": 356,
+                "order_ids": [
+                    356
+                ],
+                "sent_indexes": [
+                    99
+                ],
+                "combine_ids": [
+                    99020
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 25,
+                            "end": 42,
+                            "text": "network resources",
+                            "id": 5,
+                            "verbs": [
+                                "enumerate"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 108,
+                            "end": 117,
+                            "text": "resources",
+                            "id": 20,
+                            "verbs": [
+                                "access"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 99,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 356
+            }
+        ],
+        "370": [
+            {
+                "id": "relationship--8bbf259b-029b-48fa-859b-5dbbbcd98b53",
+                "techID": "T1082",
+                "tech_name": "System Information Discovery",
+                "value": 0.9130653566717886,
+                "min_id": 370,
+                "order_ids": [
+                    370,
+                    366
+                ],
+                "sent_indexes": [
+                    102,
+                    101
+                ],
+                "combine_ids": [
+                    102006,
+                    101021
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 26,
+                            "text": "information",
+                            "id": 3,
+                            "verbs": [
+                                "gather"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 28,
+                            "end": 39,
+                            "text": "information",
+                            "id": 6,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 102,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 34,
+                            "end": 40,
+                            "text": "system",
+                            "id": 6,
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "local drives",
+                                "system"
+                            ]
+                        },
+                        "dest": {
+                            "start": 118,
+                            "end": 124,
+                            "text": "system",
+                            "id": 21,
+                            "verbs": [
+                                "to"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 101,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 370
+            }
+        ],
+        "371": [
+            {
+                "id": "relationship--12cfc154-5240-47ce-ba54-ec40f8a6d13d",
+                "techID": "T1005",
+                "tech_name": "Data from Local System",
+                "value": 0.8870157443029909,
+                "min_id": 371,
+                "order_ids": [
+                    370,
+                    371
+                ],
+                "sent_indexes": [
+                    102,
+                    102
+                ],
+                "combine_ids": [
+                    102006,
+                    102012
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 22,
+                            "end": 26,
+                            "text": "data",
+                            "id": 4,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "data",
+                                "files",
+                                "information"
+                            ]
+                        },
+                        "dest": {
+                            "start": 28,
+                            "end": 39,
+                            "text": "information",
+                            "id": 6,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 102,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 44,
+                            "end": 63,
+                            "text": "compromised machine",
+                            "id": 10,
+                            "verbs": [
+                                "from"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "compromised computers",
+                                "compromised machine",
+                                "compromised machines"
+                            ]
+                        },
+                        "dest": {
+                            "start": 65,
+                            "end": 83,
+                            "text": "compromised system",
+                            "id": 12,
+                            "verbs": [
+                                "understand"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 102,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 371
+            }
+        ],
+        "377": [
+            {
+                "id": "relationship--a7ad3949-0d4d-49a8-a2cd-3a0d5857ba92",
+                "techID": "T1547.001",
+                "tech_name": "Registry Run Keys / Startup Folder",
+                "value": 0.993629272450717,
+                "min_id": 377,
+                "order_ids": [
+                    377
+                ],
+                "sent_indexes": [
+                    103
+                ],
+                "combine_ids": [
+                    103016
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 26,
+                            "end": 37,
+                            "text": "persistence",
+                            "id": 5,
+                            "verbs": [
+                                "establish"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 96,
+                            "end": 107,
+                            "text": "persistence",
+                            "id": 16,
+                            "verbs": [
+                                "establish"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 103,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 377
+            }
+        ],
+        "390": [
+            {
+                "id": "relationship--7542421c-f673-4f85-85ae-b4283173c48d",
+                "techID": "T1007",
+                "tech_name": "System Service Discovery",
+                "value": 0.9149614377680462,
+                "min_id": 390,
+                "order_ids": [
+                    390,
+                    389
+                ],
+                "sent_indexes": [
+                    107,
+                    107
+                ],
+                "combine_ids": [
+                    107019,
+                    107017
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 36,
+                            "end": 44,
+                            "text": "services",
+                            "id": 6,
+                            "verbs": [
+                                "obtain"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 126,
+                            "end": 134,
+                            "text": "services",
+                            "id": 19,
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 107,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 52,
+                            "end": 58,
+                            "text": "system",
+                            "id": 9,
+                            "verbs": [
+                                "from"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 114,
+                            "end": 121,
+                            "text": "systems",
+                            "id": 17,
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 107,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 390
+            }
+        ],
+        "434": [
+            {
+                "id": "relationship--4e66aad2-7c30-4c05-9f8e-767ac1cff08e",
+                "techID": "T1562.001",
+                "tech_name": "Disable or Modify Tools",
+                "value": 0.9064555870110105,
+                "min_id": 434,
+                "order_ids": [
+                    427,
+                    434
+                ],
+                "sent_indexes": [
+                    117,
+                    120
+                ],
+                "combine_ids": [
+                    117014,
+                    120013
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 32,
+                            "text": "security settings",
+                            "id": 5,
+                            "verbs": [
+                                "lower"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 89,
+                            "end": 97,
+                            "text": "security",
+                            "id": 14,
+                            "verbs": [
+                                "need"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 117,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 45,
+                            "end": 58,
+                            "text": "Registry keys",
+                            "id": 9,
+                            "verbs": [
+                                "change"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 82,
+                            "end": 95,
+                            "text": "registry keys",
+                            "id": 13,
+                            "verbs": [
+                                "modify"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 120,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 434
+            }
+        ],
+        "436": [
+            {
+                "id": "relationship--794caee4-34cd-493f-a047-1f4a8b4c8de8",
+                "techID": "T1012",
+                "tech_name": "Query Registry",
+                "value": 0.9092455167575362,
+                "min_id": 438,
+                "order_ids": [
+                    436,
+                    438
+                ],
+                "sent_indexes": [
+                    121,
+                    121
+                ],
+                "combine_ids": [
+                    121006,
+                    121013
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 27,
+                            "end": 35,
+                            "text": "Registry",
+                            "id": 5,
+                            "verbs": [
+                                "query"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 25,
+                            "end": 41,
+                            "text": "registry changes",
+                            "id": 6,
+                            "verbs": [
+                                "detect"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 121,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 89,
+                            "end": 95,
+                            "text": "system",
+                            "id": 16,
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 75,
+                            "end": 81,
+                            "text": "system",
+                            "id": 13,
+                            "label": [
+                                "OTHER",
+                                "COMPONENT"
+                            ],
+                            "sent_index": 121,
+                            "type": "object",
+                            "texts": [
+                                "those",
+                                "system"
+                            ]
+                        }
+                    }
+                ],
+                "location": 436
+            }
+        ],
+        "452": [
+            {
+                "id": "relationship--a5848605-3931-4dc8-a3e4-299683258c0f",
+                "techID": "T1070.009",
+                "tech_name": "Clear Persistence",
+                "value": 0.8716059464438806,
+                "min_id": 452,
+                "order_ids": [
+                    452
+                ],
+                "sent_indexes": [
+                    126
+                ],
+                "combine_ids": [
+                    126027
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 19,
+                            "end": 27,
+                            "text": "accounts",
+                            "id": 4,
+                            "verbs": [
+                                "delete"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 152,
+                            "end": 167,
+                            "text": "unused accounts",
+                            "id": 27,
+                            "verbs": [
+                                "deactivate"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 126,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 452
+            }
+        ],
+        "634": [
+            {
+                "id": "relationship--2b2cdb6b-c23c-4792-8cfb-8c4d9279a186",
+                "techID": "T1071.001",
+                "tech_name": "Web Protocols",
+                "value": 0.9318310187034552,
+                "min_id": 634,
+                "order_ids": [
+                    634
+                ],
+                "sent_indexes": [
+                    165
+                ],
+                "combine_ids": [
+                    165007
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 33,
+                            "end": 37,
+                            "text": "HTTP",
+                            "id": 5,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "HTTP",
+                                "HTTPS"
+                            ]
+                        },
+                        "dest": {
+                            "start": 28,
+                            "end": 42,
+                            "text": "HTTPS protocol",
+                            "id": 7,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 165,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 634
+            }
+        ],
+        "654": [
+            {
+                "id": "relationship--394a227d-585f-48a5-84ac-cc40a0ad80e6",
+                "techID": "T1119",
+                "tech_name": "Automated Collection",
+                "value": 0.993629272450717,
+                "min_id": 654,
+                "order_ids": [
+                    654
+                ],
+                "sent_indexes": [
+                    185
+                ],
+                "combine_ids": [
+                    185029
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 44,
+                            "end": 48,
+                            "text": "data",
+                            "id": 6,
+                            "verbs": [
+                                "archive"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 173,
+                            "end": 177,
+                            "text": "data",
+                            "id": 29,
+                            "verbs": [
+                                "steal"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 185,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 654
+            }
+        ]
+    },
+    "k2": {
+        "0": [
+            {
+                "id": "relationship--7b817a81-02a9-48f0-8166-9e25b6860a76",
+                "techID": "T1588.001",
+                "tech_name": "Malware",
+                "value": 0.9675723361732227,
+                "min_id": 187,
+                "order_ids": [
+                    187,
+                    182
+                ],
+                "sent_indexes": [
+                    57,
+                    56
+                ],
+                "combine_ids": [
+                    57025,
+                    56001
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 29,
+                            "end": 36,
+                            "text": "malware",
+                            "id": 5,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 141,
+                            "end": 148,
+                            "text": "malware",
+                            "id": 25,
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 57,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "text": "privilege",
+                            "start": 41,
+                            "end": 50,
+                            "id": 7,
+                            "verbs": [
+                                "escalate"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "text": "Privilege",
+                            "start": 0,
+                            "end": 9,
+                            "id": 1,
+                            "verbs": [
+                                "escalate"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 56,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 182
+            }
+        ],
+        "39": [
+            {
+                "id": "relationship--2b062058-3345-4993-9715-6ad6e98dc2ad",
+                "techID": "T1140",
+                "tech_name": "Deobfuscate/Decode Files or Information",
+                "value": 0.8756793117873485,
+                "min_id": 39,
+                "order_ids": [
+                    39
+                ],
+                "sent_indexes": [
+                    2
+                ],
+                "combine_ids": [
+                    2004
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 42,
+                            "end": 45,
+                            "text": "DLL",
+                            "id": 10,
+                            "verbs": [
+                                "load"
+                            ],
+                            "label": [
+                                "DATA",
+                                "REGISTRY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "resources",
+                                "DLL"
+                            ]
+                        },
+                        "dest": {
+                            "start": 0,
+                            "end": 22,
+                            "text": "* Partners * Resources",
+                            "id": 4,
+                            "verbs": [
+                                "start"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 2,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 39
+            }
+        ],
+        "61": [
+            {
+                "id": "relationship--c39edafb-5a90-43a3-af9f-6865c5a6a71f",
+                "techID": "T1570",
+                "tech_name": "Lateral Tool Transfer",
+                "value": 0.8865120400789779,
+                "min_id": 61,
+                "order_ids": [
+                    61,
+                    58
+                ],
+                "sent_indexes": [
+                    28,
+                    28
+                ],
+                "combine_ids": [
+                    28021,
+                    28012
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 26,
+                            "end": 31,
+                            "text": "tools",
+                            "id": 5,
+                            "verbs": [
+                                "move"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 127,
+                            "end": 132,
+                            "text": "tools",
+                            "id": 21,
+                            "verbs": [
+                                "rely"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 28,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 53,
+                            "end": 70,
+                            "text": "corporate network",
+                            "id": 10,
+                            "verbs": [
+                                "within"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 78,
+                            "end": 86,
+                            "text": "networks",
+                            "id": 12,
+                            "verbs": [
+                                "to"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 28,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 61
+            }
+        ],
+        "109": [
+            {
+                "id": "relationship--5c46f9a0-fb83-473d-af9a-c1c98cfdd85b",
+                "techID": "T1033",
+                "tech_name": "System Owner/User Discovery",
+                "value": 0.9050699304904146,
+                "min_id": 109,
+                "order_ids": [
+                    109,
+                    101
+                ],
+                "sent_indexes": [
+                    37,
+                    36
+                ],
+                "combine_ids": [
+                    37008,
+                    36017
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 17,
+                            "end": 28,
+                            "text": "information",
+                            "id": 4,
+                            "verbs": [
+                                "gather",
+                                "obtain"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "information"
+                            ]
+                        },
+                        "dest": {
+                            "start": 28,
+                            "end": 39,
+                            "text": "information",
+                            "id": 8,
+                            "verbs": [
+                                "share"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 37,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 43,
+                            "end": 47,
+                            "text": "user",
+                            "id": 7,
+                            "verbs": [
+                                "regard",
+                                "about"
+                            ],
+                            "label": [
+                                "USER"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "user"
+                            ]
+                        },
+                        "dest": {
+                            "start": 96,
+                            "end": 105,
+                            "text": "customers",
+                            "id": 17,
+                            "verbs": [
+                                "to"
+                            ],
+                            "label": [
+                                "USER"
+                            ],
+                            "sent_index": 36,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 109
+            }
+        ],
+        "150": [
+            {
+                "id": "relationship--33eb4a61-d966-4193-a8e5-237eb5a5129a",
+                "techID": "T1190",
+                "tech_name": "Exploit Public-Facing Application",
+                "value": 0.993629272450717,
+                "min_id": 150,
+                "order_ids": [
+                    150
+                ],
+                "sent_indexes": [
+                    49
+                ],
+                "combine_ids": [
+                    49009
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 30,
+                            "end": 45,
+                            "text": "vulnerabilities",
+                            "id": 5,
+                            "verbs": [
+                                "exploit"
+                            ],
+                            "label": [
+                                "VULNERABILITY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "Microsoft Exchange vulnerability CVE-2020-0688",
+                                "vulnerabilities"
+                            ]
+                        },
+                        "dest": {
+                            "start": 57,
+                            "end": 72,
+                            "text": "vulnerabilities",
+                            "id": 9,
+                            "verbs": [
+                                "exploit"
+                            ],
+                            "label": [
+                                "VULNERABILITY"
+                            ],
+                            "sent_index": 49,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 150
+            }
+        ],
+        "160": [
+            {
+                "id": "relationship--fad2a504-6e00-4892-bf88-b49d6d18788c",
+                "techID": "T1003",
+                "tech_name": "OS Credential Dumping",
+                "value": 0.993629272450717,
+                "min_id": 160,
+                "order_ids": [
+                    160
+                ],
+                "sent_indexes": [
+                    50
+                ],
+                "combine_ids": [
+                    50034
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 26,
+                            "text": "credentials",
+                            "id": 4,
+                            "verbs": [
+                                "dump"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 220,
+                            "end": 231,
+                            "text": "credentials",
+                            "id": 34,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 50,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 160
+            }
+        ],
+        "161": [
+            {
+                "id": "relationship--739217f2-c273-4005-8175-1261a81a1224",
+                "techID": "T1078.002",
+                "tech_name": "Domain Accounts",
+                "value": 0.9340974013721006,
+                "min_id": 161,
+                "order_ids": [
+                    160,
+                    161
+                ],
+                "sent_indexes": [
+                    50,
+                    50
+                ],
+                "combine_ids": [
+                    50034,
+                    50037
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 28,
+                            "end": 39,
+                            "text": "credentials",
+                            "id": 5,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "credentials",
+                                "domain accounts"
+                            ]
+                        },
+                        "dest": {
+                            "start": 220,
+                            "end": 231,
+                            "text": "credentials",
+                            "id": 34,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 50,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 45,
+                            "end": 61,
+                            "text": "infected systems",
+                            "id": 8,
+                            "verbs": [
+                                "from"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 237,
+                            "end": 256,
+                            "text": "compromised systems",
+                            "id": 37,
+                            "verbs": [
+                                "from"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 50,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 161
+            }
+        ],
+        "177": [
+            {
+                "id": "relationship--b847cd82-14c8-4270-b03d-2acf3abda4b6",
+                "techID": "T1505.003",
+                "tech_name": "Web Shell",
+                "value": 0.9936292278611506,
+                "min_id": 177,
+                "order_ids": [
+                    177
+                ],
+                "sent_indexes": [
+                    55
+                ],
+                "combine_ids": [
+                    55009
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 24,
+                            "text": "Web shell",
+                            "id": 5,
+                            "verbs": [
+                                "be"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "Web shell"
+                            ]
+                        },
+                        "dest": {
+                            "start": 35,
+                            "end": 44,
+                            "text": "web shell",
+                            "id": 9,
+                            "verbs": [
+                                "be"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 55,
+                            "type": "object",
+                            "texts": [
+                                "China Chopper",
+                                "web shell"
+                            ]
+                        }
+                    }
+                ],
+                "location": 177
+            }
+        ],
+        "179": [
+            {
+                "id": "relationship--2fa20fad-4ede-42f4-8ce5-7f5a6ce83ed8",
+                "techID": "T1059",
+                "tech_name": "Command and Scripting Interpreter",
+                "value": 0.8956441281646732,
+                "min_id": 179,
+                "order_ids": [
+                    179
+                ],
+                "sent_indexes": [
+                    55
+                ],
+                "combine_ids": [
+                    55020
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "text": "remote command",
+                            "start": 25,
+                            "end": 39,
+                            "id": 5,
+                            "verbs": [
+                                "execute"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "text": "remote code",
+                            "start": 86,
+                            "end": 97,
+                            "id": 20,
+                            "verbs": [
+                                "execute"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 55,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 179
+            }
+        ],
+        "196": [
+            {
+                "id": "relationship--b835f71a-b961-4d69-a7eb-6bf682f433de",
+                "techID": "T1047",
+                "tech_name": "Windows Management Instrumentation",
+                "value": 0.9936292278611506,
+                "min_id": 196,
+                "order_ids": [
+                    196
+                ],
+                "sent_indexes": [
+                    60
+                ],
+                "combine_ids": [
+                    60011
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 39,
+                            "end": 43,
+                            "text": "WMIC",
+                            "id": 7,
+                            "verbs": [
+                                "execute"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 78,
+                            "end": 82,
+                            "text": "WMIC",
+                            "id": 11,
+                            "verbs": [
+                                "access"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 60,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 196
+            }
+        ],
+        "197": [
+            {
+                "techID": "T1059.001",
+                "techName": "PowerShell",
+                "value": 1.0,
+                "min_id": 197,
+                "location": 197,
+                "order_ids": [
+                    197
+                ],
+                "sent_indexes": [
+                    60
+                ]
+            }
+        ],
+        "202": [
+            {
+                "id": "relationship--9655304e-7bdb-4375-8789-2bfecc5b0a64",
+                "techID": "T1133",
+                "tech_name": "External Remote Services",
+                "value": 0.993629272450717,
+                "min_id": 202,
+                "order_ids": [
+                    202
+                ],
+                "sent_indexes": [
+                    60
+                ],
+                "combine_ids": [
+                    60042
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 17,
+                            "end": 20,
+                            "text": "RDP",
+                            "id": 4,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 270,
+                            "end": 273,
+                            "text": "RDP",
+                            "id": 42,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 60,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 202
+            }
+        ],
+        "224": [
+            {
+                "id": "relationship--fdc9c7e3-4467-4f57-af5b-156cf2f9d189",
+                "techID": "T1547.004",
+                "tech_name": "Winlogon Helper DLL",
+                "value": 0.8922946566919633,
+                "min_id": 224,
+                "order_ids": [
+                    224
+                ],
+                "sent_indexes": [
+                    64
+                ],
+                "combine_ids": [
+                    64006
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 16,
+                            "end": 38,
+                            "text": "Registry key HKCU\\Software\\Microsoft\\WindowsNT\\CurrentVersion\\Winlogon",
+                            "id": 6,
+                            "verbs": [
+                                "add"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 23,
+                            "end": 35,
+                            "text": "registry key",
+                            "id": 6,
+                            "verbs": [
+                                "change"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 64,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 224
+            }
+        ],
+        "241": [
+            {
+                "id": "relationship--728c2a84-ac7d-4b17-a287-4c692d717065",
+                "techID": "T1546.008",
+                "tech_name": "Accessibility Features",
+                "value": 0.993629272450717,
+                "min_id": 241,
+                "order_ids": [
+                    241
+                ],
+                "sent_indexes": [
+                    67
+                ],
+                "combine_ids": [
+                    67028
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 11,
+                            "end": 22,
+                            "text": "sticky keys",
+                            "id": 4,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 151,
+                            "end": 162,
+                            "text": "Sticky Keys",
+                            "id": 28,
+                            "verbs": [
+                                "manage"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 67,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 241
+            }
+        ],
+        "246": [
+            {
+                "id": "relationship--4113afe0-e84a-44ba-9180-3033de06d72e",
+                "techID": "T1124",
+                "tech_name": "System Time Discovery",
+                "value": 0.8934235015984777,
+                "min_id": 246,
+                "order_ids": [
+                    246,
+                    244
+                ],
+                "sent_indexes": [
+                    69,
+                    68
+                ],
+                "combine_ids": [
+                    69006,
+                    68009
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 23,
+                            "text": "function",
+                            "id": 4,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 26,
+                            "end": 33,
+                            "text": "feature",
+                            "id": 6,
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 69,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 46,
+                            "end": 50,
+                            "text": "time",
+                            "id": 9,
+                            "verbs": [
+                                "gather"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 41,
+                            "end": 45,
+                            "text": "time",
+                            "id": 9,
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 68,
+                            "type": "object",
+                            "texts": [
+                                "time",
+                                "sign-in screen"
+                            ]
+                        }
+                    }
+                ],
+                "location": 246
+            }
+        ],
+        "252": [
+            {
+                "id": "relationship--1b1027ff-81d2-4ae9-85ac-0d886dea8a04",
+                "techID": "T1053.005",
+                "tech_name": "Scheduled Task",
+                "value": 0.8895304612722319,
+                "min_id": 252,
+                "order_ids": [
+                    252
+                ],
+                "sent_indexes": [
+                    70
+                ],
+                "combine_ids": [
+                    70010
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 25,
+                            "end": 38,
+                            "text": "Windows tasks",
+                            "id": 6,
+                            "verbs": [
+                                "create"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 40,
+                            "end": 60,
+                            "text": "Windows Task Manager",
+                            "id": 10,
+                            "verbs": [
+                                "launch"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 70,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 252
+            }
+        ],
+        "300": [
+            {
+                "id": "relationship--0f42474f-27d5-4939-8f18-348b8d09a9b6",
+                "techID": "T1543.003",
+                "tech_name": "Windows Service",
+                "value": 0.993629272450717,
+                "min_id": 300,
+                "order_ids": [
+                    300
+                ],
+                "sent_indexes": [
+                    84
+                ],
+                "combine_ids": [
+                    84006
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 39,
+                            "end": 46,
+                            "text": "service",
+                            "id": 6,
+                            "verbs": [
+                                "install",
+                                "create",
+                                "add"
+                            ],
+                            "label": [
+                                "COMPONENT",
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "Service1",
+                                "msamger",
+                                "Microsoft Security Accounts Manager",
+                                "WBService",
+                                "service",
+                                "WmiApSrvEx",
+                                "NetAdapter"
+                            ]
+                        },
+                        "dest": {
+                            "start": 32,
+                            "end": 39,
+                            "text": "service",
+                            "id": 6,
+                            "verbs": [
+                                "create"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 84,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 300
+            }
+        ],
+        "304": [
+            {
+                "id": "relationship--70879424-99b5-4ebe-8c77-cf872738dfcf",
+                "techID": "T1078",
+                "tech_name": "Valid Accounts",
+                "value": 0.9159831965225679,
+                "min_id": 304,
+                "order_ids": [
+                    304
+                ],
+                "sent_indexes": [
+                    85
+                ],
+                "combine_ids": [
+                    85009
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 19,
+                            "end": 40,
+                            "text": "valid VPN credentials",
+                            "id": 6,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 24,
+                            "end": 50,
+                            "text": "legitimate VPN application",
+                            "id": 9,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 85,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 304
+            }
+        ],
+        "308": [
+            {
+                "id": "relationship--a90a5b4d-b677-4a69-8fa0-feab294c9daf",
+                "techID": "T1036.005",
+                "tech_name": "Match Legitimate Name or Location",
+                "value": 0.8880868755170784,
+                "min_id": 308,
+                "order_ids": [
+                    308
+                ],
+                "sent_indexes": [
+                    87
+                ],
+                "combine_ids": [
+                    87010
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 31,
+                            "end": 36,
+                            "text": "tools",
+                            "id": 6,
+                            "verbs": [
+                                "rename"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "tools",
+                                "executables"
+                            ]
+                        },
+                        "dest": {
+                            "start": 44,
+                            "end": 59,
+                            "text": "executable file",
+                            "id": 10,
+                            "verbs": [
+                                "rename"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 87,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 308
+            }
+        ],
+        "327": [
+            {
+                "id": "relationship--2c9fad15-9b3f-45fe-854a-c87113d4695c",
+                "techID": "T1046",
+                "tech_name": "Network Service Discovery",
+                "value": 0.993629272450717,
+                "min_id": 327,
+                "order_ids": [
+                    327
+                ],
+                "sent_indexes": [
+                    91
+                ],
+                "combine_ids": [
+                    91013
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 20,
+                            "end": 27,
+                            "text": "systems",
+                            "id": 5,
+                            "verbs": [
+                                "scan"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 68,
+                            "end": 75,
+                            "text": "systems",
+                            "id": 13,
+                            "verbs": [
+                                "access"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 91,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 327
+            }
+        ],
+        "329": [
+            {
+                "id": "relationship--571c83a5-0a53-4f57-93bc-52356b6cc741",
+                "techID": "T1021.006",
+                "tech_name": "Windows Remote Management",
+                "value": 0.9741983638702212,
+                "min_id": 329,
+                "order_ids": [
+                    329
+                ],
+                "sent_indexes": [
+                    91
+                ],
+                "combine_ids": [
+                    91022
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 17,
+                            "end": 22,
+                            "text": "WinRM",
+                            "id": 4,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "WinRM"
+                            ]
+                        },
+                        "dest": {
+                            "start": 119,
+                            "end": 126,
+                            "text": "LOLBins",
+                            "id": 22,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "OTHER",
+                                "FUNCTION",
+                                "NETWORK"
+                            ],
+                            "sent_index": 91,
+                            "type": "object",
+                            "texts": [
+                                "WMIC",
+                                "LOLBins",
+                                "WinRM",
+                                "Windows Remote Management"
+                            ]
+                        }
+                    }
+                ],
+                "location": 329
+            }
+        ],
+        "341": [
+            {
+                "id": "relationship--f94c1c97-ec5d-4703-93c1-91de05761d2a",
+                "techID": "T1105",
+                "tech_name": "Ingress Tool Transfer",
+                "value": 0.8820629272812319,
+                "min_id": 341,
+                "order_ids": [
+                    341,
+                    332
+                ],
+                "sent_indexes": [
+                    95,
+                    92
+                ],
+                "combine_ids": [
+                    95021,
+                    92012
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 28,
+                            "end": 33,
+                            "text": "tools",
+                            "id": 5,
+                            "verbs": [
+                                "copy"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "tools",
+                                "malware"
+                            ]
+                        },
+                        "dest": {
+                            "start": 142,
+                            "end": 147,
+                            "text": "tools",
+                            "id": 21,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 95,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 51,
+                            "end": 67,
+                            "text": "targeted systems",
+                            "id": 10,
+                            "verbs": [
+                                "onto"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 69,
+                            "end": 85,
+                            "text": "targeted systems",
+                            "id": 12,
+                            "verbs": [
+                                "to"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 92,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 341
+            }
+        ],
+        "349": [
+            {
+                "id": "relationship--76d7d7fa-94a4-4fa6-9fd2-e9af9ab0f356",
+                "techID": "T1087.001",
+                "tech_name": "Local Account",
+                "value": 0.8990275968174426,
+                "min_id": 349,
+                "order_ids": [
+                    348,
+                    349
+                ],
+                "sent_indexes": [
+                    97,
+                    97
+                ],
+                "combine_ids": [
+                    97007,
+                    97012
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 22,
+                            "end": 27,
+                            "text": "users",
+                            "id": 4,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 41,
+                            "end": 46,
+                            "text": "users",
+                            "id": 7,
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 97,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 35,
+                            "end": 41,
+                            "text": "system",
+                            "id": 7,
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 63,
+                            "end": 75,
+                            "text": "local system",
+                            "id": 12,
+                            "verbs": [
+                                "sign into",
+                                "sign"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 97,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 349
+            }
+        ],
+        "356": [
+            {
+                "id": "relationship--8debe90d-927a-4195-b796-793e9b1730ee",
+                "techID": "T1135",
+                "tech_name": "Network Share Discovery",
+                "value": 0.8897267139964564,
+                "min_id": 356,
+                "order_ids": [
+                    356
+                ],
+                "sent_indexes": [
+                    99
+                ],
+                "combine_ids": [
+                    99020
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 25,
+                            "end": 42,
+                            "text": "network resources",
+                            "id": 5,
+                            "verbs": [
+                                "enumerate"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 108,
+                            "end": 117,
+                            "text": "resources",
+                            "id": 20,
+                            "verbs": [
+                                "access"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 99,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 356
+            }
+        ],
+        "370": [
+            {
+                "id": "relationship--8bbf259b-029b-48fa-859b-5dbbbcd98b53",
+                "techID": "T1082",
+                "tech_name": "System Information Discovery",
+                "value": 0.9130653566717886,
+                "min_id": 370,
+                "order_ids": [
+                    370,
+                    366
+                ],
+                "sent_indexes": [
+                    102,
+                    101
+                ],
+                "combine_ids": [
+                    102006,
+                    101021
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 26,
+                            "text": "information",
+                            "id": 3,
+                            "verbs": [
+                                "gather"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 28,
+                            "end": 39,
+                            "text": "information",
+                            "id": 6,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 102,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 34,
+                            "end": 40,
+                            "text": "system",
+                            "id": 6,
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "local drives",
+                                "system"
+                            ]
+                        },
+                        "dest": {
+                            "start": 118,
+                            "end": 124,
+                            "text": "system",
+                            "id": 21,
+                            "verbs": [
+                                "to"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 101,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 370
+            }
+        ],
+        "371": [
+            {
+                "id": "relationship--12cfc154-5240-47ce-ba54-ec40f8a6d13d",
+                "techID": "T1005",
+                "tech_name": "Data from Local System",
+                "value": 0.8870157443029909,
+                "min_id": 371,
+                "order_ids": [
+                    370,
+                    371
+                ],
+                "sent_indexes": [
+                    102,
+                    102
+                ],
+                "combine_ids": [
+                    102006,
+                    102012
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 22,
+                            "end": 26,
+                            "text": "data",
+                            "id": 4,
+                            "verbs": [
+                                "collect"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "data",
+                                "files",
+                                "information"
+                            ]
+                        },
+                        "dest": {
+                            "start": 28,
+                            "end": 39,
+                            "text": "information",
+                            "id": 6,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 102,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 44,
+                            "end": 63,
+                            "text": "compromised machine",
+                            "id": 10,
+                            "verbs": [
+                                "from"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "compromised computers",
+                                "compromised machine",
+                                "compromised machines"
+                            ]
+                        },
+                        "dest": {
+                            "start": 65,
+                            "end": 83,
+                            "text": "compromised system",
+                            "id": 12,
+                            "verbs": [
+                                "understand"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 102,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 371
+            }
+        ],
+        "377": [
+            {
+                "id": "relationship--a7ad3949-0d4d-49a8-a2cd-3a0d5857ba92",
+                "techID": "T1547.001",
+                "tech_name": "Registry Run Keys / Startup Folder",
+                "value": 0.993629272450717,
+                "min_id": 377,
+                "order_ids": [
+                    377
+                ],
+                "sent_indexes": [
+                    103
+                ],
+                "combine_ids": [
+                    103016
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 26,
+                            "end": 37,
+                            "text": "persistence",
+                            "id": 5,
+                            "verbs": [
+                                "establish"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 96,
+                            "end": 107,
+                            "text": "persistence",
+                            "id": 16,
+                            "verbs": [
+                                "establish"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 103,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 377
+            }
+        ],
+        "390": [
+            {
+                "id": "relationship--7542421c-f673-4f85-85ae-b4283173c48d",
+                "techID": "T1007",
+                "tech_name": "System Service Discovery",
+                "value": 0.9149614377680462,
+                "min_id": 390,
+                "order_ids": [
+                    390,
+                    389
+                ],
+                "sent_indexes": [
+                    107,
+                    107
+                ],
+                "combine_ids": [
+                    107019,
+                    107017
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 36,
+                            "end": 44,
+                            "text": "services",
+                            "id": 6,
+                            "verbs": [
+                                "obtain"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 126,
+                            "end": 134,
+                            "text": "services",
+                            "id": 19,
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 107,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 52,
+                            "end": 58,
+                            "text": "system",
+                            "id": 9,
+                            "verbs": [
+                                "from"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 114,
+                            "end": 121,
+                            "text": "systems",
+                            "id": 17,
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 107,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 390
+            }
+        ],
+        "434": [
+            {
+                "id": "relationship--4e66aad2-7c30-4c05-9f8e-767ac1cff08e",
+                "techID": "T1562.001",
+                "tech_name": "Disable or Modify Tools",
+                "value": 0.9064555870110105,
+                "min_id": 434,
+                "order_ids": [
+                    427,
+                    434
+                ],
+                "sent_indexes": [
+                    117,
+                    120
+                ],
+                "combine_ids": [
+                    117014,
+                    120013
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 15,
+                            "end": 32,
+                            "text": "security settings",
+                            "id": 5,
+                            "verbs": [
+                                "lower"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 89,
+                            "end": 97,
+                            "text": "security",
+                            "id": 14,
+                            "verbs": [
+                                "need"
+                            ],
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 117,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 45,
+                            "end": 58,
+                            "text": "Registry keys",
+                            "id": 9,
+                            "verbs": [
+                                "change"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 82,
+                            "end": 95,
+                            "text": "registry keys",
+                            "id": 13,
+                            "verbs": [
+                                "modify"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 120,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 434
+            }
+        ],
+        "436": [
+            {
+                "id": "relationship--794caee4-34cd-493f-a047-1f4a8b4c8de8",
+                "techID": "T1012",
+                "tech_name": "Query Registry",
+                "value": 0.9092455167575362,
+                "min_id": 438,
+                "order_ids": [
+                    436,
+                    438
+                ],
+                "sent_indexes": [
+                    121,
+                    121
+                ],
+                "combine_ids": [
+                    121006,
+                    121013
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 27,
+                            "end": 35,
+                            "text": "Registry",
+                            "id": 5,
+                            "verbs": [
+                                "query"
+                            ],
+                            "label": [
+                                "REGISTRY"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 25,
+                            "end": 41,
+                            "text": "registry changes",
+                            "id": 6,
+                            "verbs": [
+                                "detect"
+                            ],
+                            "label": [
+                                "FUNCTION"
+                            ],
+                            "sent_index": 121,
+                            "type": "object"
+                        }
+                    },
+                    {
+                        "source": {
+                            "start": 89,
+                            "end": 95,
+                            "text": "system",
+                            "id": 16,
+                            "label": [
+                                "COMPONENT"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 75,
+                            "end": 81,
+                            "text": "system",
+                            "id": 13,
+                            "label": [
+                                "OTHER",
+                                "COMPONENT"
+                            ],
+                            "sent_index": 121,
+                            "type": "object",
+                            "texts": [
+                                "those",
+                                "system"
+                            ]
+                        }
+                    }
+                ],
+                "location": 436
+            }
+        ],
+        "452": [
+            {
+                "id": "relationship--a5848605-3931-4dc8-a3e4-299683258c0f",
+                "techID": "T1070.009",
+                "tech_name": "Clear Persistence",
+                "value": 0.8716059464438806,
+                "min_id": 452,
+                "order_ids": [
+                    452
+                ],
+                "sent_indexes": [
+                    126
+                ],
+                "combine_ids": [
+                    126027
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 19,
+                            "end": 27,
+                            "text": "accounts",
+                            "id": 4,
+                            "verbs": [
+                                "delete"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 152,
+                            "end": 167,
+                            "text": "unused accounts",
+                            "id": 27,
+                            "verbs": [
+                                "deactivate"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 126,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 452
+            }
+        ],
+        "634": [
+            {
+                "id": "relationship--2b2cdb6b-c23c-4792-8cfb-8c4d9279a186",
+                "techID": "T1071.001",
+                "tech_name": "Web Protocols",
+                "value": 0.9318310187034552,
+                "min_id": 634,
+                "order_ids": [
+                    634
+                ],
+                "sent_indexes": [
+                    165
+                ],
+                "combine_ids": [
+                    165007
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 33,
+                            "end": 37,
+                            "text": "HTTP",
+                            "id": 5,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 0,
+                            "type": "object",
+                            "texts": [
+                                "HTTP",
+                                "HTTPS"
+                            ]
+                        },
+                        "dest": {
+                            "start": 28,
+                            "end": 42,
+                            "text": "HTTPS protocol",
+                            "id": 7,
+                            "verbs": [
+                                "use"
+                            ],
+                            "label": [
+                                "NETWORK"
+                            ],
+                            "sent_index": 165,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 634
+            }
+        ],
+        "654": [
+            {
+                "id": "relationship--394a227d-585f-48a5-84ac-cc40a0ad80e6",
+                "techID": "T1119",
+                "tech_name": "Automated Collection",
+                "value": 0.993629272450717,
+                "min_id": 654,
+                "order_ids": [
+                    654
+                ],
+                "sent_indexes": [
+                    185
+                ],
+                "combine_ids": [
+                    185029
+                ],
+                "phrases": [
+                    {
+                        "source": {
+                            "start": 44,
+                            "end": 48,
+                            "text": "data",
+                            "id": 6,
+                            "verbs": [
+                                "archive"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 0,
+                            "type": "object"
+                        },
+                        "dest": {
+                            "start": 173,
+                            "end": 177,
+                            "text": "data",
+                            "id": 29,
+                            "verbs": [
+                                "steal"
+                            ],
+                            "label": [
+                                "DATA"
+                            ],
+                            "sent_index": 185,
+                            "type": "object"
+                        }
+                    }
+                ],
+                "location": 654
+            }
+        ]
+    },
+    "full_path": [
+        "T1588.001",
+        "T1140",
+        "T1570",
+        "T1033",
+        "T1190",
+        "T1003",
+        "T1078.002",
+        "T1505.003",
+        "T1059",
+        "T1047",
+        "T1059.001",
+        "T1133",
+        "T1547.004",
+        "T1546.008",
+        "T1124",
+        "T1053.005",
+        "T1543.003",
+        "T1078",
+        "T1036.005",
+        "T1046",
+        "T1021.006",
+        "T1105",
+        "T1087.001",
+        "T1135",
+        "T1082",
+        "T1005",
+        "T1547.001",
+        "T1007",
+        "T1562.001",
+        "T1012",
+        "T1070.009",
+        "T1071.001",
+        "T1119"
+    ],
+    "top_k_path": {
+        "0": [
+            "T1588.001"
+        ],
+        "39": [
+            "T1140"
+        ],
+        "61": [
+            "T1570"
+        ],
+        "109": [
+            "T1033"
+        ],
+        "150": [
+            "T1190"
+        ],
+        "160": [
+            "T1003"
+        ],
+        "161": [
+            "T1078.002"
+        ],
+        "177": [
+            "T1505.003"
+        ],
+        "179": [
+            "T1059"
+        ],
+        "196": [
+            "T1047"
+        ],
+        "197": [
+            "T1059.001"
+        ],
+        "202": [
+            "T1133"
+        ],
+        "224": [
+            "T1547.004"
+        ],
+        "241": [
+            "T1546.008"
+        ],
+        "246": [
+            "T1124"
+        ],
+        "252": [
+            "T1053.005"
+        ],
+        "300": [
+            "T1543.003"
+        ],
+        "304": [
+            "T1078"
+        ],
+        "308": [
+            "T1036.005"
+        ],
+        "327": [
+            "T1046"
+        ],
+        "329": [
+            "T1021.006"
+        ],
+        "341": [
+            "T1105"
+        ],
+        "349": [
+            "T1087.001"
+        ],
+        "356": [
+            "T1135"
+        ],
+        "370": [
+            "T1082"
+        ],
+        "371": [
+            "T1005"
+        ],
+        "377": [
+            "T1547.001"
+        ],
+        "390": [
+            "T1007"
+        ],
+        "434": [
+            "T1562.001"
+        ],
+        "436": [
+            "T1012"
+        ],
+        "452": [
+            "T1070.009"
+        ],
+        "634": [
+            "T1071.001"
+        ],
+        "654": [
+            "T1119"
+        ]
+    }
+}

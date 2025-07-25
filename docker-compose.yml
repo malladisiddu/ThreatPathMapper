@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  threatpathmapper:
+    build:
+      context: .
+      dockerfile: Dockerfile.ssl-fix
+    container_name: threatpathmapper-container
+    volumes:
+      # Mount entire data directory to ensure all unzipped files are accessible
+      - ./data:/app/data
+      # Mount tf_hub cache to persist model downloads
+      - tf_hub_cache:/app/data/tf_hub
+    environment:
+      - TFHUB_CACHE_DIR=/app/data/tf_hub
+      - TF_ENABLE_ONEDNN_OPTS=0
+    stdin_open: true
+    tty: true
+    # Optional: if you want to access the container interactively
+    # command: /bin/bash
+
+volumes:
+  tf_hub_cache:

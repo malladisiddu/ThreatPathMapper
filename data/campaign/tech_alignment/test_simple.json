@@ -1,0 +1,71 @@
+{
+    "6": [
+        {
+            "techID": "T1059.001",
+            "techName": "PowerShell",
+            "value": 1.0,
+            "min_id": 6,
+            "location": 6,
+            "order_ids": [
+                6
+            ],
+            "sent_indexes": [
+                1
+            ]
+        }
+    ],
+    "0": [
+        {
+            "techID": "T1588.001",
+            "techName": "Malware",
+            "value": 1.0,
+            "min_id": 11,
+            "location": 11,
+            "order_ids": [
+                11
+            ],
+            "sent_indexes": [
+                3
+            ]
+        },
+        {
+            "techID": "T1587.001",
+            "techName": "Malware",
+            "value": 1.0,
+            "min_id": 11,
+            "location": 11,
+            "order_ids": [
+                11
+            ],
+            "sent_indexes": [
+                3
+            ]
+        },
+        {
+            "techID": "T1584.004",
+            "techName": "Server",
+            "value": 1.0,
+            "min_id": 7,
+            "location": 7,
+            "order_ids": [
+                7
+            ],
+            "sent_indexes": [
+                1
+            ]
+        },
+        {
+            "techID": "T1583.004",
+            "techName": "Server",
+            "value": 1.0,
+            "min_id": 7,
+            "location": 7,
+            "order_ids": [
+                7
+            ],
+            "sent_indexes": [
+                1
+            ]
+        }
+    ]
+}
