@@ -1,26 +1,26 @@
 # ThreatPathMapper: Advanced Attack Path Visualization & Analysis
 
-> **🙏 This project is based on the original [RAF-AG research by CyberLab](https://github.com/cyb3rlab/RAF-AG)**  
-> **Enhanced with advanced visualization and multi-format attack chain analysis capabilities**
+> This project is based on the original [RAF-AG research by CyberLab](https://github.com/cyb3rlab/RAF-AG)  
+> Enhanced with advanced visualization and multi-format attack chain analysis capabilities
 
-ThreatPathMapper is an **AI-powered cybersecurity framework** that automatically reads threat intelligence reports and generates structured attack paths mapped to the MITRE ATT&CK framework. Instead of manual analysis, ThreatPathMapper uses graph-based knowledge matching to transform unstructured CTI content into actionable attack intelligence with professional-grade visualization.
+ThreatPathMapper is an AI-powered cybersecurity framework that automatically processes threat intelligence reports and generates structured attack paths mapped to the MITRE ATT&CK framework. Rather than requiring manual analysis, ThreatPathMapper uses graph-based knowledge matching to transform unstructured threat intelligence content into actionable attack intelligence with professional visualization capabilities.
 
-## 🚀 Key Features
+## Key Features
 
 ### **Core Capabilities:**
-1. **Automated Attack Path Generation**: Converts CTI reports into sequential attack chains
+1. **Automated Attack Path Generation**: Converts threat intelligence reports into sequential attack chains
 2. **MITRE ATT&CK Mapping**: Automatically identifies and maps techniques to the MITRE framework
 3. **Graph-based Analysis**: Uses knowledge graphs for semantic understanding of attack narratives
 4. **Multi-format Visualization**: Generates attack chains in multiple formats for different audiences
 
-### **🆕 ThreatPathMapper Enhanced Features:**
+### ThreatPathMapper Enhanced Features:
 - **Kill Chain Structure**: Organizes techniques by MITRE ATT&CK tactic phases
 - **Attack Path Analysis**: Shows primary and alternative attack progressions
 - **Multiple Output Formats**: Simple flow, narrative story, tabular summary, and detailed analysis
 - **Confidence Scoring**: Provides probability scores for each technique identification
 - **Interactive Analysis**: Comprehensive technique descriptions with implementation methods and tools
 
-### **🔧 ThreatPathMapper Enhancements Over Original RAF-AG:
+### ThreatPathMapper Enhancements Over Original RAF-AG:
 - **4 Visualization Formats**: Executive summaries, technical analysis, narratives, and structured tables
 - **Enhanced MITRE Mapping**: Expanded technique-to-tactic mappings with 200+ techniques
 - **Kill Chain Analysis**: Professional-grade attack progression visualization
@@ -59,9 +59,9 @@ Example of input and output of the framework:
 
 ## Architecture Overview
 
-### 🏗️ System Architecture
+### System Architecture
 
-ThreatPathMapper uses a **graph-based knowledge matching approach** that differs from traditional keyword-based tools:
+ThreatPathMapper uses a graph-based knowledge matching approach that differs from traditional keyword-based tools:
 
 ```
 CTI Reports → NLP Processing → Graph Alignment → Attack Path Generation → Multi-format Visualization
@@ -80,7 +80,7 @@ CTI Reports → NLP Processing → Graph Alignment → Attack Path Generation �
 - **Machine Learning**: TensorFlow for semantic similarity
 - **Visualization**: Custom Python formatting and tabulation
 
-### 🎯 How ThreatPathMapper Works
+### How ThreatPathMapper Works
 
 1. **Input**: Technical blogs, threat reports, incident analyses
 2. **Processing**: Converts text into structured knowledge graphs
@@ -94,7 +94,7 @@ CTI Reports → NLP Processing → Graph Alignment → Attack Path Generation �
 
 ### Option 1: Docker Setup (Recommended)
 
-Docker provides the easiest and most consistent way to run RAF-AG across all platforms (Windows, macOS, Linux).
+Docker provides the easiest and most consistent way to run ThreatPathMapper across all platforms (Windows, macOS, Linux).
 
 #### Prerequisites
 - [Docker](https://docs.docker.com/get-docker/) installed on your system
@@ -127,12 +127,12 @@ Docker provides the easiest and most consistent way to run RAF-AG across all pla
    docker-compose up -d
    
    # Or run interactively
-   docker-compose run --rm raf-ag /bin/bash
+   docker-compose run --rm threatpathmapper /bin/bash
    ```
 
 5. **Access the container (if running detached):**
    ```bash
-   docker-compose exec raf-ag /bin/bash
+   docker-compose exec threatpathmapper /bin/bash
    ```
 
 6. **Inside the container, run the framework:**
@@ -287,7 +287,7 @@ python -m coreferee install en
 
    **Using Docker:**
    ```bash
-   docker-compose exec raf-ag python3 main.py
+   docker-compose exec threatpathmapper python3 main.py
    ```
 
    **Using local installation:**
@@ -324,21 +324,21 @@ python3 main.py --techniue_alignment_from_0=True
 
 ThreatPathMapper features a comprehensive **Enhanced Attack Chain Analysis System** that generates multiple visualization formats for different audiences and use cases.
 
-### 🎯 Kill Chain Visualization
+### Kill Chain Visualization
 
 The enhanced system organizes attack techniques by **MITRE ATT&CK tactic phases**, similar to professional threat intelligence reports:
 
 ```
-🎯 TA0001 - INITIAL ACCESS
-  1. T1566.001 - Spearphishing Attachment (Confidence: ██████████ 0.911)
-  2. T1190 - Exploit Public-Facing Application (Confidence: █████████░ 0.876)
+TA0001 - INITIAL ACCESS
+  1. T1566.001 - Spearphishing Attachment (Confidence: 0.911)
+  2. T1190 - Exploit Public-Facing Application (Confidence: 0.876)
 
-🎯 TA0002 - EXECUTION  
-  1. T1059.001 - PowerShell (Confidence: ██████████ 1.000)
-  2. T1059.003 - Windows Command Shell (Confidence: █████████░ 0.944)
+TA0002 - EXECUTION  
+  1. T1059.001 - PowerShell (Confidence: 1.000)
+  2. T1059.003 - Windows Command Shell (Confidence: 0.944)
 ```
 
-### 📊 Multiple Output Formats
+### Multiple Output Formats
 
 The system automatically generates **4 different visualization formats**:
 
@@ -351,7 +351,7 @@ Lateral Movement → Collection → Command and Control → Exfiltration
 
 #### **2. Attack Story** (Narrative Format)
 ```
-📖 Complete Attack Narrative:
+Complete Attack Narrative:
 1. Attackers develop malware for the attack
 2. Exploit public-facing application to gain access  
 3. Execute PowerShell commands
@@ -376,12 +376,12 @@ Complete technical breakdown with:
 - Confidence bars and scoring
 - Primary and alternative attack paths
 
-### 🚀 Usage Examples
+### Usage Examples
 
 #### **Basic Analysis:**
 ```bash
 # Using Docker
-docker-compose exec raf-ag python generate_tabular_data.py "data/campaign/decoding_result/Your_Campaign.json"
+docker-compose exec threatpathmapper python generate_tabular_data.py "data/campaign/decoding_result/Your_Campaign.json"
 
 # Using virtual environment
 source venv/bin/activate
@@ -407,7 +407,7 @@ for file in data/campaign/decoding_result/*.json; do
 done
 ```
 
-### 📋 Command Line Options
+### Command Line Options
 
 | Option | Description |
 |--------|-------------|
@@ -417,7 +417,7 @@ done
 | `--save-json` | Export results as JSON file |
 | `--no-print` | Skip console output (silent mode) |
 
-### 📈 Output Features
+### Output Features
 
 **Enhanced Data Columns:**
 - **Kill Chain Structure**: Organized by MITRE ATT&CK tactic phases
@@ -428,12 +428,12 @@ done
 
 ## Code Hierarchy
 
-### 🏗️ Architecture Overview
+### Architecture Overview
 
-RAF-AG follows a modular, object-oriented design with clear separation of concerns:
+ThreatPathMapper follows a modular, object-oriented design with clear separation of concerns:
 
 ```
-RAF-AG/
+ThreatPathMapper/
 ├── classes/           # Core analysis components
 ├── data/             # Knowledge base and campaign data
 ├── main.py           # Primary analysis engine
@@ -441,7 +441,7 @@ RAF-AG/
 └── docker-compose.yml # Deployment configuration
 ```
 
-### 🧩 Core Classes (`classes/`)
+### Core Classes (`classes/`)
 
 **NLP and Text Processing:**
 - **`sentence.py`**: Dependency tree analysis and cybersecurity event extraction
@@ -464,7 +464,7 @@ RAF-AG/
 - **`heuristic_model.py`**: Rule-based technique identification
 - **`finalizing.py`**: Result aggregation and confidence scoring
 
-### 🚀 Main Scripts
+### Main Scripts
 
 **Core Analysis:**
 - **`main.py`**: Primary RAF-AG analysis engine and orchestrator
@@ -472,7 +472,7 @@ RAF-AG/
 - **`language_models.py`**: NLP model initialization and management
 
 **Enhanced Visualization:**
-- **`generate_tabular_data.py`**: **🆕 Enhanced attack chain analysis system**
+- **`generate_tabular_data.py`**: Enhanced attack chain analysis system
   - Kill chain structure visualization
   - Multi-format output generation
   - Attack path progression analysis
@@ -482,7 +482,7 @@ RAF-AG/
 - **`keys.py`**: Framework hyperparameters and configuration settings
 - **`modules.py`** / **`utils.py`**: Supporting utilities and helper functions
 
-### 📁 Data Structure (`data/`)
+### Data Structure (`data/`)
 
 **Campaign Processing Pipeline:**
 ```
@@ -505,7 +505,7 @@ data/
 └── dictionarydata/          # Weak supervision dictionaries
 ```
 
-### 🐳 Deployment Configuration
+### Deployment Configuration
 
 - **`Dockerfile`** / **`Dockerfile.ssl-fix`**: Container definitions with SSL handling
 - **`docker-compose.yml`**: Multi-service orchestration configuration
@@ -514,15 +514,15 @@ data/
 
 ## Data Hierarchy
 
-### 📊 Understanding RAF-AG's Data Flow
+### Understanding ThreatPathMapper's Data Flow
 
-RAF-AG processes data through multiple stages, each with specific purposes:
+ThreatPathMapper processes data through multiple stages, each with specific purposes:
 
 ```
 CTI Reports → Graph Processing → Alignment → Attack Path Generation → Visualization
 ```
 
-### 🎯 Campaign Processing Pipeline (`data/campaign/`)
+### Campaign Processing Pipeline (`data/campaign/`)
 
 **Input Stage:**
 - **`input/`**: Your CTI reports in various formats
@@ -545,8 +545,8 @@ CTI Reports → Graph Processing → Alignment → Attack Path Generation → Vi
   - Confidence scoring and validation
 
 **Final Results:**
-- **`decoding_result/`**: **🎯 Complete attack paths** (JSON format)
-  - **Use these files with `generate_tabular_data.py`**
+- **`decoding_result/`**: Complete attack paths (JSON format)
+  - Use these files with `generate_tabular_data.py`
   - Contains sequential attack chains
   - Includes confidence scores and technique details
 
@@ -555,7 +555,7 @@ CTI Reports → Graph Processing → Alignment → Attack Path Generation → Vi
   - Speeds up repeated analysis
   - Stores embedding calculations
 
-### 🧠 Knowledge Base (`data/procedure/` & `data/technique/`)
+### Knowledge Base (`data/procedure/` & `data/technique/`)
 
 **MITRE ATT&CK Integration:**
 - **`procedure/input/`**: Raw MITRE ATT&CK procedure examples
@@ -568,7 +568,7 @@ CTI Reports → Graph Processing → Alignment → Attack Path Generation → Vi
 - **`patterns/`**: Regex patterns for cybersecurity entity recognition
 - **`metadata/`**: Framework configuration and similarity matrices
 
-### 🔧 Supporting Data Resources
+### Supporting Data Resources
 
 **Dictionary-based Learning:**
 - **`dictionarydata/`**: Weak supervision dictionaries
@@ -580,7 +580,7 @@ CTI Reports → Graph Processing → Alignment → Attack Path Generation → Vi
 - **`patterns/`**: Domain-specific extraction patterns
 - **`metadata/`**: Performance tuning and similarity data
 
-### 📈 Workflow Integration
+### Workflow Integration
 
 **For New Users:**
 1. Place reports in `data/campaign/input/`
@@ -615,7 +615,7 @@ echo "The Typhoon APT group used spearphishing emails with malicious Office docu
 **Step 2: Run RAF-AG Analysis**
 ```bash
 # Using Docker
-docker-compose exec raf-ag python3 main.py --campaign_from_0=True
+docker-compose exec threatpathmapper python3 main.py --campaign_from_0=True
 
 # Using local environment
 source venv/bin/activate
@@ -658,7 +658,7 @@ python3 main.py --campaign_from_0=True
 mkdir -p threat_intelligence_reports
 for result_file in data/campaign/decoding_result/*.json; do
     campaign_name=$(basename "$result_file" .json)
-    echo "📊 Processing $campaign_name attack chain..."
+    echo "Processing $campaign_name attack chain..."
     
     # Generate all formats
     python generate_tabular_data.py "$result_file" \
@@ -666,7 +666,7 @@ for result_file in data/campaign/decoding_result/*.json; do
         --output-dir threat_intelligence_reports/$campaign_name
 done
 
-echo "✅ Complete threat intelligence analysis ready!"
+echo "Complete threat intelligence analysis ready!"
 ```
 
 ### Example 3: Integration with Security Operations
@@ -680,11 +680,11 @@ CTI_INPUT_DIR="data/campaign/input"
 REPORTS_DIR="security_reports"
 DATE=$(date +%Y%m%d)
 
-echo "🚀 Starting daily CTI processing - $DATE"
+echo "Starting daily CTI processing - $DATE"
 
 # 1. Process new threat intelligence
 if [ "$(ls -A $CTI_INPUT_DIR)" ]; then
-    echo "📖 Found new CTI reports, processing..."
+    echo "Found new CTI reports, processing..."
     python3 main.py --campaign_from_0=True
     
     # 2. Generate security reports
@@ -701,13 +701,13 @@ if [ "$(ls -A $CTI_INPUT_DIR)" ]; then
         python generate_tabular_data.py "$result_file" \
             --save-json --output-dir $REPORTS_DIR/$DATE/technical
             
-        echo "📋 Generated reports for: $campaign_name"
+        echo "Generated reports for: $campaign_name"
     done
     
-    echo "✅ Daily CTI processing complete!"
-    echo "📁 Reports available in: $REPORTS_DIR/$DATE/"
+    echo "Daily CTI processing complete!"
+    echo "Reports available in: $REPORTS_DIR/$DATE/"
 else
-    echo "ℹ️  No new CTI reports found"
+    echo "No new CTI reports found"
 fi
 ```
 
@@ -737,12 +737,12 @@ echo "Campaign,Primary_Tactic,Technique_Count,Avg_Confidence" > research_summary
 
 ## Performance and Troubleshooting
 
-### 🚀 Performance Optimization
+### Performance Optimization
 
 **Memory Management:**
 ```bash
 # For large CTI reports, increase Docker memory
-docker-compose run --rm -m 8g raf-ag python3 main.py
+docker-compose run --rm -m 8g threatpathmapper python3 main.py
 
 # Disable multiprocessing for memory-constrained environments
 python3 main.py --multiprocessing=False
@@ -762,11 +762,11 @@ docker stats  # Monitor Docker resource usage
 htop         # Monitor system resources
 ```
 
-### 🔧 Common Issues and Solutions
+### Common Issues and Solutions
 
 #### **1. Process Killed / Memory Issues**
 ```bash
-# Symptoms: Process terminates with "Killed" message
+# Issue: Process terminates with "Killed" message
 # Solution: Increase available memory
 
 # Docker approach:
@@ -819,7 +819,7 @@ echo "Simple APT attack using spearphishing" > data/campaign/input/test.txt
 python3 main.py
 ```
 
-### 🔍 Debugging Tips
+### Debugging Tips
 
 **Monitor Processing:**
 ```bash
@@ -842,42 +842,92 @@ jq '.' data/campaign/decoding_result/your_campaign.json | head -20
 
 ---
 
-## Comparison with Other Tools
+## Comparison with Original RAF-AG and Other Tools
 
-### 🆚 ThreatPathMapper vs TRAM
+### ThreatPathMapper vs Original RAF-AG Research
+
+ThreatPathMapper builds upon the foundational RAF-AG research by CyberLab, adding significant enhancements for operational use:
+
+| Feature | **Original RAF-AG** | **ThreatPathMapper** |
+|---------|-------------------|--------------------|
+| **Core Algorithm** | Graph-based knowledge matching | Same core algorithm with optimizations |
+| **Output Format** | JSON attack paths | 4 visualization formats + JSON/CSV export |
+| **Visualization** | Basic JSON structure | Kill chain analysis, narratives, executive summaries |
+| **User Experience** | Research-focused | Multiple audiences (executives, analysts, technical teams) |
+| **Documentation** | Academic paper focus | Comprehensive setup guides and troubleshooting |
+| **Deployment** | Local setup only | Docker containerization + local options |
+| **Performance** | Basic implementation | Memory optimization and multiprocessing support |
+| **Data Export** | JSON only | CSV, JSON, console output with formatting |
+| **Attack Chain Analysis** | Sequential technique identification | Tactical phase organization with confidence visualization |
+| **Practical Usage** | Proof of concept | Production-ready with batch processing |
+
+### Key Improvements Over RAF-AG
+
+**Enhanced Visualization System:**
+- Simple attack flow diagrams for executive briefings
+- Detailed technical analysis with implementation methods
+- Attack narrative stories for documentation
+- Structured tabular summaries for reporting
+
+**Operational Enhancements:**
+- Docker containerization for consistent deployment
+- Batch processing capabilities for multiple campaigns
+- Memory management for large CTI reports
+- Comprehensive error handling and troubleshooting guides
+
+**User Experience Improvements:**
+- Multi-audience output formats
+- Professional confidence scoring visualization
+- Export capabilities for integration with other tools
+- Extensive documentation and usage examples
+
+### ThreatPathMapper vs Other CTI Tools
+
+#### vs TRAM (Technique Recognition and Mapping)
 
 | Aspect | **ThreatPathMapper** | **TRAM** |
-|--------|------------|----------|
-| **Approach** | Graph-based knowledge matching | ML classification |
-| **Focus** | Complete attack path reconstruction | Technique identification |
-| **Output** | Sequential attack chains with confidence | Technique tags with probability |
-| **Analysis Depth** | Narrative flow and relationships | Individual sentence classification |
-| **Use Case** | Operational threat intelligence | Research and technique tagging |
-| **Training Required** | No (unsupervised) | Yes (supervised ML) |
+|--------|--------------------|---------|
+| **Approach** | Graph-based knowledge matching | Machine learning classification |
+| **Focus** | Complete attack path reconstruction | Individual technique identification |
+| **Output** | Sequential attack chains with narrative flow | Technique tags with probability scores |
+| **Training Data** | Uses MITRE ATT&CK procedures (unsupervised) | Requires labeled training datasets |
+| **Analysis Depth** | Understands relationships and attack progression | Classifies individual sentences or paragraphs |
+| **Use Case** | Operational threat intelligence and incident response | Research and bulk technique tagging |
+| **Visualization** | Multiple formats for different audiences | Basic technique identification results |
 
-**When to Use ThreatPathMapper:**
-- Need complete attack storylines
-- Want to understand attack progression
-- Require operational intelligence for defense
-- Analyzing complex multi-stage campaigns
+#### vs Commercial Threat Intelligence Platforms
 
-**When to Use TRAM:**
-- Research-focused technique identification
-- Academic analysis of technique coverage
-- Building training datasets
-- Individual technique classification tasks
+| Feature | **ThreatPathMapper** | **Commercial TI Platforms** |
+|---------|--------------------|--------------------------|
+| **Cost** | Open source and free | Subscription-based, expensive |
+| **Customization** | Full source code access | Limited customization options |
+| **Attack Path Analysis** | Automated graph-based reconstruction | Manual analysis or rule-based systems |
+| **MITRE Mapping** | Comprehensive automated mapping | Varies by vendor, often manual |
+| **Data Sources** | Any CTI report format | Vendor-specific feeds and formats |
+| **Deployment** | Self-hosted with full control | Cloud-based SaaS models |
+| **Integration** | Export to standard formats | Vendor-specific APIs |
 
-### 🎯 ThreatPathMapper Advantages
+### When to Choose ThreatPathMapper
 
-1. **Attack Path Reconstruction**: Shows how attacks unfold sequentially
-2. **Kill Chain Analysis**: Organizes techniques by tactical phases
-3. **Multiple Visualizations**: Formats for different audience needs
-4. **Confidence Scoring**: Probabilistic assessment of technique identification
-5. **Operational Focus**: Designed for security practitioners
+**Ideal Use Cases:**
+- Organizations needing automated attack path analysis
+- Security teams analyzing APT campaigns and incident reports
+- Research institutions studying attack methodologies
+- Companies requiring customizable threat intelligence processing
+- Teams wanting to understand attack progression and relationships
+- Environments requiring self-hosted, air-gapped analysis capabilities
+
+**Advantages Over Alternatives:**
+1. **Complete Attack Storylines**: Unlike tools that identify isolated techniques, ThreatPathMapper reconstructs the full attack narrative
+2. **No Training Data Required**: Uses unsupervised learning based on MITRE ATT&CK knowledge
+3. **Multiple Visualization Formats**: Serves different audiences from executives to technical analysts
+4. **Open Source Flexibility**: Full customization and integration capabilities
+5. **Operational Focus**: Designed for real-world security operations, not just research
+6. **Cost-Effective**: No licensing fees or subscription costs
 
 ## Dataset
 
-### 📚 Research Dataset
+### Research Dataset
 
 ThreatPathMapper includes a comprehensive research dataset for validation and benchmarking:
 
@@ -898,7 +948,7 @@ ThreatPathMapper includes a comprehensive research dataset for validation and be
   - Kill chain structures
   - Performance benchmarks
 
-### 🎯 Dataset Applications
+### Dataset Applications
 
 **Academic Research:**
 - Benchmark automated threat intelligence analysis
@@ -915,7 +965,7 @@ ThreatPathMapper includes a comprehensive research dataset for validation and be
 - Understand MITRE ATT&CK framework applications
 - Practice with real-world attack scenarios
 
-### 📊 Dataset Statistics
+### Dataset Statistics
 
 - **Report Sources**: 15+ threat intelligence providers
 - **Technique Coverage**: 200+ unique MITRE ATT&CK techniques
@@ -929,19 +979,19 @@ ThreatPathMapper includes a comprehensive research dataset for validation and be
 - Respect original source attributions and licenses
 - Contact maintainers for commercial usage discussions
 
-## 📊 Example Output
+## Example Output
 
 Here's what ThreatPathMapper generates from a typical threat intelligence report:
 
 ### Kill Chain Structure
 ```
-🎯 TA0001 - INITIAL ACCESS
-  1. T1566.001 - Spearphishing Attachment (Confidence: ██████████ 0.911)
-  2. T1190 - Exploit Public-Facing Application (Confidence: █████████░ 0.876)
+TA0001 - INITIAL ACCESS
+  1. T1566.001 - Spearphishing Attachment (Confidence: 0.911)
+  2. T1190 - Exploit Public-Facing Application (Confidence: 0.876)
 
-🎯 TA0002 - EXECUTION
-  1. T1059.001 - PowerShell (Confidence: ██████████ 1.000)
-  2. T1059.003 - Windows Command Shell (Confidence: █████████░ 0.944)
+TA0002 - EXECUTION
+  1. T1059.001 - PowerShell (Confidence: 1.000)
+  2. T1059.003 - Windows Command Shell (Confidence: 0.944)
 ```
 
 ### Simple Attack Flow
@@ -963,7 +1013,7 @@ Command and Control → Exfiltration
 
 ---
 
-## 🎯 Who Should Use ThreatPathMapper?
+## Who Should Use ThreatPathMapper?
 
 - **Threat Intelligence Analysts**: Automated attack path analysis
 - **Security Operations Teams**: Understanding attack progression for defense
@@ -974,7 +1024,7 @@ Command and Control → Exfiltration
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see our contributing guidelines for:
 - Bug reports and feature requests
@@ -989,19 +1039,19 @@ We welcome contributions! Please see our contributing guidelines for:
 
 ThreatPathMapper leverages several key technologies and frameworks:
 
-### 🛠️ Core Technologies
+### Core Technologies
 - **MITRE ATT&CK Framework**: Standardized adversary tactics and techniques taxonomy
 - **SpaCy**: Advanced natural language processing and dependency parsing
 - **TensorFlow/TensorFlow Hub**: Machine learning models and semantic embeddings
 - **NetworkX**: Graph-based analysis and knowledge representation
 - **Docker**: Containerized deployment and cross-platform compatibility
 
-### 📊 Enhanced Visualization
+### Enhanced Visualization
 - **Tabulate**: Professional table formatting
 - **Custom Python**: Multi-format attack chain visualization
 - **MITRE ATT&CK Navigator**: Inspiration for kill chain representation
 
-### 🙏 Special Thanks
+### Special Thanks
 
 **Original Research:**
 - **[CyberLab Team](https://github.com/cyb3rlab)**: For the foundational RAF-AG research and implementation that ThreatPathMapper builds upon
@@ -1014,7 +1064,7 @@ ThreatPathMapper leverages several key technologies and frameworks:
 - **MITRE Corporation**: For the ATT&CK framework foundation
 - **Open Source Contributors**: For the underlying technology stack
 
-### 📚 Research Foundation
+### Research Foundation
 ThreatPathMapper builds upon research in:
 - Graph-based knowledge representation
 - Natural language processing for cybersecurity
@@ -1023,10 +1073,10 @@ ThreatPathMapper builds upon research in:
 
 ---
 
-**📧 Contact**: For questions, issues, or collaboration opportunities, please use the GitHub issue tracker or reach out to the research team.
+**Contact**: For questions, issues, or collaboration opportunities, please use the GitHub issue tracker or reach out to the research team.
 
-**⭐ Star this repository** if ThreatPathMapper helps with your threat intelligence analysis!
+**Star this repository** if ThreatPathMapper helps with your threat intelligence analysis!
 
 ---
 
-**⚠️ Important**: This framework is designed for **defensive cybersecurity research and threat analysis purposes**. Please use responsibly and in accordance with applicable laws and ethical guidelines.
+**Important**: This framework is designed for **defensive cybersecurity research and threat analysis purposes**. Please use responsibly and in accordance with applicable laws and ethical guidelines.
