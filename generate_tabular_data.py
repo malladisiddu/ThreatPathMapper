@@ -146,6 +146,7 @@ class AttackChainTableGenerator:
     def __init__(self):
         self.attack_chain_data = []
         self.attack_paths = []
+        self.campaign_sentences = {}  # Cache for sentence data
         
     def load_raf_data(self, json_file_path: str) -> Dict[str, Any]:
         """Load RAF-AG JSON results file."""
@@ -154,6 +155,33 @@ class AttackChainTableGenerator:
                 return json.load(f)
         except Exception as e:
             print(f"Error loading JSON file {json_file_path}: {e}")
+            return {}
+    
+    def load_campaign_sentences(self, campaign_name: str) -> Dict[int, str]:
+        """Load sentence data from campaign output file."""
+        if campaign_name in self.campaign_sentences:
+            return self.campaign_sentences[campaign_name]
+        
+        # Construct path to campaign output file
+        campaign_output_path = f"data/campaign/output/{campaign_name}.jsonl"
+        
+        try:
+            with open(campaign_output_path, 'r', encoding='utf-8') as f:
+                campaign_data = json.load(f)
+                
+            # Extract sentences and create mapping
+            sentences = {}
+            if 'sentences' in campaign_data:
+                for sentence in campaign_data['sentences']:
+                    sentence_id = sentence.get('id', -1)
+                    sentence_text = sentence.get('text', '')
+                    sentences[sentence_id] = sentence_text
+                    
+            self.campaign_sentences[campaign_name] = sentences
+            return sentences
+            
+        except Exception as e:
+            print(f"Warning: Could not load sentence data from {campaign_output_path}: {e}")
             return {}
     
     def get_tactic_from_technique(self, technique_id: str) -> str:
@@ -191,21 +219,47 @@ class AttackChainTableGenerator:
         }
         return tactic_tool_mapping.get(tactic_id, ["Various tools"])
     
-    def extract_technique_details(self, technique_data: Dict[str, Any]) -> Dict[str, Any]:
-        """Extract technique details and create comprehensive description."""
+    def extract_technique_details(self, technique_data: Dict[str, Any], campaign_name: str = "") -> Dict[str, Any]:
+        """Extract technique details and create comprehensive description with full sentence context."""
         details = []
+        context_sentences = []
+        sentence_indexes = set()
         
-        # Extract phrases and create meaningful details
+        # Load sentence data for this campaign
+        sentences = self.load_campaign_sentences(campaign_name) if campaign_name else {}
+        
+        # Extract phrases and create meaningful details with full sentence context
         if 'phrases' in technique_data:
             for phrase in technique_data['phrases']:
-                if 'source' in phrase and 'text' in phrase['source']:
-                    details.append(phrase['source']['text'])
-                if 'dest' in phrase and 'text' in phrase['dest']:
-                    details.append(phrase['dest']['text'])
+                # Extract text from source and dest
+                source_text = phrase.get('source', {}).get('text', '')
+                dest_text = phrase.get('dest', {}).get('text', '')
+                source_sent_idx = phrase.get('source', {}).get('sent_index', -1)
+                dest_sent_idx = phrase.get('dest', {}).get('sent_index', -1)
+                
+                if source_text:
+                    details.append(source_text)
+                    sentence_indexes.add(source_sent_idx)
+                        
+                if dest_text and dest_text != source_text:
+                    details.append(dest_text)
+                    sentence_indexes.add(dest_sent_idx)
+        
+        # Get full sentences for context
+        for sent_idx in sentence_indexes:
+            if sent_idx in sentences:
+                full_sentence = sentences[sent_idx]
+                context_sentences.append(f"Sentence {sent_idx}: \"{full_sentence}\"")
+            elif sent_idx >= 0:  # Valid sentence index but no sentence data
+                context_sentences.append(f"Sentence {sent_idx}: [Full text not available]")
         
         # Create a concise detail string
         unique_details = list(set(details))[:3]  # Limit to 3 unique details
         observed_indicators = ", ".join(unique_details) if unique_details else "No specific indicators"
+        
+        # Create context mapping string showing full sentences that matched this technique
+        unique_context = list(set(context_sentences))[:3]  # Limit to 3 unique sentence contexts
+        context_mapping = " | ".join(unique_context) if unique_context else "No specific text matches found"
         
         # Get technique description
         technique_id = technique_data.get('techID', 'Unknown')
@@ -213,13 +267,14 @@ class AttackChainTableGenerator:
         
         return {
             'observed_indicators': observed_indicators,
+            'context_mapping': context_mapping,
             'confidence': technique_data.get('value', 0.0),
             'description': tech_info['description'],
             'implementation_methods': tech_info['implementation'],
             'associated_tools': tech_info['tools']
         }
     
-    def generate_kill_chain_structure(self, raf_data: Dict[str, Any]) -> Dict[str, List[Dict[str, Any]]]:
+    def generate_kill_chain_structure(self, raf_data: Dict[str, Any], campaign_name: str = "") -> Dict[str, List[Dict[str, Any]]]:
         """Generate kill chain structure organized by MITRE ATT&CK tactics."""
         if 'best' not in raf_data:
             return {}
@@ -239,7 +294,7 @@ class AttackChainTableGenerator:
                 tactic_name = MITRE_TACTICS.get(tactic_id, "Unknown Tactic")
                 
                 # Extract technique details
-                details_info = self.extract_technique_details(technique)
+                details_info = self.extract_technique_details(technique, campaign_name)
                 
                 technique_info = {
                     'step': int(step_key),
@@ -249,6 +304,7 @@ class AttackChainTableGenerator:
                     'tactic_id': tactic_id,
                     'tactic_name': tactic_name,
                     'observed_indicators': details_info['observed_indicators'],
+                    'context_mapping': details_info['context_mapping'],
                     'description': details_info['description'],
                     'implementation_methods': details_info['implementation_methods'],
                     'associated_tools': details_info['associated_tools']
@@ -324,7 +380,7 @@ class AttackChainTableGenerator:
         
         return paths
     
-    def generate_tabular_data(self, raf_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+    def generate_tabular_data(self, raf_data: Dict[str, Any], campaign_name: str = "") -> List[Dict[str, Any]]:
         """Generate enhanced tabular data from RAF-AG results."""
         tabular_data = []
         
@@ -340,7 +396,7 @@ class AttackChainTableGenerator:
                     tactic_name = MITRE_TACTICS.get(tactic_id, "Unknown Tactic")
                     
                     # Extract comprehensive details
-                    details_info = self.extract_technique_details(technique)
+                    details_info = self.extract_technique_details(technique, campaign_name)
                     
                     # Create enhanced table row
                     row = {
@@ -351,6 +407,7 @@ class AttackChainTableGenerator:
                         'Implementation Methods': "; ".join(details_info['implementation_methods']),
                         'Associated Tools': "; ".join(details_info['associated_tools']),
                         'Observed Indicators': details_info['observed_indicators'],
+                        'Context Mapping': details_info['context_mapping'],
                         'Confidence': f"{details_info['confidence']:.3f}"
                     }
                     tabular_data.append(row)
@@ -359,7 +416,7 @@ class AttackChainTableGenerator:
         tabular_data.sort(key=lambda x: int(x['Stage'].split()[-1]))
         
         # Generate kill chain structure and attack paths
-        self.kill_chain = self.generate_kill_chain_structure(raf_data)
+        self.kill_chain = self.generate_kill_chain_structure(raf_data, campaign_name)
         self.attack_paths = self.generate_attack_paths(self.kill_chain)
         
         return tabular_data
@@ -384,7 +441,8 @@ class AttackChainTableGenerator:
                     confidence_bar = "█" * int(tech['confidence'] * 10) + "░" * (10 - int(tech['confidence'] * 10))
                     print(f"  {i}. {tech['technique_id']} - {tech['technique_name']}")
                     print(f"     Confidence: {confidence_bar} {tech['confidence']:.3f}")
-                    print(f"     Step: {tech['step']} | Observed: {tech['observed_indicators'][:60]}...")
+                    print(f"     Step: {tech['step']} | Observed: {tech['observed_indicators']}")
+                    print(f"     Context: {tech['context_mapping']}")
                     if i < len(techniques):
                         print()
         
@@ -396,7 +454,8 @@ class AttackChainTableGenerator:
                 confidence_bar = "█" * int(tech['confidence'] * 10) + "░" * (10 - int(tech['confidence'] * 10))
                 print(f"  {i}. {tech['technique_id']} - {tech['technique_name']}")
                 print(f"     Confidence: {confidence_bar} {tech['confidence']:.3f}")
-                print(f"     Step: {tech['step']} | Observed: {tech['observed_indicators'][:60]}...")
+                print(f"     Step: {tech['step']} | Observed: {tech['observed_indicators']}")
+                print(f"     Context: {tech['context_mapping']}")
                 if i < len(self.kill_chain['Unknown']):
                     print()
     
@@ -542,13 +601,12 @@ class AttackChainTableGenerator:
         
         if summary_data:
             # Print table headers
-            print(f"{'Phase':<20} {'Technique':<12} {'Action':<50} {'Confidence':<10}")
-            print("-" * 92)
+            print(f"{'Phase':<20} {'Technique':<12} {'Action'} {'Confidence'}")
+            print("-" * 50)
             
             # Print table rows
             for row in summary_data:
-                action_truncated = row['Action'][:47] + "..." if len(row['Action']) > 50 else row['Action']
-                print(f"{row['Phase']:<20} {row['Technique']:<12} {action_truncated:<50} {row['Confidence']:<10}")
+                print(f"{row['Phase']:<20} {row['Technique']:<12} {row['Action']} {row['Confidence']}")
             print()
     
     def print_attack_paths(self):
@@ -610,7 +668,8 @@ class AttackChainTableGenerator:
                 'Stage': row['Stage'],
                 'Tactic': row['Tactic (MITRE)'],
                 'Technique': row['Technique'],
-                'Tools': row['Associated Tools'][:50] + "..." if len(row['Associated Tools']) > 50 else row['Associated Tools'],
+                'Context': row['Context Mapping'],  # No truncation
+                'Tools': row['Associated Tools'],   # No truncation
                 'Confidence': row['Confidence']
             }
             compact_data.append(compact_row)
@@ -618,7 +677,7 @@ class AttackChainTableGenerator:
         # Print compact table
         headers = list(compact_data[0].keys())
         rows = [[row[header] for header in headers] for row in compact_data]
-        table = tabulate(rows, headers=headers, tablefmt="grid", maxcolwidths=[10, 25, 30, 40, 10])
+        table = tabulate(rows, headers=headers, tablefmt="grid")  # No column width limits
         print(table)
         
         # Print detailed information for each technique
@@ -630,6 +689,7 @@ class AttackChainTableGenerator:
             print(f"Description: {row['Description']}")
             print(f"Implementation: {row['Implementation Methods']}")
             print(f"Observed: {row['Observed Indicators']}")
+            print(f"Context: {row['Context Mapping']}")
             print(f"Confidence: {row['Confidence']}")
             print()
         
@@ -675,11 +735,11 @@ class AttackChainTableGenerator:
         if not raf_data:
             return []
         
-        # Generate tabular data
-        tabular_data = self.generate_tabular_data(raf_data)
-        
         # Extract campaign name from file path
         campaign_name = os.path.splitext(os.path.basename(input_file))[0]
+        
+        # Generate tabular data
+        tabular_data = self.generate_tabular_data(raf_data, campaign_name)
         
         # Print table if requested
         if print_table:
