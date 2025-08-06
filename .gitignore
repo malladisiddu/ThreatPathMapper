@@ -206,3 +206,9 @@ analyze_url.py
 # data/campaign/procedure_alignment/
 # data/campaign/tech_alignment/
 # data/campaign/USE_cosine/
+
+# Large pickle files and backups
+*.pkl
+*.pickle
+*.pkl.corrupted_backup
+*.pkl.backup
