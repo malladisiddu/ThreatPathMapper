@@ -537,7 +537,20 @@ class Paragraph:
                         flag = True
                         break
                 if not flag: # if there is no actor in the graph, we add pseudo actor
-                    _graph_nodes[0] = {"id": 0, "contracted": 0, "meta": {"label": ["ACTOR"], "text": "attacker", "id": 0, "sent_index": 0, "type": "subject"}}
+                    # Check if sentence 0 contains navigation/webpage content to avoid redundant context
+                    sentence_0_text = ""
+                    if len(self.sentences) > 0:
+                        sentence_0_text = self.sentences[0].text.lower()
+                    
+                    # Skip adding pseudo attacker if sentence 0 contains webpage navigation content
+                    navigation_indicators = ["skip to main content", "microsoft security", "home * explore", 
+                                           "solutions +", "ai-powered cybersecurity", "cloud security", 
+                                           "data security & governance", "privacy & risk management"]
+                    
+                    is_navigation_content = any(indicator in sentence_0_text for indicator in navigation_indicators)
+                    
+                    if not is_navigation_content:
+                        _graph_nodes[0] = {"id": 0, "contracted": 0, "meta": {"label": ["ACTOR"], "text": "attacker", "id": 0, "sent_index": 0, "type": "subject"}}
         
         self.graph_nodes = _graph_nodes
 
