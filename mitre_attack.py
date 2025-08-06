@@ -10,7 +10,8 @@ class MitreAttack:
     @classmethod
     def initialize(cls, mitre_attack_file):
         cls.mitre_attack_data = MitreAttackData(mitre_attack_file)
-        techniques = cls.mitre_attack_data.get_techniques(include_subtechniques=True, remove_revoked_deprecated=True)
+        # Get all techniques including revoked ones to handle local technique files that reference them
+        techniques = cls.mitre_attack_data.get_techniques(include_subtechniques=True, remove_revoked_deprecated=False)
         data = cls.mitre_attack_data.get_all_parent_techniques_of_all_subtechniques()
         for item in techniques:
             encoded_name = item.name
@@ -39,6 +40,10 @@ class MitreAttack:
         return tech_obj.x_mitre_platforms
     @classmethod
     def get_technique_name(cls, tech_id):#T1204 => "User Execution"
+        if tech_id not in cls.id_type_map:
+            available_techniques = list(cls.id_type_map.keys())[:10]  # Show first 10 for debugging
+            raise KeyError(f"Technique '{tech_id}' not found in MITRE ATT&CK data. "
+                         f"Available techniques: {available_techniques}... (showing first 10)")
         return cls.id_type_map[tech_id]
     @classmethod
     def get_tactics(cls, tech_id):
