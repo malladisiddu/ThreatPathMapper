@@ -97,8 +97,8 @@ RUN curl --insecure -L -o /tmp/spacy_models/en_core_web_trf.tar.gz \
 # Clean up downloaded files
 RUN rm -rf /tmp/spacy_models
 
-# Try to install Coreferee (may fail but that's OK)
-RUN python -c "import coreferee; coreferee.install('en')" || echo "Coreferee manual installation - this is normal"
+# Install Coreferee English model properly
+RUN python -m coreferee install en || echo "Coreferee installation attempted"
 
 # Copy the rest of the application
 COPY . .

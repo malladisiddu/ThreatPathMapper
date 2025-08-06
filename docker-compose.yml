@@ -16,8 +16,8 @@ services:
       - TF_ENABLE_ONEDNN_OPTS=0
     stdin_open: true
     tty: true
-    # Optional: if you want to access the container interactively
-    # command: /bin/bash
+    # Keep container running for interactive access
+    command: tail -f /dev/null
 
 volumes:
   tf_hub_cache:
