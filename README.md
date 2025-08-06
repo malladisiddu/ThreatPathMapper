@@ -22,8 +22,23 @@ AI-powered cybersecurity framework that automatically processes threat intellige
 
 2. **Using Docker (Recommended):**
    ```bash
+   # Build the Docker image
    docker-compose build
+   
+   # Start the container in detached mode
    docker-compose up -d
+   
+   # Access the container to run commands
+   docker-compose exec threatpathmapper /bin/bash
+   
+   # Inside the container, run analysis
+   python3 main.py
+   
+   # Generate enhanced visualization
+   python3 generate_tabular_data.py "data/campaign/decoding_result/your_campaign.json"
+   
+   # Stop the container when done
+   docker-compose down
    ```
 
 3. **Using Local Installation:**
@@ -32,7 +47,52 @@ AI-powered cybersecurity framework that automatically processes threat intellige
    python -m spacy download en_core_web_lg
    ```
 
-### Usage
+### Docker Usage (Detailed)
+
+1. **Prepare your CTI reports:**
+   ```bash
+   # Place your threat intelligence reports in the input directory
+   # Supports .txt, .html, .pdf formats
+   cp your_threat_report.txt data/campaign/input/
+   ```
+
+2. **Run complete analysis with Docker:**
+   ```bash
+   # Method 1: Interactive container access
+   docker-compose build && docker-compose up -d
+   docker-compose exec threatpathmapper /bin/bash
+   
+   # Inside container:
+   python3 main.py --campaign_from_0=True
+   python3 generate_tabular_data.py "data/campaign/decoding_result/your_report.json"
+   exit
+   
+   # Method 2: Direct command execution
+   docker-compose run --rm threatpathmapper python3 main.py --campaign_from_0=True
+   docker-compose run --rm threatpathmapper python3 generate_tabular_data.py "data/campaign/decoding_result/your_report.json"
+   
+   # Method 3: One-liner for quick analysis
+   docker-compose run --rm threatpathmapper /bin/bash -c "python3 main.py --campaign_from_0=True && python3 generate_tabular_data.py data/campaign/decoding_result/*.json"
+   ```
+
+3. **Memory allocation for large reports:**
+   ```bash
+   # Allocate more memory for large CTI reports
+   docker-compose run --rm -m 8g threatpathmapper python3 main.py
+   ```
+
+4. **Access results:**
+   ```bash
+   # Results are saved in the mounted volumes
+   # View generated attack chains
+   ls -la data/campaign/decoding_result/
+   
+   # Export results with Docker
+   docker-compose run --rm threatpathmapper python3 generate_tabular_data.py \
+     "data/campaign/decoding_result/your_report.json" --save-csv --output-dir reports/
+   ```
+
+### Local Usage
 
 1. **Place CTI reports in `data/campaign/input/`**
 
@@ -110,16 +170,66 @@ done
 
 ## Troubleshooting
 
+### Docker Issues
+
+**Container not starting:**
+```bash
+# Check if Docker is running
+docker version
+
+# Rebuild the image
+docker-compose build --no-cache
+
+# Check logs
+docker-compose logs threatpathmapper
+```
+
 **Memory Issues:**
 ```bash
-# Use Docker with more memory
+# Allocate more memory to Docker container
 docker-compose run --rm -m 8g threatpathmapper python3 main.py
+
+# Or modify docker-compose.yml to add memory limits:
+# deploy:
+#   resources:
+#     limits:
+#       memory: 8G
 ```
+
+**Permission Issues:**
+```bash
+# Fix file permissions
+sudo chown -R $USER:$USER data/
+chmod -R 755 data/
+```
+
+**Container Access Issues:**
+```bash
+# List running containers
+docker ps
+
+# Force stop and restart
+docker-compose down --remove-orphans
+docker-compose up -d
+
+# Access container with different shell
+docker-compose exec threatpathmapper /bin/sh
+```
+
+### Local Installation Issues
 
 **Missing Dependencies:**
 ```bash
 pip install tabulate spacy tensorflow-hub
 python -m spacy download en_core_web_lg
+```
+
+**SpaCy Model Issues:**
+```bash
+# Download required models
+python -m spacy download en_core_web_lg
+python -m spacy download en_core_web_trf
+python -m coreferee install en
 ```
 
 ## Based on RAF-AG Research
