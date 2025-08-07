@@ -247,20 +247,13 @@ class AttackChainTableGenerator:
         
         # Get full sentences for context
         for sent_idx in sentence_indexes:
+            # Completely exclude sentence 0 as it always contains webpage navigation content
+            if sent_idx == 0:
+                continue
+                
             if sent_idx in sentences:
                 full_sentence = sentences[sent_idx]
-                
-                # Filter out navigation/webpage content
-                navigation_indicators = ["skip to main content", "microsoft security", "home * explore", 
-                                       "solutions +", "ai-powered cybersecurity", "cloud security", 
-                                       "data security & governance", "privacy & risk management"]
-                
-                sentence_lower = full_sentence.lower()
-                is_navigation_content = any(indicator in sentence_lower for indicator in navigation_indicators)
-                
-                # Only add context if it's not navigation content
-                if not is_navigation_content:
-                    context_sentences.append(f"Sentence {sent_idx}: \"{full_sentence}\"")
+                context_sentences.append(f"Sentence {sent_idx}: \"{full_sentence}\"")
                     
             elif sent_idx >= 0:  # Valid sentence index but no sentence data
                 context_sentences.append(f"Sentence {sent_idx}: [Full text not available]")

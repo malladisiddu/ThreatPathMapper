@@ -1,1 +1,693 @@
-{"text": "The attacker used spear phishing emails to deliver malicious Word documents. The document contained a macro that downloaded a PowerShell script from a remote server. The PowerShell script established persistence by creating a scheduled task. The malware then performed credential dumping using mimikatz and moved laterally by the network using RDP connections.", "graph_nodes": [{"id": 2, "contracted": 0, "meta": {"start": 4, "end": 12, "text": "attacker", "id": 2, "label": ["ACTOR"], "sent_index": 0, "type": "subject"}}, {"id": 6, "contracted": 0, "meta": {"start": 18, "end": 39, "text": "spear phishing emails", "id": 6, "verbs": ["use"], "label": ["NETWORK"], "sent_index": 0, "type": "object"}}, {"id": 11, "contracted": 0, "meta": {"start": 61, "end": 75, "text": "Word documents", "id": 11, "verbs": ["deliver"], "label": ["DATA"], "sent_index": 0, "type": "object"}}, {"id": 1002, "contracted": 0, "meta": {"start": 4, "end": 12, "text": "document", "id": 2, "label": ["DATA"], "sent_index": 1, "type": "subject"}}, {"id": 1005, "contracted": 0, "meta": {"start": 25, "end": 30, "text": "macro", "id": 5, "verbs": ["contain"], "label": ["FUNCTION"], "sent_index": 1, "type": "object"}}, {"id": 1006, "contracted": 0, "meta": {"text": "that", "start": 31, "end": 35, "id": 6, "label": ["OTHER"], "sent_index": 1, "type": "subject"}}, {"id": 1010, "contracted": 0, "meta": {"start": 49, "end": 66, "text": "PowerShell script", "id": 10, "verbs": ["download"], "label": ["FUNCTION"], "sent_index": 1, "type": "object"}}, {"id": 1014, "contracted": 0, "meta": {"start": 74, "end": 87, "text": "remote server", "id": 14, "verbs": ["from"], "label": ["NETWORK"], "sent_index": 1, "type": "object"}}, {"id": 2003, "contracted": 0, "meta": {"start": 4, "end": 21, "text": "PowerShell script", "id": 3, "label": ["FUNCTION"], "sent_index": 2, "type": "subject"}}, {"id": 2005, "contracted": 0, "meta": {"start": 34, "end": 45, "text": "persistence", "id": 5, "verbs": ["establish"], "label": ["FUNCTION"], "sent_index": 2, "type": "object"}}, {"id": 2010, "contracted": 0, "meta": {"start": 60, "end": 74, "text": "scheduled task", "id": 10, "verbs": ["create"], "label": ["FUNCTION"], "sent_index": 2, "type": "object"}}, {"id": 3002, "contracted": 0, "meta": {"start": 4, "end": 11, "text": "malware", "id": 2, "label": ["FUNCTION"], "sent_index": 3, "type": "subject"}}, {"id": 3006, "contracted": 0, "meta": {"start": 27, "end": 45, "text": "credential dumping", "id": 6, "verbs": ["perform"], "label": ["FUNCTION"], "sent_index": 3, "type": "object"}}, {"id": 3008, "contracted": 0, "meta": {"start": 52, "end": 60, "text": "mimikatz", "id": 8, "verbs": ["use"], "label": ["FUNCTION"], "sent_index": 3, "type": "object"}}, {"id": 3014, "contracted": 0, "meta": {"start": 88, "end": 95, "text": "network", "id": 14, "verbs": ["use", "by"], "label": ["NETWORK"], "sent_index": 3, "type": "object"}}, {"id": 3017, "contracted": 0, "meta": {"start": 102, "end": 117, "text": "RDP connections", "id": 17, "verbs": ["use"], "label": ["NETWORK"], "sent_index": 3, "type": "object"}}], "graph_edges": [{"source": 2, "dest": 6, "index": 0, "verb": "use", "id": "2_6"}, {"source": 2, "dest": 11, "index": 1, "verb": "deliver", "id": "2_11"}, {"source": 1002, "dest": 1005, "index": 2, "verb": "contain", "id": "1002_1005"}, {"source": 1005, "dest": 1010, "index": 3, "verb": "download", "id": "1005_1010"}, {"source": 1010, "dest": 1014, "index": 4, "verb": "from", "id": "1010_1014"}, {"source": 1006, "dest": 1014, "index": 5, "verb": "from", "id": "1006_1014"}, {"source": 2003, "dest": 2005, "index": 6, "verb": "establish", "id": "2003_2005"}, {"source": 2003, "dest": 2010, "index": 7, "verb": "create", "id": "2003_2010"}, {"source": 3002, "dest": 3014, "index": 11, "verb": "by", "id": "3002_3014"}, {"source": 3002, "dest": 3006, "index": 9, "verb": "perform", "id": "3002_3006"}, {"source": 3002, "dest": 3008, "index": 10, "verb": "use", "id": "3002_3008"}, {"source": 3002, "dest": 3017, "index": 12, "verb": "use", "id": "3002_3017"}], "replacement_mapper": {}, "sentences": [{"id": 0, "text": "The attacker used spear phishing emails to deliver malicious Word documents.", "svos": [{"sub": {"start": 4, "end": 12, "text": "attacker", "id": 2, "label": ["ACTOR"], "sent_index": 0, "type": "subject"}, "verb": {"negation": false, "text": "use", "index": 2, "flag": 0}, "obj": {"start": 18, "end": 39, "text": "spear phishing emails", "id": 6, "verbs": ["use"], "label": ["NETWORK"], "sent_index": 0, "type": "object"}}, {"sub": {"start": 4, "end": 12, "text": "attacker", "id": 2, "label": ["ACTOR"], "sent_index": 0, "type": "subject"}, "verb": {"negation": false, "text": "deliver", "index": 7, "flag": 0}, "obj": {"start": 61, "end": 75, "text": "Word documents", "id": 11, "verbs": ["deliver"], "label": ["DATA"], "sent_index": 0, "type": "object"}}]}, {"id": 1, "text": "The document contained a macro that downloaded a PowerShell script from a remote server.", "svos": [{"sub": {"start": 4, "end": 12, "text": "document", "id": 2, "label": ["DATA"], "sent_index": 1, "type": "subject"}, "verb": {"negation": false, "text": "contain", "index": 2, "flag": 0}, "obj": {"start": 25, "end": 30, "text": "macro", "id": 5, "verbs": ["contain"], "label": ["FUNCTION"], "sent_index": 1, "type": "object"}}, {"sub": {"start": 25, "end": 30, "text": "macro", "id": 5, "verbs": ["contain"], "label": ["FUNCTION"], "sent_index": 1, "type": "subject"}, "verb": {"negation": false, "text": "download", "index": 6, "flag": 0}, "obj": {"start": 49, "end": 66, "text": "PowerShell script", "id": 10, "verbs": ["download"], "label": ["FUNCTION"], "sent_index": 1, "type": "object"}}, {"sub": {"start": 49, "end": 66, "text": "PowerShell script", "id": 10, "verbs": ["download"], "label": ["FUNCTION"], "sent_index": 1, "type": "subject"}, "verb": {"negation": false, "text": "from", "index": 10, "flag": 0}, "obj": {"start": 74, "end": 87, "text": "remote server", "id": 14, "verbs": ["from"], "label": ["NETWORK"], "sent_index": 1, "type": "object"}}, {"sub": {"text": "that", "start": 31, "end": 35, "id": 6, "label": ["OTHER"], "sent_index": 1, "type": "subject"}, "verb": {"negation": false, "text": "from", "index": 10, "flag": 0}, "obj": {"start": 74, "end": 87, "text": "remote server", "id": 14, "verbs": ["from"], "label": ["NETWORK"], "sent_index": 1, "type": "object"}}]}, {"id": 2, "text": "The PowerShell script established persistence by creating a scheduled task.", "svos": [{"sub": {"start": 4, "end": 21, "text": "PowerShell script", "id": 3, "label": ["FUNCTION"], "sent_index": 2, "type": "subject"}, "verb": {"negation": false, "text": "establish", "index": 3, "flag": 0}, "obj": {"start": 34, "end": 45, "text": "persistence", "id": 5, "verbs": ["establish"], "label": ["FUNCTION"], "sent_index": 2, "type": "object"}}, {"sub": {"start": 4, "end": 21, "text": "PowerShell script", "id": 3, "label": ["FUNCTION"], "sent_index": 2, "type": "subject"}, "verb": {"negation": false, "text": "create", "index": 6, "flag": 0}, "obj": {"start": 60, "end": 74, "text": "scheduled task", "id": 10, "verbs": ["create"], "label": ["FUNCTION"], "sent_index": 2, "type": "object"}}]}, {"id": 3, "text": "The malware then performed credential dumping using mimikatz and moved laterally by the network using RDP connections.", "svos": [{"sub": {"start": 4, "end": 11, "text": "malware", "id": 2, "label": ["FUNCTION"], "sent_index": 3, "type": "subject"}, "verb": {"negation": false, "text": "use", "index": -1, "flag": 0}, "obj": {"start": 88, "end": 95, "text": "network", "id": 14, "verbs": ["use", "by"], "label": ["NETWORK"], "sent_index": 3, "type": "object"}}, {"sub": {"start": 4, "end": 11, "text": "malware", "id": 2, "label": ["FUNCTION"], "sent_index": 3, "type": "subject"}, "verb": {"negation": false, "text": "perform", "index": 3, "flag": 0}, "obj": {"start": 27, "end": 45, "text": "credential dumping", "id": 6, "verbs": ["perform"], "label": ["FUNCTION"], "sent_index": 3, "type": "object"}}, {"sub": {"start": 4, "end": 11, "text": "malware", "id": 2, "label": ["FUNCTION"], "sent_index": 3, "type": "subject"}, "verb": {"negation": false, "text": "use", "index": 6, "flag": 0}, "obj": {"start": 52, "end": 60, "text": "mimikatz", "id": 8, "verbs": ["use"], "label": ["FUNCTION"], "sent_index": 3, "type": "object"}}, {"sub": {"start": 4, "end": 11, "text": "malware", "id": 2, "label": ["FUNCTION"], "sent_index": 3, "type": "subject"}, "verb": {"negation": false, "text": "by", "index": 11, "flag": 0}, "obj": {"start": 88, "end": 95, "text": "network", "id": 14, "verbs": ["by"], "label": ["NETWORK"], "sent_index": 3, "type": "object"}}, {"sub": {"start": 4, "end": 11, "text": "malware", "id": 2, "label": ["FUNCTION"], "sent_index": 3, "type": "subject"}, "verb": {"negation": false, "text": "use", "index": 14, "flag": 0}, "obj": {"start": 102, "end": 117, "text": "RDP connections", "id": 17, "verbs": ["use"], "label": ["NETWORK"], "sent_index": 3, "type": "object"}}]}], "mapper": {}, "id": 0}
+{
+  "text": "The attacker used spear phishing emails to deliver malicious Word documents. The document contained a macro that downloaded a PowerShell script from a remote server. The PowerShell script established persistence by creating a scheduled task. The malware then performed credential dumping using mimikatz and moved laterally by the network using RDP connections.",
+  "graph_nodes": [
+    {
+      "id": 1002,
+      "contracted": 0,
+      "meta": {
+        "start": 4,
+        "end": 12,
+        "text": "document",
+        "id": 2,
+        "label": [
+          "DATA"
+        ],
+        "sent_index": 1,
+        "type": "subject"
+      }
+    },
+    {
+      "id": 1005,
+      "contracted": 0,
+      "meta": {
+        "start": 25,
+        "end": 30,
+        "text": "macro",
+        "id": 5,
+        "verbs": [
+          "contain"
+        ],
+        "label": [
+          "FUNCTION"
+        ],
+        "sent_index": 1,
+        "type": "object"
+      }
+    },
+    {
+      "id": 1006,
+      "contracted": 0,
+      "meta": {
+        "text": "that",
+        "start": 31,
+        "end": 35,
+        "id": 6,
+        "label": [
+          "OTHER"
+        ],
+        "sent_index": 1,
+        "type": "subject"
+      }
+    },
+    {
+      "id": 1010,
+      "contracted": 0,
+      "meta": {
+        "start": 49,
+        "end": 66,
+        "text": "PowerShell script",
+        "id": 10,
+        "verbs": [
+          "download"
+        ],
+        "label": [
+          "FUNCTION"
+        ],
+        "sent_index": 1,
+        "type": "object"
+      }
+    },
+    {
+      "id": 1014,
+      "contracted": 0,
+      "meta": {
+        "start": 74,
+        "end": 87,
+        "text": "remote server",
+        "id": 14,
+        "verbs": [
+          "from"
+        ],
+        "label": [
+          "NETWORK"
+        ],
+        "sent_index": 1,
+        "type": "object"
+      }
+    },
+    {
+      "id": 2003,
+      "contracted": 0,
+      "meta": {
+        "start": 4,
+        "end": 21,
+        "text": "PowerShell script",
+        "id": 3,
+        "label": [
+          "FUNCTION"
+        ],
+        "sent_index": 2,
+        "type": "subject"
+      }
+    },
+    {
+      "id": 2005,
+      "contracted": 0,
+      "meta": {
+        "start": 34,
+        "end": 45,
+        "text": "persistence",
+        "id": 5,
+        "verbs": [
+          "establish"
+        ],
+        "label": [
+          "FUNCTION"
+        ],
+        "sent_index": 2,
+        "type": "object"
+      }
+    },
+    {
+      "id": 2010,
+      "contracted": 0,
+      "meta": {
+        "start": 60,
+        "end": 74,
+        "text": "scheduled task",
+        "id": 10,
+        "verbs": [
+          "create"
+        ],
+        "label": [
+          "FUNCTION"
+        ],
+        "sent_index": 2,
+        "type": "object"
+      }
+    },
+    {
+      "id": 3002,
+      "contracted": 0,
+      "meta": {
+        "start": 4,
+        "end": 11,
+        "text": "malware",
+        "id": 2,
+        "label": [
+          "FUNCTION"
+        ],
+        "sent_index": 3,
+        "type": "subject"
+      }
+    },
+    {
+      "id": 3006,
+      "contracted": 0,
+      "meta": {
+        "start": 27,
+        "end": 45,
+        "text": "credential dumping",
+        "id": 6,
+        "verbs": [
+          "perform"
+        ],
+        "label": [
+          "FUNCTION"
+        ],
+        "sent_index": 3,
+        "type": "object"
+      }
+    },
+    {
+      "id": 3008,
+      "contracted": 0,
+      "meta": {
+        "start": 52,
+        "end": 60,
+        "text": "mimikatz",
+        "id": 8,
+        "verbs": [
+          "use"
+        ],
+        "label": [
+          "FUNCTION"
+        ],
+        "sent_index": 3,
+        "type": "object"
+      }
+    },
+    {
+      "id": 3014,
+      "contracted": 0,
+      "meta": {
+        "start": 88,
+        "end": 95,
+        "text": "network",
+        "id": 14,
+        "verbs": [
+          "use",
+          "by"
+        ],
+        "label": [
+          "NETWORK"
+        ],
+        "sent_index": 3,
+        "type": "object"
+      }
+    },
+    {
+      "id": 3017,
+      "contracted": 0,
+      "meta": {
+        "start": 102,
+        "end": 117,
+        "text": "RDP connections",
+        "id": 17,
+        "verbs": [
+          "use"
+        ],
+        "label": [
+          "NETWORK"
+        ],
+        "sent_index": 3,
+        "type": "object"
+      }
+    }
+  ],
+  "graph_edges": [
+    {
+      "source": 1002,
+      "dest": 1005,
+      "index": 2,
+      "verb": "contain",
+      "id": "1002_1005"
+    },
+    {
+      "source": 1005,
+      "dest": 1010,
+      "index": 3,
+      "verb": "download",
+      "id": "1005_1010"
+    },
+    {
+      "source": 1010,
+      "dest": 1014,
+      "index": 4,
+      "verb": "from",
+      "id": "1010_1014"
+    },
+    {
+      "source": 1006,
+      "dest": 1014,
+      "index": 5,
+      "verb": "from",
+      "id": "1006_1014"
+    },
+    {
+      "source": 2003,
+      "dest": 2005,
+      "index": 6,
+      "verb": "establish",
+      "id": "2003_2005"
+    },
+    {
+      "source": 2003,
+      "dest": 2010,
+      "index": 7,
+      "verb": "create",
+      "id": "2003_2010"
+    },
+    {
+      "source": 3002,
+      "dest": 3014,
+      "index": 11,
+      "verb": "by",
+      "id": "3002_3014"
+    },
+    {
+      "source": 3002,
+      "dest": 3006,
+      "index": 9,
+      "verb": "perform",
+      "id": "3002_3006"
+    },
+    {
+      "source": 3002,
+      "dest": 3008,
+      "index": 10,
+      "verb": "use",
+      "id": "3002_3008"
+    },
+    {
+      "source": 3002,
+      "dest": 3017,
+      "index": 12,
+      "verb": "use",
+      "id": "3002_3017"
+    }
+  ],
+  "replacement_mapper": {},
+  "sentences": [
+    {
+      "id": 1,
+      "text": "The document contained a macro that downloaded a PowerShell script from a remote server.",
+      "svos": [
+        {
+          "sub": {
+            "start": 4,
+            "end": 12,
+            "text": "document",
+            "id": 2,
+            "label": [
+              "DATA"
+            ],
+            "sent_index": 1,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "contain",
+            "index": 2,
+            "flag": 0
+          },
+          "obj": {
+            "start": 25,
+            "end": 30,
+            "text": "macro",
+            "id": 5,
+            "verbs": [
+              "contain"
+            ],
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 1,
+            "type": "object"
+          }
+        },
+        {
+          "sub": {
+            "start": 25,
+            "end": 30,
+            "text": "macro",
+            "id": 5,
+            "verbs": [
+              "contain"
+            ],
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 1,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "download",
+            "index": 6,
+            "flag": 0
+          },
+          "obj": {
+            "start": 49,
+            "end": 66,
+            "text": "PowerShell script",
+            "id": 10,
+            "verbs": [
+              "download"
+            ],
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 1,
+            "type": "object"
+          }
+        },
+        {
+          "sub": {
+            "start": 49,
+            "end": 66,
+            "text": "PowerShell script",
+            "id": 10,
+            "verbs": [
+              "download"
+            ],
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 1,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "from",
+            "index": 10,
+            "flag": 0
+          },
+          "obj": {
+            "start": 74,
+            "end": 87,
+            "text": "remote server",
+            "id": 14,
+            "verbs": [
+              "from"
+            ],
+            "label": [
+              "NETWORK"
+            ],
+            "sent_index": 1,
+            "type": "object"
+          }
+        },
+        {
+          "sub": {
+            "text": "that",
+            "start": 31,
+            "end": 35,
+            "id": 6,
+            "label": [
+              "OTHER"
+            ],
+            "sent_index": 1,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "from",
+            "index": 10,
+            "flag": 0
+          },
+          "obj": {
+            "start": 74,
+            "end": 87,
+            "text": "remote server",
+            "id": 14,
+            "verbs": [
+              "from"
+            ],
+            "label": [
+              "NETWORK"
+            ],
+            "sent_index": 1,
+            "type": "object"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The PowerShell script established persistence by creating a scheduled task.",
+      "svos": [
+        {
+          "sub": {
+            "start": 4,
+            "end": 21,
+            "text": "PowerShell script",
+            "id": 3,
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 2,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "establish",
+            "index": 3,
+            "flag": 0
+          },
+          "obj": {
+            "start": 34,
+            "end": 45,
+            "text": "persistence",
+            "id": 5,
+            "verbs": [
+              "establish"
+            ],
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 2,
+            "type": "object"
+          }
+        },
+        {
+          "sub": {
+            "start": 4,
+            "end": 21,
+            "text": "PowerShell script",
+            "id": 3,
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 2,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "create",
+            "index": 6,
+            "flag": 0
+          },
+          "obj": {
+            "start": 60,
+            "end": 74,
+            "text": "scheduled task",
+            "id": 10,
+            "verbs": [
+              "create"
+            ],
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 2,
+            "type": "object"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The malware then performed credential dumping using mimikatz and moved laterally by the network using RDP connections.",
+      "svos": [
+        {
+          "sub": {
+            "start": 4,
+            "end": 11,
+            "text": "malware",
+            "id": 2,
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 3,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "use",
+            "index": -1,
+            "flag": 0
+          },
+          "obj": {
+            "start": 88,
+            "end": 95,
+            "text": "network",
+            "id": 14,
+            "verbs": [
+              "use",
+              "by"
+            ],
+            "label": [
+              "NETWORK"
+            ],
+            "sent_index": 3,
+            "type": "object"
+          }
+        },
+        {
+          "sub": {
+            "start": 4,
+            "end": 11,
+            "text": "malware",
+            "id": 2,
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 3,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "perform",
+            "index": 3,
+            "flag": 0
+          },
+          "obj": {
+            "start": 27,
+            "end": 45,
+            "text": "credential dumping",
+            "id": 6,
+            "verbs": [
+              "perform"
+            ],
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 3,
+            "type": "object"
+          }
+        },
+        {
+          "sub": {
+            "start": 4,
+            "end": 11,
+            "text": "malware",
+            "id": 2,
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 3,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "use",
+            "index": 6,
+            "flag": 0
+          },
+          "obj": {
+            "start": 52,
+            "end": 60,
+            "text": "mimikatz",
+            "id": 8,
+            "verbs": [
+              "use"
+            ],
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 3,
+            "type": "object"
+          }
+        },
+        {
+          "sub": {
+            "start": 4,
+            "end": 11,
+            "text": "malware",
+            "id": 2,
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 3,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "by",
+            "index": 11,
+            "flag": 0
+          },
+          "obj": {
+            "start": 88,
+            "end": 95,
+            "text": "network",
+            "id": 14,
+            "verbs": [
+              "by"
+            ],
+            "label": [
+              "NETWORK"
+            ],
+            "sent_index": 3,
+            "type": "object"
+          }
+        },
+        {
+          "sub": {
+            "start": 4,
+            "end": 11,
+            "text": "malware",
+            "id": 2,
+            "label": [
+              "FUNCTION"
+            ],
+            "sent_index": 3,
+            "type": "subject"
+          },
+          "verb": {
+            "negation": false,
+            "text": "use",
+            "index": 14,
+            "flag": 0
+          },
+          "obj": {
+            "start": 102,
+            "end": 117,
+            "text": "RDP connections",
+            "id": 17,
+            "verbs": [
+              "use"
+            ],
+            "label": [
+              "NETWORK"
+            ],
+            "sent_index": 3,
+            "type": "object"
+          }
+        }
+      ]
+    }
+  ],
+  "mapper": {},
+  "id": 0
+}

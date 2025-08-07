@@ -164,7 +164,7 @@ class Paragraph:
                             continue
                         token_start = token.idx
                         token_end = token.idx + len(token.text)
-                        for sent_index in range(0,len(sents)):
+                        for sent_index in range(1,len(sents)):  # Skip sentence 0 (navigation content)
                             sent = sents[sent_index]
                             sent_start = sent.start_char
                             sent_end = sent.end_char
@@ -705,7 +705,7 @@ class Paragraph:
                 
     def conjuntion_simplification(self):
         _chains = []
-        for sent_index in range(0, len(self.sentences)):
+        for sent_index in range(1, len(self.sentences)):  # Skip sentence 0 (navigation content)
             sent = self.sentences[sent_index]
             chains = sent.chains
             for chain in chains:
